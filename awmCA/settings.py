@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
+import socket
+
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -18,8 +20,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-r5vz9)fvt1wl*-_xd-)^g@pv8g!4&9gww1z5)emv&@0nz_@!3g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -126,8 +126,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-
 STATIC_URL = 'static/'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
@@ -138,6 +136,25 @@ STATICFILES_DIRS = [
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+if socket.gethostname() == "mich-bich":
+    DATABASES["default"]["HOST"] = "localhost"
+    DATABASES["default"]["PORT"] = 25432            # docker_config.POSTGIS_PORT
+else:
+    DATABASES["default"]["HOST"] = "awmca_postgis"   # f"{docker_config.PROJECT_NAME}-postgis"
+    DATABASES["default"]["PORT"] = 5432
+
+# Set DEPLOY_SECURE to True only for LIVE deployment
+if os.getenv('DEPLOY_SECURE'):
+    DEBUG = False
+    CSRF_TRUSTED_ORIGINS = "https://michal-korneluk.shop"
+    ALLOWED_HOSTS = ['.michal-korneluk.shop', 'localhost',]
+    CSRF_COOKIE_SECURE = True
+    SESSION_COOKIE_SECURE = True
+else:
+    DEBUG = True
+    ALLOWED_HOSTS = []
+    CSRF_COOKIE_SECURE = False
+    SESSION_COOKIE_SECURE = False
 
 
 # Default primary key field type

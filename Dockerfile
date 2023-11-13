@@ -14,6 +14,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 # Set env variable DOCKERENV to true
 ENV DOCKER_ENV="True"
+ENV SECURE_DEPLOY=True
 # Get the following libraries. We can install them "globally" on the image as it will contain only our project
 # RUN apt-get -y install build-essential python-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info
 # You should have already exported your conda environment to an "ENV.yml" file.
