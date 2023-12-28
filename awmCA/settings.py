@@ -146,7 +146,7 @@ else:
 # Set DEPLOY_SECURE to True only for LIVE deployment
 if os.getenv('DEPLOY_SECURE'):
     DEBUG = False
-    CSRF_TRUSTED_ORIGINS = "https://michal-korneluk.shop"
+    CSRF_TRUSTED_ORIGINS = ["https://michal-korneluk.shop"]
     ALLOWED_HOSTS = ['.michal-korneluk.shop', 'localhost',]
     CSRF_COOKIE_SECURE = True
     SESSION_COOKIE_SECURE = True
