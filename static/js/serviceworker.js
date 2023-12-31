@@ -5,9 +5,9 @@ self.addEventListener("install", function (event) {
     caches.open(staticCacheName).then(function (cache) {
       return cache.addAll([
         "/",
-        "/index.html",
+        "/templates/index.html",
         "/static/css/main.css",
-        "/static/js/main.js",
+        "/static/js/script.js",
         /* Add other necessary paths to cache */
       ]);
     })

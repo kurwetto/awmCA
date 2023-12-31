@@ -9,4 +9,5 @@ urlpatterns = [
 
     path('', worldapp, name='worldapp'),
     path('update_location/', update_location, name="update_location"),
+
 ]

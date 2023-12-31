@@ -1,7 +1,10 @@
 {% load static %}
+{% load pwa %}
 <!DOCTYPE html>
 <html>
 <head>
+    {% progressive_web_app_meta %}
+    <link rel="manifest" href="manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Advanced Web Mapping{% endblock %}</title>
