@@ -1,69 +1,92 @@
 // Map initialization
-map = L.map('map', { doubleClickZoom: false }).locate({ setView: true, maxZoom: 16 });
-
-// OSM layer
-const osm1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-});
-osm1.addTo(map);
-
-L.control.locate().addTo(map);
-
-// Additional map layers
-const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+const map = L.map("map", { doubleClickZoom: false }).locate({
+  setView: true,
+  watch: true,
+  maxZoom: 16,
 });
 
-// Add layer control
-const baseLayers = {
-    'OpenStreetMap': osm1,
-    'Satellite': satelliteLayer,
-};
+let osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+});
+osm.addTo(map);
 
-L.control.layers(baseLayers).addTo(map);
+map.on("locationfound", onLocationFound);
 
-map.on('locationfound', onLocationFound);
-map.on('click', onMapClick);
+// Replace 'iconUrl' with the correct path to your icon image
+var icon = L.icon({
+  iconUrl: '/static/icon.png', // Update with the correct path
+  iconSize: [50, 50], // size of the icon
+});
 
-// GPS marker
+// Replace 'fuel' with the correct URL or path to your GeoJSON file
+fetch('/static/fuel_location.geojson')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    L.geoJson(data, {
+      pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, { icon: icon });
+      },
+      onEachFeature: function (feature, layer) {
+        let petrolStation = "";
+
+        if (feature.properties.brand) {
+          petrolStation += "<p>" + feature.properties.brand + "</p>";
+        }
+        if (feature.properties.street) {
+          petrolStation += "<p>Street: " + feature.properties.street + "</p>";
+        }
+        if (feature.properties.city) {
+          petrolStation += "<p>City: " + feature.properties.city + "</p>";
+        }
+
+        layer.bindPopup(petrolStation);
+      },
+    }).addTo(map);
+  });
+
 let gpsMarker = null;
 let gpsCircleMarker;
 
-// GPS marker popup
 function onLocationFound(e) {
-    let radius = e.accuracy / 2;
-    let popupContent = "You are within " + radius + " meters from this point";
+  let radius = e.accuracy / 2;
+  let popupContent = "You are within " + radius + " meters from this point";
 
-    if (gpsMarker == null) {
-        gpsMarker = L.marker(e.latlng).addTo(map);
-        gpsMarker.bindPopup(popupContent).openPopup();
-        gpsCircleMarker = L.circle(e.latlng, radius).addTo(map);
-    } else {
-        gpsMarker.getPopup().setContent(popupContent);
-        gpsMarker.setLatLng(e.latlng);
-        gpsCircleMarker.setLatLng(e.latlng);
-        gpsCircleMarker.setRadius(radius);
-    }
+  if (gpsMarker == null) {
+    gpsMarker = L.marker(e.latlng).addTo(map);
+    gpsMarker.bindPopup(popupContent).openPopup();
+    gpsCircleMarker = L.circle(e.latlng, radius).addTo(map);
+  } else {
+    gpsMarker.getPopup().setContent(popupContent);
+    gpsMarker.setLatLng(e.latlng);
+    gpsCircleMarker.setLatLng(e.latlng);
+    gpsCircleMarker.setRadius(radius);
+  }
 
-    let url = '/update_location/';
+  let url = "/update_location/";
 
-    fetch(url, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'X-CSRFToken': csrftoken,
-        },
-        body: JSON.stringify({ 'latitude': e.latlng.lat, 'longitude': e.latlng.lng })
-    })
-        .then((response) => {
-            return response.json();
-        });
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-CSRFToken": csrftoken,
+    },
+    body: JSON.stringify({ latitude: e.latlng.lat, longitude: e.latlng.lng }),
+  }).then((response) => {
+    return response.json();
+  });
 }
 
-// function that shows your distance away from point clicked on map
-function onMapClick(e) {
-    if (gpsMarker != null) {
-        let distance = gpsMarker.getLatLng().distanceTo(e.latlng);
-        alert("You are " + distance + " meters away from this point");
-    }
+// Function to calculate distance between two points
+function calculateDistance(latlng1, latlng2) {
+  return latlng1.distanceTo(latlng2);
 }
+
+map.on("click", function (e) {
+  if (gpsMarker != null) {
+    let distance = calculateDistance(gpsMarker.getLatLng(), e.latlng);
+    alert("You are " + distance.toFixed(2) + " meters away from this point");
+  }
+});
