@@ -15,8 +15,10 @@ import socket
 from pathlib import Path
 from dotenv import load_dotenv
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/js', 'serviceworker.js')
 
 
 # Quick-start development settings - unsuitable for production
@@ -41,6 +43,7 @@ INSTALLED_APPS = [
     'worldapp.apps.WorldappConfig',
     'crispy_forms',
     'leaflet',
+    'pwa',
 ]
 
 MIDDLEWARE = [
@@ -146,12 +149,13 @@ else:
 
 # Uncomment for deployment
 # Set DEPLOY_SECURE to True only for LIVE deployment
-# if os.getenv('DEPLOY_SECURE'):
-#     DEBUG = False
-#     CSRF_TRUSTED_ORIGINS = "https://michal-korneluk.shop"
-#     ALLOWED_HOSTS = ['.michal-korneluk.shop', 'localhost',]
-#     CSRF_COOKIE_SECURE = True
-#     SESSION_COOKIE_SECURE = True
+
+if os.getenv('DEPLOY_SECURE') == "True":
+    DEBUG = False
+    CSRF_TRUSTED_ORIGINS = "https://michal-korneluk.shop"
+    ALLOWED_HOSTS = ['.michal-korneluk.shop', 'localhost',]
+    CSRF_COOKIE_SECURE = True
+    SESSION_COOKIE_SECURE = True
 # else:
 #     DEBUG = True
 #     ALLOWED_HOSTS = []
