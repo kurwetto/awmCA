@@ -1,4 +1,5 @@
-from django.urls import path
+
+from django.urls import include, path
 from .views import *
 
 urlpatterns = [
@@ -9,5 +10,5 @@ urlpatterns = [
 
     path('', worldapp, name='worldapp'),
     path('update_location/', update_location, name="update_location"),
-
+    path('', include('pwa.urls')),
 ]
