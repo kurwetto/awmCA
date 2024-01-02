@@ -24,7 +24,20 @@ intended to the size of mobile devices.
 After a lot of trouble with this problem I decided to deploy the web app with the "path('', include('pwa.urls'))" line commented
 from the urls.py file. This was then pushed to the dockerhub as kornetto21/awmca2.
 
-For the deployment I bought a domain name from 
+For the deployment I bought the cheapest domain name from https://www.godaddy.com/en-ie and also created a droplet on digitalocean with docker on Ubuntu. The nameservers from digitalocean were added to the DNS on godaddy as well as the A record on the digitalocean domain settings. This was tested using the ping command from the terminal - the domain name was working as intended redirecting to the drolplet ip. 
+
+![image](https://github.com/kurwetto/awmCA/assets/71713449/9f79fc60-5ee8-4455-9b23-f625f7a79727)
+
+I ssh'd into the droplet and installed nginx. Next I cd'd into the snap directory and created a dockerfile that would be used to build the nginx image. The container was created and ran based on this image, after sshing into it a cert was created using "certbot certonly --nginx". 
+
+The PgAdmin and PostGis docker containers were created and ran as was done locally. 
+
+Next I pulled the image I created I pushed early to the dockerhub "kornetto21/awmca2" and created a container based on this image. I ssh'd into the nginx container and installed nano to created a headers.conf and service.conf file which reflected my domain name and django app container. I then started the django app container and ssh'd into it where i then ran "python manage.py makemigrations", "python manage.py migrate" and "python manage.py collectstatic --no-input". All the commands ran successfully. Upon checking whether all the containers were running using docker ps, the web app was deployed sucessfully.
+
+![image](https://github.com/kurwetto/awmCA/assets/71713449/b61941ca-eeb1-4df3-98b0-d61b52caf235)
+
+
+
 
 
 
