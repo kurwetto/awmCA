@@ -21,40 +21,23 @@
 
         #map {
             width: 100%;
-            height: 90vh;
+            height: 100vh;
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar" style="background-color: darkgreen;">
-        <div class="container-fluid">
-            <a class="navbar-brand" style="color: #ffffff" href="{% url 'worldapp' %}">AWM 2023</a>
-            <form class="d-flex">
-                {% if user.is_authenticated %}
-                    <!-- Logout Button -->
-                    <a href="{% url 'logout' %}" class="btn ml-4" style="background-color: greenyellow">Logout</a>
-                {% else %}
-                    <!-- Login and Register Buttons -->
-                    <a href="{% url 'login' %}" class="btn" style="background-color: greenyellow">Login</a>
-                    <a href="{% url 'register' %}" class="btn " style="background-color: greenyellow">Register</a>
-                {% endif %}
-            </form>
-        </div>
-    </nav>
 
     <div id="map"></div>
-
-    <footer class="text-center text-lg-start fixed-bottom" style="background-color: darkgreen;">
-        <div class="text-center p-3" style="color: #ffffff">© 2023 Copyright: Michal Korneluk</div>
-    </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+<!-- Leaflet Routing Machine CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-routing-machine/3.2.12/leaflet-routing-machine.css" />
+
 
 </body>
 
