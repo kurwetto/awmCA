@@ -11,6 +11,8 @@ let osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 });
 osm.addTo(map);
 
+L.control.locate().addTo(map);
+
 map.on("locationfound", onLocationFound);
 
 // Replace 'iconUrl' with the correct path to your icon image
@@ -19,7 +21,7 @@ var icon = L.icon({
   iconSize: [50, 50], // size of the icon
 });
 
-// Replace 'fuel' with the correct URL or path to your GeoJSON file
+// Fetch GeoJson data
 fetch('/static/fuel_location.geojson')
   .then(function (response) {
     return response.json();
@@ -30,19 +32,21 @@ fetch('/static/fuel_location.geojson')
         return L.marker(latlng, { icon: icon });
       },
       onEachFeature: function (feature, layer) {
-        let petrolStation = "";
+        let Pub = "";
 
-        if (feature.properties.brand) {
-          petrolStation += "<p>" + feature.properties.brand + "</p>";
+        if (feature.properties.name) {
+          Pub += "<p>Name: " + feature.properties.name + "</p>";
         }
-        if (feature.properties.street) {
-          petrolStation += "<p>Street: " + feature.properties.street + "</p>";
+        if (feature.properties.amenity) {
+          Pub += "<p>Bar/Pub: " + feature.properties.amenity + "</p>";
         }
-        if (feature.properties.city) {
-          petrolStation += "<p>City: " + feature.properties.city + "</p>";
+        if (feature.properties.postcode) {
+          Pub += "<p>Address: " + feature.properties.postcode + "</p>";
         }
-
-        layer.bindPopup(petrolStation);
+        if (feature.properties.wheelchair) {
+          Pub += "<p>Wheelchair: " + feature.properties.wheelchair + "</p>";
+        }
+        layer.bindPopup(Pub);
       },
     }).addTo(map);
   });
