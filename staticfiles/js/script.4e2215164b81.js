@@ -1,5 +1,5 @@
 // Map initialization
-const map = L.map("map", { doubleClickZoom: false }).locate({
+const mapContainer = L.map("map", { doubleClickZoom: false }).locate({
   setView: true,
   watch: true,
   maxZoom: 16,
@@ -9,11 +9,11 @@ let osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 });
-osm.addTo(map);
+osm.addTo(mapContainer);
 
-L.control.locate().addTo(map);
+L.control.locate().addTo(mapContainer);
 
-map.on("locationfound", onLocationFound);
+mapContainer.on("locationfound", onLocationFound);
 
 // Replace 'iconUrl' with the correct path to your icon image
 var icon = L.icon({
@@ -48,7 +48,7 @@ fetch('/static/fuel_location.geojson')
         }
         layer.bindPopup(Pub);
       },
-    }).addTo(map);
+    }).addTo(mapContainer);
   });
 
 let gpsMarker = null;
@@ -59,9 +59,9 @@ function onLocationFound(e) {
   let popupContent = "You are within " + radius + " meters from this point";
 
   if (gpsMarker == null) {
-    gpsMarker = L.marker(e.latlng).addTo(map);
+    gpsMarker = L.marker(e.latlng).addTo(mapContainer);
     gpsMarker.bindPopup(popupContent).openPopup();
-    gpsCircleMarker = L.circle(e.latlng, radius).addTo(map);
+    gpsCircleMarker = L.circle(e.latlng, radius).addTo(mapContainer);
   } else {
     gpsMarker.getPopup().setContent(popupContent);
     gpsMarker.setLatLng(e.latlng);
@@ -88,21 +88,13 @@ function calculateDistance(latlng1, latlng2) {
   return latlng1.distanceTo(latlng2);
 }
 
-map.on("click", function (e) {
+mapContainer.on("click", function (e) {
   if (gpsMarker != null) {
     let distance = calculateDistance(gpsMarker.getLatLng(), e.latlng);
     alert("You are " + distance.toFixed(2) + " meters away from this point");
   }
 });
 
-setTimeout(() => {
-  const mapContainer = document.getElementById('map');
-  mapContainer.style.position = 'absolute';
-  mapContainer.style.top = '50%';
-  mapContainer.style.left = '50%';
-  mapContainer.style.transform = 'translate(-50%, -65%)';
-  mapContainer.style.width = '750px'; // Set the desired width
-  mapContainer.style.height = '500px'; // Set the desired height
-  map.setView([map.getCenter().lat, map.getCenter().lng], map.getZoom());
-  map.invalidateSize(); // Invalidate the size to redraw the map
-}, 100);
+// Center the map within its container
+mapContainer.invalidateSize();
+mapContainer.setView([mapContainer.getCenter().lat, mapContainer.getCenter().lng], mapContainer.getZoom());

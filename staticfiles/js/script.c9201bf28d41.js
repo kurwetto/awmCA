@@ -83,25 +83,10 @@ function onLocationFound(e) {
   });
 }
 
-// Function to calculate distance between two points
-function calculateDistance(latlng1, latlng2) {
-  return latlng1.distanceTo(latlng2);
-}
-
-map.on("click", function (e) {
-  if (gpsMarker != null) {
-    let distance = calculateDistance(gpsMarker.getLatLng(), e.latlng);
-    alert("You are " + distance.toFixed(2) + " meters away from this point");
-  }
-});
-
+// Adjust the size of the map container
 setTimeout(() => {
   const mapContainer = document.getElementById('map');
-  mapContainer.style.position = 'absolute';
-  mapContainer.style.top = '50%';
-  mapContainer.style.left = '50%';
-  mapContainer.style.transform = 'translate(-50%, -65%)';
-  mapContainer.style.width = '750px'; // Set the desired width
+  mapContainer.style.width = '700px'; // Set the desired width
   mapContainer.style.height = '500px'; // Set the desired height
   map.setView([map.getCenter().lat, map.getCenter().lng], map.getZoom());
   map.invalidateSize(); // Invalidate the size to redraw the map

@@ -18,7 +18,7 @@ map.on("locationfound", onLocationFound);
 // Replace 'iconUrl' with the correct path to your icon image
 var icon = L.icon({
   iconUrl: '/static/icon.png', // Update with the correct path
-  iconSize: [40, 40], // size of the icon
+  iconSize: [30, 30], // Adjust the size of the icon
 });
 
 // Fetch GeoJson data
@@ -94,15 +94,3 @@ map.on("click", function (e) {
     alert("You are " + distance.toFixed(2) + " meters away from this point");
   }
 });
-
-setTimeout(() => {
-  const mapContainer = document.getElementById('map');
-  mapContainer.style.position = 'absolute';
-  mapContainer.style.top = '50%';
-  mapContainer.style.left = '50%';
-  mapContainer.style.transform = 'translate(-50%, -65%)';
-  mapContainer.style.width = '750px'; // Set the desired width
-  mapContainer.style.height = '500px'; // Set the desired height
-  map.setView([map.getCenter().lat, map.getCenter().lng], map.getZoom());
-  map.invalidateSize(); // Invalidate the size to redraw the map
-}, 100);

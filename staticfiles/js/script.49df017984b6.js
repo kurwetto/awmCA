@@ -1,9 +1,5 @@
 // Map initialization
-const map = L.map("map", { doubleClickZoom: false }).locate({
-  setView: true,
-  watch: true,
-  maxZoom: 16,
-});
+const map = L.map("map", { doubleClickZoom: false });
 
 let osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
@@ -83,26 +79,11 @@ function onLocationFound(e) {
   });
 }
 
-// Function to calculate distance between two points
-function calculateDistance(latlng1, latlng2) {
-  return latlng1.distanceTo(latlng2);
+// Resize and center the map
+function resizeMap() {
+  map.invalidateSize();
+  map.setView([0, 0], 1);
 }
 
-map.on("click", function (e) {
-  if (gpsMarker != null) {
-    let distance = calculateDistance(gpsMarker.getLatLng(), e.latlng);
-    alert("You are " + distance.toFixed(2) + " meters away from this point");
-  }
-});
-
-setTimeout(() => {
-  const mapContainer = document.getElementById('map');
-  mapContainer.style.position = 'absolute';
-  mapContainer.style.top = '50%';
-  mapContainer.style.left = '50%';
-  mapContainer.style.transform = 'translate(-50%, -65%)';
-  mapContainer.style.width = '750px'; // Set the desired width
-  mapContainer.style.height = '500px'; // Set the desired height
-  map.setView([map.getCenter().lat, map.getCenter().lng], map.getZoom());
-  map.invalidateSize(); // Invalidate the size to redraw the map
-}, 100);
+// Resize the map when the sidebar is opened or closed
+document.getElementById("sidebar").addEventListener("transitionend", resizeMap);

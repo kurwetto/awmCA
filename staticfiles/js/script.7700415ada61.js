@@ -97,11 +97,11 @@ map.on("click", function (e) {
 
 setTimeout(() => {
   const mapContainer = document.getElementById('map');
-  mapContainer.style.position = 'absolute';
-  mapContainer.style.top = '50%';
-  mapContainer.style.left = '50%';
-  mapContainer.style.transform = 'translate(-50%, -65%)';
-  mapContainer.style.width = '750px'; // Set the desired width
+mapContainer.style.position = 'absolute';
+mapContainer.style.top = '50%';
+mapContainer.style.left = '50%';
+mapContainer.style.transform = 'translate(-50%, -50%)';
+  mapContainer.style.width = '700px'; // Set the desired width
   mapContainer.style.height = '500px'; // Set the desired height
   map.setView([map.getCenter().lat, map.getCenter().lng], map.getZoom());
   map.invalidateSize(); // Invalidate the size to redraw the map

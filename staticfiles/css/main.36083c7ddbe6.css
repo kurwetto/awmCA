@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 90vh;
+}
+
+/* Add this CSS to center the map container */
+#map-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust the width and height based on your preferences */
+    height: 400px;
+}
+
+/* ... (existing CSS styles) ... */
