@@ -97,7 +97,7 @@ map.on("click", function (e) {
 
 // Spotify Web Playback SDK integration
 window.onSpotifyWebPlaybackSDKReady = () => {
-  const token = 'BQDcS85zFuhxrmFy3dx3i2xWYxSRUPH8PGYUFIKtj57Li1bZNti8QB8fbJBuG-E_Rdu6dH5HyVSC0KTb_F5-HTGpLhBKPvYXIak1T_t-sQE6m50yJTV5YsMwWbqZ3BC0xMdHof-ofenO7lbl2aQoEXVIoXt73ZMPyMoORT4pSWSTA-9Muy4NloRFpP7K8X8ZcyxmzDY43Hld_2qh6nYju1KJ';  // Replace with your Spotify access token
+  const token = 'BQDDp_D9WIM_OK07iO21gGc0E5blbXgRXSbPSnA57MyUxP3FwJa-WsZbA5owZm_JzIykqO-1gCF5IJS6_qCXkDBG8hAZYXR3Qzs4xe2Z6VMynUZnQv8JFMFZxAs4x3NcG_YaABL4AqhQDBNJP11WVkFqJLpREFd8DJyV4q91iHX1rObWrHxfeCpDd66zTaNvy1b4bID4AI-Kp-LZUjSq0kqTeUm9';  // Replace with your Spotify access token
   const player = new Spotify.Player({
     name: 'Web Playback SDK Quick Start Player',
     getOAuthToken: cb => { cb(token); },

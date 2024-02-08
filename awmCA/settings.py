@@ -184,6 +184,13 @@ LEAFLET_CONFIG = {
     'OPACITY': 0.5,
 }
 
+# settings.py
+
+SPOTIFY_CLIENT_ID = '48ff16e8e6884d3c87d712250814c16e'
+SPOTIFY_CLIENT_SECRET = '8420cc7e68104406a977ad5f3922d70d'
+SPOTIFY_REDIRECT_URI = 'http://127.0.0.1:8000'
+SPOTIFY_SCOPES = ['user-read-playback-state', 'user-modify-playback-state']
+
 # PWA_APP_NAME = 'My App'
 # PWA_APP_DESCRIPTION = "My app description"
 # PWA_APP_THEME_COLOR = '#0A0302'

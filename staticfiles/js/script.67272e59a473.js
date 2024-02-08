@@ -95,36 +95,6 @@ map.on("click", function (e) {
   }
 });
 
-// Spotify Web Playback SDK integration
-window.onSpotifyWebPlaybackSDKReady = () => {
-  const token = 'BQDcS85zFuhxrmFy3dx3i2xWYxSRUPH8PGYUFIKtj57Li1bZNti8QB8fbJBuG-E_Rdu6dH5HyVSC0KTb_F5-HTGpLhBKPvYXIak1T_t-sQE6m50yJTV5YsMwWbqZ3BC0xMdHof-ofenO7lbl2aQoEXVIoXt73ZMPyMoORT4pSWSTA-9Muy4NloRFpP7K8X8ZcyxmzDY43Hld_2qh6nYju1KJ';  // Replace with your Spotify access token
-  const player = new Spotify.Player({
-    name: 'Web Playback SDK Quick Start Player',
-    getOAuthToken: cb => { cb(token); },
-    volume: 0.8
-  });
-
-  player.addListener('ready', ({ device_id }) => {
-    console.log('Ready with Device ID', device_id);
-
-    // Example: Play a specific track
-    const trackUri = 'spotify:track:142yjgxYc26ON55Zx2M339';  // Replace with the Spotify URI of the track you want to play
-    player.resume({ uris: [trackUri] }).then(() => {
-      console.log('Playing track:', trackUri);
-    });
-  });
-
-  // Connect to the player
-  player.connect();
-
-  // Event listener for the togglePlay button
-  document.getElementById('togglePlay').addEventListener('click', () => {
-    player.togglePlay().then(() => {
-      console.log('Toggled playback');
-    });
-  });
-};
-
 // Puts map into a centered box.
 setTimeout(() => {
   const mapContainer = document.getElementById('map');
@@ -137,3 +107,4 @@ setTimeout(() => {
   map.setView([map.getCenter().lat, map.getCenter().lng], map.getZoom());
   map.invalidateSize(); // Invalidate the size to redraw the map
 }, 100);
+
