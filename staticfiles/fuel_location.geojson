@@ -1605,7 +1605,9 @@
         "@id": "node/504986812",
         "addr:street": "Blackthorn Drive",
         "amenity": "bar",
-        "name": "Crystal Bar"
+        "name": "Crystal Bar",
+        "songURL": "/media/songs/Shakira_-_Hips_Dont_Lie_Lyrics_ft._Wyclef_Jean.mp3",
+        "artist": "Shakira"
       },
       "geometry": {
         "type": "Point",
@@ -1624,7 +1626,9 @@
         "addr:street": "Cedar Road",
         "amenity": "pub",
         "name": "Ollie's Lounge & Bar",
-        "wheelchair": "limited"
+        "wheelchair": "limited",
+        "songURL": "/media/songs/Purrple_Cat_-_Sea_of_Stars_2.mp3",
+        "artist": "Purrple Cat"
       },
       "geometry": {
         "type": "Point",
@@ -7115,7 +7119,9 @@
         "name": "Brickyard",
         "phone": "+35312987410",
         "website": "https://www.brickyard.ie",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "songURL": "No artists preforming at the moment",
+        "artist": "None"
       },
       "geometry": {
         "type": "Point",
