@@ -21,7 +21,6 @@ class UserRegisterForm(forms.ModelForm):
         model = User
         fields = ['username', 'email', 'first_name', 'last_name', 'password', 'password1']
 
-
     def clean_email(self):
         """ Verify that email address is available. """
         email = self.cleaned_data.get('email')

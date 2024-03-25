@@ -22,7 +22,7 @@
 // });
 //
 // // Fetch GeoJson data
-// fetch('/static/fuel_location.geojson')
+// fetch('/static/dublinpubs.geojson')
 //   .then(function (response) {
 //     return response.json();
 //   })

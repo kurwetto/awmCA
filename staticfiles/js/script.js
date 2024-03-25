@@ -1,3 +1,52 @@
+// Global variable to store all markers
+let markers = [];
+let geoJsonData; // Variable to store the GeoJSON data
+
+// Add event listener to the directions button
+const directionsButton = document.getElementById('directionsButton');
+directionsButton.addEventListener('click', showDirectionsToClosestPub);
+
+function showDirectionsToClosestPub() {
+    // Check if the user's location has been found
+    if (gpsMarker) {
+        // Calculate distance to each pub and find the closest one
+        let closestPub;
+        let closestDistance = Infinity;
+        markers.forEach(function (marker) {
+            let distance = marker.getLatLng().distanceTo(gpsMarker.getLatLng());
+            if (distance < closestDistance) {
+                closestDistance = distance;
+                closestPub = marker;
+            }
+        });
+
+        // Show route to the closest pub
+        if (closestPub) {
+            if (window.route) {
+                map.removeControl(window.route);
+            }
+            window.route = L.Routing.control({
+                waypoints: [
+                    L.latLng(gpsMarker.getLatLng().lat, gpsMarker.getLatLng().lng),
+                    L.latLng(closestPub.getLatLng().lat, closestPub.getLatLng().lng)
+                ],
+                routeWhileDragging: true
+            }).addTo(map);
+
+            // Hide all other markers from the map
+            markers.forEach(function (marker) {
+                if (marker !== closestPub) {
+                    marker.setOpacity(0);
+                }
+            });
+        } else {
+            alert('No pubs found.');
+        }
+    } else {
+        alert('Location not found. Please enable location services.');
+    }
+}
+
 // Map initialization
 const map = L.map("map", {
     doubleClickZoom: false
@@ -18,8 +67,8 @@ setTimeout(() => {
     mapContainer.style.top = '60%';
     mapContainer.style.left = '50%';
     mapContainer.style.transform = 'translate(-50%, -65%)';
-    mapContainer.style.width = '750px'; // Set the desired width
-    mapContainer.style.height = '500px'; // Set the desired height
+    mapContainer.style.width = '800px'; // Set the desired width
+    mapContainer.style.height = '600px'; // Set the desired height
     map.setView([map.getCenter().lat, map.getCenter().lng], map.getZoom());
     map.invalidateSize(); // Invalidate the size to redraw the map
 }, 100);
@@ -42,45 +91,100 @@ function playAudio(url) {
     audio.play();
 }
 
-// Fetch GeoJson data and add to map
-fetch('/static/fuel_location.geojson')
+ function toggleAudio(audioId) {
+            var audio = document.getElementById(audioId);
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+
+fetch('/static/dublinpubs.geojson')
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
-        L.geoJson(data, {
-            pointToLayer: function (feature, latlng) {
-                return L.marker(latlng, { icon: icon });
-            },
-            onEachFeature: function (feature, layer) {
-                let pubContent = "";
+        geoJsonData = data; // Store the data
+        addMarkersToMap(data); // Add markers to the map
+    });
 
-                if (feature.properties.name) {
-                    pubContent += "<p>Name: " + feature.properties.name + "</p>";
-                }
-                if (feature.properties.amenity) {
-                    pubContent += "<p>Bar/Pub: " + feature.properties.amenity + "</p>";
-                }
-                if (feature.properties.postcode) {
-                    pubContent += "<p>Address: " + feature.properties.postcode + "</p>";
-                }
-                if (feature.properties.wheelchair) {
-                    pubContent += "<p>Wheelchair: " + feature.properties.wheelchair + "</p>";
-                }
-                if (feature.properties.artist) {
-                    pubContent += "<p>Artist Preforming: " + feature.properties.artist + "</p>";
-                }
-                layer.bindPopup(pubContent);
+function addMarkersToMap(data) {
+    L.geoJson(data, {
+        pointToLayer: function (feature, latlng) {
+            let marker = L.marker(latlng, { icon: icon });
+            markers.push(marker); // Add the marker to the array
+            return marker;
+        },
+        onEachFeature: function (feature, layer) {
+            let pubContent = "";
 
-                // Playback of songURL on click
-                if (feature.properties.songURL) {
-                    layer.on('click', function () {
-                        playAudio(feature.properties.songURL);
+            if (feature.properties.name) {
+                pubContent += "<p>Name: " + feature.properties.name + "</p>";
+            }
+            if (feature.properties.amenity) {
+                pubContent += "<p>Bar/Pub: " + feature.properties.amenity + "</p>";
+            }
+            if (feature.properties.postcode) {
+                pubContent += "<p>Address: " + feature.properties.postcode + "</p>";
+            }
+            if (feature.properties.wheelchair) {
+                pubContent += "<p>Wheelchair Access: " + feature.properties.wheelchair + "</p>";
+            }
+            if (feature.properties.artist) {
+                pubContent += "<p>Artist Preforming: " + feature.properties.artist + "</p>";
+            }
+            if (feature.properties.songURL) {
+                pubContent += `
+                    <audio id="audio_${feature.properties['@id']}" src="${feature.properties.songURL}"></audio>
+                    <button onclick="toggleAudio('audio_${feature.properties['@id']}')">Play Sample</button>
+                `;
+            }
+
+            layer.bindPopup(pubContent);
+
+            // Add click event to show route to pub
+            layer.on('click', function () {
+                if (gpsMarker) {
+                    // If a route already exists, remove it
+                    if (window.route) {
+                        map.removeControl(window.route);
+                    }
+
+                    // Create a new route from the user's location to the pub
+                    window.route = L.Routing.control({
+                        waypoints: [
+                            L.latLng(gpsMarker.getLatLng().lat, gpsMarker.getLatLng().lng),
+                            L.latLng(layer.getLatLng().lat, layer.getLatLng().lng)
+                        ],
+                        routeWhileDragging: true
+                    }).addTo(map);
+
+                    // Hide all other markers from the map
+                    markers.forEach(function (marker) {
+                        if (marker !== layer) {
+                            marker.setOpacity(0);
+                        }
                     });
                 }
-            },
-        }).addTo(map);
-    });
+            });
+
+            // Add click event to the map to show all markers and remove directions
+            map.on('click', function () {
+                // Show all markers
+                markers.forEach(function (marker) {
+                    marker.setOpacity(1);
+                });
+
+                // If a route exists, remove it
+                if (window.route) {
+                    map.removeControl(window.route);
+                    window.route = null;
+                }
+            });
+        },
+    }).addTo(map);
+}
 
 // Current Location
 let gpsMarker, gpsCircleMarker;
@@ -102,27 +206,7 @@ function onLocationFound(e) {
         headers: { "Content-Type": "application/json", "X-CSRFToken": csrftoken },
         body: JSON.stringify({ latitude: e.latlng.lat, longitude: e.latlng.lng }),
     }).then(response => response.json());
+    map.stopLocate();
 }
 
 map.on("locationfound", onLocationFound);
-map.on("click", e => {
-    if (gpsMarker)
-        alert(`You are ${gpsMarker.getLatLng().distanceTo(e.latlng).toFixed(2)} meters away from this point`);
-});
-
-/*
-// Spotify Web Playback SDK integration
-window.onSpotifyWebPlaybackSDKReady = () => {
-  const token = 'BQDL9hkn7q6lH0LcgBv9Md5jt_wCnFVs2R7FiK0dX8esU-OhuT--ZGsDmhMIhLECy-9Qcp3ftC_DpTo7C3SU5x1nFvVpDnoLp_b5mmE8BXUY9SGrsztEroExJfil0WI7uTqEVjxtrX-KuVvLo4IgRQ8rW18AKNCO1Rtu08VlkxS_cWsF3ixQq8KOtbUW_ZqbuwPmRXHzUfJDpOUXj2skEOVClAQX';
-  const player = new Spotify.Player({ name: 'FYP Musivents Player', getOAuthToken: cb => cb(token), volume: 0.8 });
-
-  player.addListener('ready', ({ device_id }) => {
-    console.log('Ready with Device ID', device_id);
-    const trackUri = 'spotify:track:142yjgxYc26ON55Zx2M339';
-    player.resume({ uris: [trackUri] }).then(() => console.log('Playing track:', trackUri));
-  });
-
-  player.connect();
-  document.getElementById('togglePlay').addEventListener('click', () => player.togglePlay().then(() => console.log('Toggled playback')));
-};
-*/
