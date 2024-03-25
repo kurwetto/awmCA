@@ -2,35 +2,67 @@
 
 {% block content %}
     <div class="container mt-5">
-        <div class="card box-element">
-            <div class="card-body">
-                <h2 class="card-title">Login</h2>
-                <form method="POST" action="">
+        <div class="card shadow-lg rounded-lg">
+            <div class="card-body p-5">
+                <h2 class="card-title text-center mb-4">Welcome Back!</h2>
+                <form method="POST" action="" class="needs-validation" novalidate>
                     {% csrf_token %}
-
                     <div class="form-group">
-                        <label for="id_username">Username:</label>
-                        <input type="text" class="form-control" id="id_username" name="username" required>
+                        <label for="id_username" class="form-label">Username</label>
+                        <input type="text" class="form-control form-control-lg" id="id_username" name="username" required>
+                        <div class="invalid-feedback">Please enter your username.</div>
                     </div>
 
                     <div class="form-group">
-                        <label for="id_password">Password:</label>
-                        <input type="password" class="form-control" id="id_password" name="password" required>
+                        <label for="id_password" class="form-label">Password</label>
+                        <input type="password" class="form-control form-control-lg" id="id_password" name="password" required>
+                        <div class="invalid-feedback">Please enter your password.</div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-block mt-3 custom-login-btn">Login</button>
-                    <!-- Added custom class 'custom-login-btn' -->
-
+                    <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Login</button>
                 </form>
             </div>
         </div>
     </div>
-
-    <!-- Move the styles outside the form -->
-    <style>
-        .custom-login-btn {
-            background-color: yellowgreen;
-            color: black; /* Added style for text color */
-        }
-    </style>
 {% endblock %}
+
+<style>
+    body {
+        background-color: #f8f9fa; /* Set a light background color */
+    }
+
+    .card {
+        background-color: #fff; /* White background for card */
+    }
+
+    .card-title {
+        color: #333; /* Darken title color */
+    }
+
+    .form-label {
+        font-weight: bold; /* Make form labels bold */
+    }
+
+    .btn-primary {
+        background-color: #007bff; /* Primary button color */
+        border-color: #007bff; /* Border color */
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3; /* Darken button color on hover */
+        border-color: #0056b3; /* Darken border color on hover */
+    }
+
+    .form-control {
+        border-color: #ced4da; /* Default input border color */
+    }
+
+    .form-control:focus {
+        border-color: #80bdff; /* Change input border color on focus */
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add focus shadow */
+    }
+
+    .invalid-feedback {
+        color: #dc3545; /* Error message color */
+    }
+</style>

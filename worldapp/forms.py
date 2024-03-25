@@ -1,4 +1,4 @@
-from django.contrib.auth.forms import AuthenticationForm, ReadOnlyPasswordHashField
+from django.contrib.auth.forms import AuthenticationForm, ReadOnlyPasswordHashField, PasswordChangeForm
 from django import forms
 from django.contrib.auth import get_user_model
 
@@ -7,7 +7,25 @@ class UserLoginForm(AuthenticationForm):
     username = forms.CharField(label='Username', widget=forms.EmailInput(attrs={'class': 'form-control'}))
     password = forms.CharField(label='Password', widget=forms.PasswordInput(attrs={'class': 'form-control'}))
 
+class ProfileUpdateForm(PasswordChangeForm):
+    username = forms.CharField(label='Username', max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
 
+    class Meta:
+        model = User
+        fields = ['username', 'old_password', 'new_password1', 'new_password2']
+
+    def clean_username(self):
+        username = self.cleaned_data.get('username')
+        if User.objects.filter(username=username).exclude(pk=self.user.pk).exists():
+            raise forms.ValidationError("Username is already in use.")
+        return username
+
+    def save(self, commit=True):
+        user = super().save(commit=False)
+        user.username = self.cleaned_data["username"]
+        if commit:
+            user.save()
+        return user
 class UserRegisterForm(forms.ModelForm):
     """Default"""
     username = forms.CharField(label='Username', max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
@@ -90,3 +108,5 @@ class UserAdminChangeForm(forms.ModelForm):
         # This is done here, rather than on the field, because the
         # field does not have access to the initial value
         return self.initial["password"]
+
+

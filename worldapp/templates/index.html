@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Musivents FYP</title>
-     <button id="directionsButton">Show Directions to Closest Pub</button>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -37,12 +36,29 @@
             text-align: center; /* Center text within the container */
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: Green;
         }
 
         p {
             line-height: 1.6;
+        }
+
+        .directions-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .directions-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -51,8 +67,12 @@
 
     <div class="container text-center">
         <h1>Welcome to Musivents!</h1>
+        <button id="directionsButton" class="directions-button">Show Directions to Closest Pub</button>
     </div>
 
+    <script>
+
+    </script>
     <!-- Bootstrap JS -->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -68,6 +88,12 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
     <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
 
+    <script>
+        document.getElementById('directionsButton').addEventListener('click', function () {
+            // Your code to show directions to closest pub goes here
+            alert('Directions to closest pub will be shown here!');
+        });
+    </script>
 
 </body>
 
