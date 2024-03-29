@@ -70,6 +70,44 @@ function playAudio(url) {
             }
         }
 
+
+        function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        let cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            let cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+       function toggleFavorite(pubId) {
+    // Send an AJAX request to the backend to toggle the favorite status
+    fetch(`/toggle_favourite/${pubId}/`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCookie('csrftoken') // Function to get CSRF token from cookie
+        },
+        credentials: 'same-origin' // Include cookies in the request
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'added') {
+            // Pub was added to favorites, update UI accordingly (change button color, etc.)
+            console.log('Pub added to favorites');
+        } else if (data.status === 'removed') {
+            // Pub was removed from favorites, update UI accordingly (change button color, etc.)
+            console.log('Pub removed from favorites');
+        }
+    })
+    .catch(error => console.error('Error:', error));
+}
 fetch('/pubs_geojson/')
     .then(function (response) {
         return response.json();
@@ -78,6 +116,7 @@ fetch('/pubs_geojson/')
         geoJsonData = data; // Store the data
         addMarkersToMap(data); // Add markers to the map
     });
+
 
 function addMarkersToMap(data) {
     L.geoJson(data, {
@@ -109,6 +148,7 @@ function addMarkersToMap(data) {
             }
              // Add "Show Directions" button to the popup content
             pubContent += `<button onclick="showDirections('${feature.properties.name}', ${layer.getLatLng().lat}, ${layer.getLatLng().lng})">Show Directions</button>`;
+            pubContent += `<button onclick="toggleFavorite(${feature.properties.id})">Favorite</button>`;
 
             layer.bindPopup(pubContent);
 
@@ -146,12 +186,6 @@ function onLocationFound(e) {
         gpsMarker.setLatLng(e.latlng);
         gpsCircleMarker.setLatLng(e.latlng).setRadius(radius);
     }
-
-    fetch("/update_location/", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "X-CSRFToken": csrftoken },
-        body: JSON.stringify({ latitude: e.latlng.lat, longitude: e.lng }),
-    }).then(response => response.json());
     map.stopLocate();
 }
 

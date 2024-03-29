@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.utils import timezone
 from django.contrib.gis.db import models
+from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
 
 User = settings.AUTH_USER_MODEL
@@ -47,6 +48,8 @@ class User(AbstractBaseUser):
     date_joined = models.DateTimeField(verbose_name='Date Joined', default=timezone.now)
     last_location = models.PointField(verbose_name='Last Location', srid=4326, null=True, blank=True)
 
+
+
     # password field is already built-in
     # email and password are required by default
 
@@ -92,7 +95,6 @@ class User(AbstractBaseUser):
         return f'{self.last_name}, {self.first_name}'
 
 
-from django.utils.translation import gettext_lazy as _
 
 
 class Artist(models.Model):
@@ -156,3 +158,9 @@ class Pub(models.Model):
     songURL = models.CharField(max_length=255, null=True)  # Add this line
     location = models.PointField()
 
+class Favourite(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    pub = models.ForeignKey(Pub, on_delete=models.CASCADE)
+
+    class Meta:
+        unique_together = ('user', 'pub')

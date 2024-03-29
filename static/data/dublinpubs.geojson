@@ -7,7 +7,7 @@
         {
           "type": "Feature",
           "properties": {
-            "@id": "node/122079566",
+            "@id": "122079566",
             "amenity": "pub",
             "name": "Boot Inn"
           },
@@ -18,12 +18,12 @@
               53.4318903
             ]
           },
-          "id": "node/122079566"
+          "id": "122079566"
         },
         {
           "type": "Feature",
           "properties": {
-            "@id": "node/130156802",
+            "@id": "130156802",
             "addr:city": "Dublin",
             "addr:country": "IE",
             "addr:county": "Dublin",
@@ -44,12 +44,12 @@
               53.3501917
             ]
           },
-          "id": "node/130156802"
+          "id": "130156802"
         },
         {
           "type": "Feature",
           "properties": {
-            "@id": "node/132186038",
+            "@id": "132186038",
             "addr:city": "Balinteer",
             "addr:country": "IE",
             "addr:county": "Dublin",
@@ -69,12 +69,12 @@
               53.2747643
             ]
           },
-          "id": "node/132186038"
+          "id": "132186038"
         },
         {
           "type": "Feature",
           "properties": {
-            "@id": "node/132228340",
+            "@id": "132228340",
             "addr:housenumber": "116",
             "postcode": "A94 X2C6",
             "addr:street": "Rock Road",
@@ -97,12 +97,12 @@
               53.3087656
             ]
           },
-          "id": "node/132228340"
+          "id": "132228340"
         },
         {
           "type": "Feature",
           "properties": {
-            "@id": "node/132775981",
+            "@id": "132775981",
             "accommodation": "yes",
             "addr:city": "Dublin",
             "addr:country": "IE",
@@ -122,12 +122,12 @@
               53.3441892
             ]
           },
-          "id": "node/132775981"
+          "id": "132775981"
         },
         {
           "type": "Feature",
           "properties": {
-            "@id": "node/132811831",
+            "@id": "132811831",
             "addr:city": "Palmerstown",
             "addr:country": "IE",
             "addr:county": "Dublin",
@@ -148,12 +148,12 @@
               53.356444
             ]
           },
-          "id": "node/132811831"
+          "id": "132811831"
         },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/132814618",
+        "@id": "132814618",
         "amenity": "pub",
         "created_by": "Potlatch 0.5d",
         "name": "Silver Granite"
@@ -165,12 +165,12 @@
           53.3500748
         ]
       },
-      "id": "node/132814618"
+      "id": "132814618"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/132831833",
+        "@id": "132831833",
         "amenity": "pub",
         "name": "The Ark"
       },
@@ -181,12 +181,12 @@
           53.3541515
         ]
       },
-      "id": "node/132831833"
+      "id": "132831833"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/133193958",
+        "@id": "133193958",
         "addr:city": "Dublin",
         "addr:street": "Charlemont Mall",
         "amenity": "pub",
@@ -203,12 +203,12 @@
           53.3305512
         ]
       },
-      "id": "node/133193958"
+      "id": "133193958"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/135547952",
+        "@id": "135547952",
         "amenity": "pub",
         "name": "The Gallops",
         "wheelchair": "limited"
@@ -220,12 +220,12 @@
           53.2582331
         ]
       },
-      "id": "node/135547952"
+      "id": "135547952"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/139590769",
+        "@id": "139590769",
         "amenity": "pub",
         "created_by": "Potlatch 0.5d",
         "name": "The Foxhunter",
@@ -239,12 +239,12 @@
           53.3586043
         ]
       },
-      "id": "node/139590769"
+      "id": "139590769"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/249425860",
+        "@id": "249425860",
         "amenity": "pub",
         "name": "Graingers"
       },
@@ -255,12 +255,12 @@
           53.3679678
         ]
       },
-      "id": "node/249425860"
+      "id": "249425860"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/249426205",
+        "@id": "249426205",
         "addr:city": "Dublin",
         "addr:housenumber": "16",
         "addr:street": "Malahide Road",
@@ -279,12 +279,12 @@
           53.365756
         ]
       },
-      "id": "node/249426205"
+      "id": "249426205"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/256258286",
+        "@id": "256258286",
         "amenity": "pub",
         "name": "The Clubhouse"
       },
@@ -295,12 +295,12 @@
           53.3082485
         ]
       },
-      "id": "node/256258286"
+      "id": "256258286"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/263366607",
+        "@id": "263366607",
         "addr:city": "Lucan",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -319,12 +319,12 @@
           53.3473896
         ]
       },
-      "id": "node/263366607"
+      "id": "263366607"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/279464425",
+        "@id": "279464425",
         "amenity": "pub",
         "name": "The Lower Deck"
       },
@@ -335,12 +335,12 @@
           53.330686
         ]
       },
-      "id": "node/279464425"
+      "id": "279464425"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/279915988",
+        "@id": "279915988",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -363,12 +363,12 @@
           53.3472522
         ]
       },
-      "id": "node/279915988"
+      "id": "279915988"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/280123269",
+        "@id": "280123269",
         "amenity": "bar",
         "name": "Bar@Tolka"
       },
@@ -379,12 +379,12 @@
           53.3676758
         ]
       },
-      "id": "node/280123269"
+      "id": "280123269"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/280958210",
+        "@id": "280958210",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -404,12 +404,12 @@
           53.3389839
         ]
       },
-      "id": "node/280958210"
+      "id": "280958210"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/282342105",
+        "@id": "282342105",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:housenumber": "18",
@@ -425,12 +425,12 @@
           53.3452765
         ]
       },
-      "id": "node/282342105"
+      "id": "282342105"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/282917369",
+        "@id": "282917369",
         "addr:city": "Tallaght",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -451,12 +451,12 @@
           53.2751247
         ]
       },
-      "id": "node/282917369"
+      "id": "282917369"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/286817205",
+        "@id": "286817205",
         "addr:street": "Ballyboden Road",
         "alt_name:en": "Ballyboden House",
         "amenity": "pub",
@@ -473,12 +473,12 @@
           53.2840791
         ]
       },
-      "id": "node/286817205"
+      "id": "286817205"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/293524291",
+        "@id": "293524291",
         "addr:street": "Parkland Road",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/scholarspub",
@@ -498,12 +498,12 @@
           53.2750936
         ]
       },
-      "id": "node/293524291"
+      "id": "293524291"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/298721803",
+        "@id": "298721803",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -531,12 +531,12 @@
           53.3424988
         ]
       },
-      "id": "node/298721803"
+      "id": "298721803"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/299224403",
+        "@id": "299224403",
         "addr:city": "Dublin",
         "addr:county": "Dublin",
         "addr:housenumber": "105-107",
@@ -553,12 +553,12 @@
           53.3100543
         ]
       },
-      "id": "node/299224403"
+      "id": "299224403"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/299225092",
+        "@id": "299225092",
         "addr:city": "Dublin",
         "addr:county": "Dublin",
         "addr:housenumber": "5-9",
@@ -575,12 +575,12 @@
           53.3098046
         ]
       },
-      "id": "node/299225092"
+      "id": "299225092"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/303968050",
+        "@id": "303968050",
         "addr:city": "Dublin",
         "addr:housenumber": "81",
         "addr:street": "Pearse Street",
@@ -597,12 +597,12 @@
           53.3433273
         ]
       },
-      "id": "node/303968050"
+      "id": "303968050"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/305312829",
+        "@id": "305312829",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -625,12 +625,12 @@
           53.345976
         ]
       },
-      "id": "node/305312829"
+      "id": "305312829"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/306276661",
+        "@id": "306276661",
         "addr:city": "Dublin",
         "addr:housename": "Tara Street Station",
         "addr:street": "George's Quay",
@@ -646,12 +646,12 @@
           53.3470972
         ]
       },
-      "id": "node/306276661"
+      "id": "306276661"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/310408293",
+        "@id": "310408293",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -674,12 +674,12 @@
           53.343428
         ]
       },
-      "id": "node/310408293"
+      "id": "310408293"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/311099928",
+        "@id": "311099928",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -706,12 +706,12 @@
           53.3502671
         ]
       },
-      "id": "node/311099928"
+      "id": "311099928"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/311197513",
+        "@id": "311197513",
         "addr:street": "Main Street",
         "amenity": "pub",
         "brewery": "various",
@@ -725,12 +725,12 @@
           53.2301989
         ]
       },
-      "id": "node/311197513"
+      "id": "311197513"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/312565824",
+        "@id": "312565824",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -749,12 +749,12 @@
           53.3416674
         ]
       },
-      "id": "node/312565824"
+      "id": "312565824"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/312566081",
+        "@id": "312566081",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -773,12 +773,12 @@
           53.3416876
         ]
       },
-      "id": "node/312566081"
+      "id": "312566081"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/312569767",
+        "@id": "312569767",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -795,12 +795,12 @@
           53.3386881
         ]
       },
-      "id": "node/312569767"
+      "id": "312569767"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/312569935",
+        "@id": "312569935",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -818,12 +818,12 @@
           53.3385836
         ]
       },
-      "id": "node/312569935"
+      "id": "312569935"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/312574900",
+        "@id": "312574900",
         "addr:city": "Dublin",
         "addr:housenumber": "1",
         "addr:street": "Seafort Avenue",
@@ -840,12 +840,12 @@
           53.3323885
         ]
       },
-      "id": "node/312574900"
+      "id": "312574900"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/312574927",
+        "@id": "312574927",
         "addr:street": "Seafort Avenue",
         "amenity": "pub",
         "name": "O'Reilly"
@@ -857,12 +857,12 @@
           53.3328247
         ]
       },
-      "id": "node/312574927"
+      "id": "312574927"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/312576602",
+        "@id": "312576602",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -891,12 +891,12 @@
           53.3285197
         ]
       },
-      "id": "node/312576602"
+      "id": "312576602"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/312576639",
+        "@id": "312576639",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -921,12 +921,12 @@
           53.3290182
         ]
       },
-      "id": "node/312576639"
+      "id": "312576639"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/312576904",
+        "@id": "312576904",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -950,12 +950,12 @@
           53.3290475
         ]
       },
-      "id": "node/312576904"
+      "id": "312576904"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/312577264",
+        "@id": "312577264",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -978,12 +978,12 @@
           53.3291081
         ]
       },
-      "id": "node/312577264"
+      "id": "312577264"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/315252689",
+        "@id": "315252689",
         "addr:city": "Dublin",
         "addr:county": "Dublin",
         "addr:housenumber": "94-96",
@@ -1005,12 +1005,12 @@
           53.3113561
         ]
       },
-      "id": "node/315252689"
+      "id": "315252689"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/335569489",
+        "@id": "335569489",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1028,12 +1028,12 @@
           53.3395798
         ]
       },
-      "id": "node/335569489"
+      "id": "335569489"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/335980359",
+        "@id": "335980359",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1053,12 +1053,12 @@
           53.3395619
         ]
       },
-      "id": "node/335980359"
+      "id": "335980359"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/358543320",
+        "@id": "358543320",
         "addr:housenumber": "27",
         "addr:street": "Dolphin's Barn Street",
         "amenity": "pub",
@@ -1071,12 +1071,12 @@
           53.333764
         ]
       },
-      "id": "node/358543320"
+      "id": "358543320"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/358543587",
+        "@id": "358543587",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1094,12 +1094,12 @@
           53.3365462
         ]
       },
-      "id": "node/358543587"
+      "id": "358543587"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/367411336",
+        "@id": "367411336",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1117,12 +1117,12 @@
           53.3419933
         ]
       },
-      "id": "node/367411336"
+      "id": "367411336"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/368883560",
+        "@id": "368883560",
         "addr:city": "Howth",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1141,12 +1141,12 @@
           53.3889795
         ]
       },
-      "id": "node/368883560"
+      "id": "368883560"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/390324314",
+        "@id": "390324314",
         "addr:city": "Tallaght",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1162,12 +1162,12 @@
           53.2879405
         ]
       },
-      "id": "node/390324314"
+      "id": "390324314"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/415802976",
+        "@id": "415802976",
         "addr:city": "Dublin",
         "addr:county": "Dublin",
         "addr:housenumber": "238",
@@ -1185,12 +1185,12 @@
           53.3216994
         ]
       },
-      "id": "node/415802976"
+      "id": "415802976"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/415803254",
+        "@id": "415803254",
         "addr:city": "Dublin",
         "addr:street": "Terenure Road East",
         "amenity": "pub",
@@ -1205,12 +1205,12 @@
           53.312007
         ]
       },
-      "id": "node/415803254"
+      "id": "415803254"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/434153487",
+        "@id": "434153487",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:housenumber": "1",
@@ -1228,12 +1228,12 @@
           53.3421487
         ]
       },
-      "id": "node/434153487"
+      "id": "434153487"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/444529271",
+        "@id": "444529271",
         "amenity": "pub",
         "name": "The Orchard",
         "outdoor_seating": "yes",
@@ -1246,12 +1246,12 @@
           53.4712932
         ]
       },
-      "id": "node/444529271"
+      "id": "444529271"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/446783419",
+        "@id": "446783419",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1268,12 +1268,12 @@
           53.3353226
         ]
       },
-      "id": "node/446783419"
+      "id": "446783419"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/446785628",
+        "@id": "446785628",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1296,12 +1296,12 @@
           53.3471016
         ]
       },
-      "id": "node/446785628"
+      "id": "446785628"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/446785642",
+        "@id": "446785642",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1319,12 +1319,12 @@
           53.3470056
         ]
       },
-      "id": "node/446785642"
+      "id": "446785642"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/467744840",
+        "@id": "467744840",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1346,12 +1346,12 @@
           53.3514331
         ]
       },
-      "id": "node/467744840"
+      "id": "467744840"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/467744856",
+        "@id": "467744856",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1372,12 +1372,12 @@
           53.3505727
         ]
       },
-      "id": "node/467744856"
+      "id": "467744856"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/467744860",
+        "@id": "467744860",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1397,12 +1397,12 @@
           53.3451275
         ]
       },
-      "id": "node/467744860"
+      "id": "467744860"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/475642367",
+        "@id": "475642367",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1419,12 +1419,12 @@
           53.3394911
         ]
       },
-      "id": "node/475642367"
+      "id": "475642367"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/475642453",
+        "@id": "475642453",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1441,12 +1441,12 @@
           53.3405349
         ]
       },
-      "id": "node/475642453"
+      "id": "475642453"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/478929879",
+        "@id": "478929879",
         "amenity": "pub",
         "name": "The Lord Lucan"
       },
@@ -1457,12 +1457,12 @@
           53.3413059
         ]
       },
-      "id": "node/478929879"
+      "id": "478929879"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/479092745",
+        "@id": "479092745",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:housenumber": "83-85",
@@ -1483,12 +1483,12 @@
           53.3244334
         ]
       },
-      "id": "node/479092745"
+      "id": "479092745"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/485973256",
+        "@id": "485973256",
         "addr:city": "Dundrum",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1512,12 +1512,12 @@
           53.2881483
         ]
       },
-      "id": "node/485973256"
+      "id": "485973256"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/491319647",
+        "@id": "491319647",
         "addr:city": "Dublin",
         "addr:street": "Drumcondra Road Upper",
         "amenity": "bar",
@@ -1530,12 +1530,12 @@
           53.3727647
         ]
       },
-      "id": "node/491319647"
+      "id": "491319647"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/491319669",
+        "@id": "491319669",
         "amenity": "bar",
         "name": "Bar@Regency"
       },
@@ -1546,12 +1546,12 @@
           53.377485
         ]
       },
-      "id": "node/491319669"
+      "id": "491319669"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/503224346",
+        "@id": "503224346",
         "addr:city": "Dublin",
         "addr:county": "Dublin",
         "addr:housenumber": "12",
@@ -1568,12 +1568,12 @@
           53.3405863
         ]
       },
-      "id": "node/503224346"
+      "id": "503224346"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/503224354",
+        "@id": "503224354",
         "addr:city": "Dublin",
         "addr:county": "Dublin",
         "addr:housenumber": "31",
@@ -1597,12 +1597,12 @@
           53.3369586
         ]
       },
-      "id": "node/503224354"
+      "id": "503224354"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/504986812",
+        "@id": "504986812",
         "addr:street": "Blackthorn Drive",
         "amenity": "bar",
         "name": "Crystal Bar"
@@ -1614,12 +1614,12 @@
           53.2766878
         ]
       },
-      "id": "node/504986812"
+      "id": "504986812"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/504990897",
+        "@id": "504990897",
         "addr:housename": "Balally Shopping Centre",
         "addr:street": "Cedar Road",
         "amenity": "pub",
@@ -1633,12 +1633,12 @@
           53.2767305
         ]
       },
-      "id": "node/504990897"
+      "id": "504990897"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/506824954",
+        "@id": "506824954",
         "addr:street": "Leixlip Road",
         "amenity": "pub",
         "name": "Ball Alley House"
@@ -1650,12 +1650,12 @@
           53.3554596
         ]
       },
-      "id": "node/506824954"
+      "id": "506824954"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/516031805",
+        "@id": "516031805",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1678,12 +1678,12 @@
           53.3443491
         ]
       },
-      "id": "node/516031805"
+      "id": "516031805"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/538103859",
+        "@id": "538103859",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1701,12 +1701,12 @@
           53.3610075
         ]
       },
-      "id": "node/538103859"
+      "id": "538103859"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/543384713",
+        "@id": "543384713",
         "addr:city": "Ranelagh",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1725,12 +1725,12 @@
           53.3233007
         ]
       },
-      "id": "node/543384713"
+      "id": "543384713"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/550381051",
+        "@id": "550381051",
         "addr:city": "Malahide",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1748,12 +1748,12 @@
           53.4513054
         ]
       },
-      "id": "node/550381051"
+      "id": "550381051"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/550381063",
+        "@id": "550381063",
         "addr:city": "Malahide",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1769,12 +1769,12 @@
           53.4507207
         ]
       },
-      "id": "node/550381063"
+      "id": "550381063"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/550381074",
+        "@id": "550381074",
         "addr:city": "Malahide",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1798,12 +1798,12 @@
           53.4513369
         ]
       },
-      "id": "node/550381074"
+      "id": "550381074"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/559485123",
+        "@id": "559485123",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1824,12 +1824,12 @@
           53.3456404
         ]
       },
-      "id": "node/559485123"
+      "id": "559485123"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/559854615",
+        "@id": "559854615",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1848,12 +1848,12 @@
           53.3433784
         ]
       },
-      "id": "node/559854615"
+      "id": "559854615"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/560602898",
+        "@id": "560602898",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1872,12 +1872,12 @@
           53.3221522
         ]
       },
-      "id": "node/560602898"
+      "id": "560602898"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/560621655",
+        "@id": "560621655",
         "addr:city": "Balbriggan",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1895,12 +1895,12 @@
           53.6095796
         ]
       },
-      "id": "node/560621655"
+      "id": "560621655"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/562072082",
+        "@id": "562072082",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1919,12 +1919,12 @@
           53.350879
         ]
       },
-      "id": "node/562072082"
+      "id": "562072082"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/564399648",
+        "@id": "564399648",
         "addr:street": "Mountpleasant Avenue Lower",
         "amenity": "pub",
         "name": "Mountpleasant Inn (Corrigans)"
@@ -1936,12 +1936,12 @@
           53.3275519
         ]
       },
-      "id": "node/564399648"
+      "id": "564399648"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/565770327",
+        "@id": "565770327",
         "addr:city": "Ranelagh",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -1958,12 +1958,12 @@
           53.3233904
         ]
       },
-      "id": "node/565770327"
+      "id": "565770327"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/576982879",
+        "@id": "576982879",
         "addr:city": "Dublin",
         "addr:street": "Pembroke Road",
         "amenity": "pub",
@@ -1979,12 +1979,12 @@
           53.332152
         ]
       },
-      "id": "node/576982879"
+      "id": "576982879"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/583257143",
+        "@id": "583257143",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2005,12 +2005,12 @@
           53.3362336
         ]
       },
-      "id": "node/583257143"
+      "id": "583257143"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/583411333",
+        "@id": "583411333",
         "addr:city": "Dublin",
         "addr:housenumber": "3",
         "addr:street": "Fade Street",
@@ -2026,12 +2026,12 @@
           53.3418854
         ]
       },
-      "id": "node/583411333"
+      "id": "583411333"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/583412899",
+        "@id": "583412899",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2051,12 +2051,12 @@
           53.3430907
         ]
       },
-      "id": "node/583412899"
+      "id": "583412899"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/592066036",
+        "@id": "592066036",
         "addr:city": "Dublin",
         "addr:housenumber": "31-32",
         "addr:street": "Mount Street Lower",
@@ -2073,12 +2073,12 @@
           53.3383463
         ]
       },
-      "id": "node/592066036"
+      "id": "592066036"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/593844444",
+        "@id": "593844444",
         "addr:city": "Dún Laoghaire",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2098,12 +2098,12 @@
           53.2900598
         ]
       },
-      "id": "node/593844444"
+      "id": "593844444"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/593844510",
+        "@id": "593844510",
         "addr:city": "Dún Laoghaire",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2135,12 +2135,12 @@
           53.2940117
         ]
       },
-      "id": "node/593844510"
+      "id": "593844510"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/593844518",
+        "@id": "593844518",
         "addr:housenumber": "3-5",
         "addr:street": "Old Dunleary Road",
         "amenity": "pub",
@@ -2161,12 +2161,12 @@
           53.2951939
         ]
       },
-      "id": "node/593844518"
+      "id": "593844518"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/597119697",
+        "@id": "597119697",
         "addr:city": "Dún Laoghaire",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2187,12 +2187,12 @@
           53.2919874
         ]
       },
-      "id": "node/597119697"
+      "id": "597119697"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/598161343",
+        "@id": "598161343",
         "amenity": "bar",
         "name": "Trinity Sports & Leisure Club & Bar"
       },
@@ -2203,12 +2203,12 @@
           53.4022449
         ]
       },
-      "id": "node/598161343"
+      "id": "598161343"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/598519953",
+        "@id": "598519953",
         "addr:housenumber": "18",
         "addr:street": "Glasthule Road",
         "amenity": "pub",
@@ -2223,12 +2223,12 @@
           53.2869998
         ]
       },
-      "id": "node/598519953"
+      "id": "598519953"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/612427114",
+        "@id": "612427114",
         "amenity": "pub",
         "name": "The Laurels",
         "wheelchair": "limited"
@@ -2240,12 +2240,12 @@
           53.3079564
         ]
       },
-      "id": "node/612427114"
+      "id": "612427114"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/612427116",
+        "@id": "612427116",
         "amenity": "pub",
         "name": "The Pines",
         "wheelchair": "limited"
@@ -2257,12 +2257,12 @@
           53.3073383
         ]
       },
-      "id": "node/612427116"
+      "id": "612427116"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/612623532",
+        "@id": "612623532",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2283,12 +2283,12 @@
           53.328038
         ]
       },
-      "id": "node/612623532"
+      "id": "612623532"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/613230592",
+        "@id": "613230592",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2309,12 +2309,12 @@
           53.3473641
         ]
       },
-      "id": "node/613230592"
+      "id": "613230592"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/616479695",
+        "@id": "616479695",
         "addr:city": "Dublin",
         "addr:housenumber": "7",
         "addr:street": "Leeson Street Lower",
@@ -2329,12 +2329,12 @@
           53.3357173
         ]
       },
-      "id": "node/616479695"
+      "id": "616479695"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/626672376",
+        "@id": "626672376",
         "amenity": "pub",
         "name": "Vacant Lot"
       },
@@ -2345,12 +2345,12 @@
           53.4202021
         ]
       },
-      "id": "node/626672376"
+      "id": "626672376"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/629750014",
+        "@id": "629750014",
         "amenity": "bar",
         "level": "5",
         "name": "The Source Bar"
@@ -2362,12 +2362,12 @@
           53.3420131
         ]
       },
-      "id": "node/629750014"
+      "id": "629750014"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/629750018",
+        "@id": "629750018",
         "amenity": "bar",
         "indoor_seating": "yes",
         "level": "7",
@@ -2384,12 +2384,12 @@
           53.3419024
         ]
       },
-      "id": "node/629750018"
+      "id": "629750018"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/632666705",
+        "@id": "632666705",
         "addr:city": "Dublin",
         "addr:county": "Dublin",
         "addr:housenumber": "83",
@@ -2408,12 +2408,12 @@
           53.3498707
         ]
       },
-      "id": "node/632666705"
+      "id": "632666705"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/632756503",
+        "@id": "632756503",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2431,12 +2431,12 @@
           53.3542365
         ]
       },
-      "id": "node/632756503"
+      "id": "632756503"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/635273448",
+        "@id": "635273448",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2456,12 +2456,12 @@
           53.3492625
         ]
       },
-      "id": "node/635273448"
+      "id": "635273448"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/636958169",
+        "@id": "636958169",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2482,12 +2482,12 @@
           53.3514108
         ]
       },
-      "id": "node/636958169"
+      "id": "636958169"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/638722447",
+        "@id": "638722447",
         "addr:city": "Tallaght",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2503,12 +2503,12 @@
           53.2880299
         ]
       },
-      "id": "node/638722447"
+      "id": "638722447"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/639367124",
+        "@id": "639367124",
         "amenity": "pub",
         "name": "The Waterside"
       },
@@ -2519,12 +2519,12 @@
           53.3286777
         ]
       },
-      "id": "node/639367124"
+      "id": "639367124"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/639829717",
+        "@id": "639829717",
         "amenity": "pub"
       },
       "geometry": {
@@ -2534,12 +2534,12 @@
           53.3898897
         ]
       },
-      "id": "node/639829717"
+      "id": "639829717"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/658492175",
+        "@id": "658492175",
         "addr:city": "Dún Laoghaire",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2566,12 +2566,12 @@
           53.2917713
         ]
       },
-      "id": "node/658492175"
+      "id": "658492175"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/658492392",
+        "@id": "658492392",
         "addr:city": "Dún Laoghaire",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2589,12 +2589,12 @@
           53.2897873
         ]
       },
-      "id": "node/658492392"
+      "id": "658492392"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/658999927",
+        "@id": "658999927",
         "amenity": "pub",
         "name": "Paidi Ogs"
       },
@@ -2605,12 +2605,12 @@
           53.4027495
         ]
       },
-      "id": "node/658999927"
+      "id": "658999927"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/662938466",
+        "@id": "662938466",
         "addr:city": "Blackrock",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2632,12 +2632,12 @@
           53.3015086
         ]
       },
-      "id": "node/662938466"
+      "id": "662938466"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/662970909",
+        "@id": "662970909",
         "addr:city": "Blackrock",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2660,12 +2660,12 @@
           53.3010267
         ]
       },
-      "id": "node/662970909"
+      "id": "662970909"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/677596888",
+        "@id": "677596888",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2683,12 +2683,12 @@
           53.3468848
         ]
       },
-      "id": "node/677596888"
+      "id": "677596888"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/683894548",
+        "@id": "683894548",
         "addr:city": "Blackrock",
         "addr:county": "Dublin",
         "addr:housename": "Phillipstown House",
@@ -2708,12 +2708,12 @@
           53.2802879
         ]
       },
-      "id": "node/683894548"
+      "id": "683894548"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/689479314",
+        "@id": "689479314",
         "addr:city": "Donabate",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2737,12 +2737,12 @@
           53.4876672
         ]
       },
-      "id": "node/689479314"
+      "id": "689479314"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/698087515",
+        "@id": "698087515",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2760,12 +2760,12 @@
           53.3588257
         ]
       },
-      "id": "node/698087515"
+      "id": "698087515"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/725068375",
+        "@id": "725068375",
         "addr:city": "Dublin",
         "addr:street": "Mayor Square",
         "amenity": "bar",
@@ -2779,12 +2779,12 @@
           53.3496181
         ]
       },
-      "id": "node/725068375"
+      "id": "725068375"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/736892767",
+        "@id": "736892767",
         "amenity": "pub",
         "name": "The Twelfth Lock"
       },
@@ -2795,12 +2795,12 @@
           53.3821395
         ]
       },
-      "id": "node/736892767"
+      "id": "736892767"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/739756772",
+        "@id": "739756772",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2820,12 +2820,12 @@
           53.3360277
         ]
       },
-      "id": "node/739756772"
+      "id": "739756772"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/739778204",
+        "@id": "739778204",
         "addr:housenumber": "21-25",
         "addr:street": "Harcourt Street",
         "amenity": "pub",
@@ -2845,12 +2845,12 @@
           53.3358434
         ]
       },
-      "id": "node/739778204"
+      "id": "739778204"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/759295279",
+        "@id": "759295279",
         "addr:city": "Dublin",
         "addr:housename": "CHQ",
         "addr:street": "Custom House Quay",
@@ -2868,12 +2868,12 @@
           53.3492828
         ]
       },
-      "id": "node/759295279"
+      "id": "759295279"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/759299090",
+        "@id": "759299090",
         "amenity": "bar",
         "name": "Vacant"
       },
@@ -2884,12 +2884,12 @@
           53.3498116
         ]
       },
-      "id": "node/759299090"
+      "id": "759299090"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/768231200",
+        "@id": "768231200",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2910,12 +2910,12 @@
           53.3410955
         ]
       },
-      "id": "node/768231200"
+      "id": "768231200"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/768231201",
+        "@id": "768231201",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2934,12 +2934,12 @@
           53.3431091
         ]
       },
-      "id": "node/768231201"
+      "id": "768231201"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/768231204",
+        "@id": "768231204",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2961,12 +2961,12 @@
           53.3400902
         ]
       },
-      "id": "node/768231204"
+      "id": "768231204"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/768231205",
+        "@id": "768231205",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -2986,12 +2986,12 @@
           53.3412009
         ]
       },
-      "id": "node/768231205"
+      "id": "768231205"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/768231917",
+        "@id": "768231917",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3012,12 +3012,12 @@
           53.336171
         ]
       },
-      "id": "node/768231917"
+      "id": "768231917"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/768231918",
+        "@id": "768231918",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3038,12 +3038,12 @@
           53.3434972
         ]
       },
-      "id": "node/768231918"
+      "id": "768231918"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/768520263",
+        "@id": "768520263",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3066,12 +3066,12 @@
           53.3503544
         ]
       },
-      "id": "node/768520263"
+      "id": "768520263"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/775278278",
+        "@id": "775278278",
         "addr:street": "Manor Mall Shopping Centre",
         "amenity": "pub",
         "brewery": "various",
@@ -3086,12 +3086,12 @@
           53.4604175
         ]
       },
-      "id": "node/775278278"
+      "id": "775278278"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/775415430",
+        "@id": "775415430",
         "addr:street": "Harcourt Street",
         "amenity": "pub",
         "name": "D-Two",
@@ -3104,12 +3104,12 @@
           53.3344059
         ]
       },
-      "id": "node/775415430"
+      "id": "775415430"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/778690166",
+        "@id": "778690166",
         "amenity": "bar",
         "name": "C Central"
       },
@@ -3120,12 +3120,12 @@
           53.3331138
         ]
       },
-      "id": "node/778690166"
+      "id": "778690166"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/778699196",
+        "@id": "778699196",
         "addr:city": "Dublin",
         "addr:housenumber": "29",
         "addr:street": "Richmond Street South",
@@ -3139,12 +3139,12 @@
           53.3306454
         ]
       },
-      "id": "node/778699196"
+      "id": "778699196"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/811533577",
+        "@id": "811533577",
         "addr:city": "Dublin",
         "addr:housename": "Donaghmede Shopping Centre",
         "addr:street": "Grange Road",
@@ -3157,12 +3157,12 @@
           53.3951322
         ]
       },
-      "id": "node/811533577"
+      "id": "811533577"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/830659393",
+        "@id": "830659393",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3184,12 +3184,12 @@
           53.3467462
         ]
       },
-      "id": "node/830659393"
+      "id": "830659393"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/880923510",
+        "@id": "880923510",
         "addr:city": "Howth",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3210,12 +3210,12 @@
           53.388225
         ]
       },
-      "id": "node/880923510"
+      "id": "880923510"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/880923549",
+        "@id": "880923549",
         "addr:city": "Howth",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3236,12 +3236,12 @@
           53.3870047
         ]
       },
-      "id": "node/880923549"
+      "id": "880923549"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/882292497",
+        "@id": "882292497",
         "addr:city": "Dublin",
         "amenity": "pub",
         "name": "The Barn House"
@@ -3253,12 +3253,12 @@
           53.3322249
         ]
       },
-      "id": "node/882292497"
+      "id": "882292497"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/882335486",
+        "@id": "882335486",
         "addr:city": "Tallaght",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3273,12 +3273,12 @@
           53.287319
         ]
       },
-      "id": "node/882335486"
+      "id": "882335486"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/890854720",
+        "@id": "890854720",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3296,12 +3296,12 @@
           53.3523358
         ]
       },
-      "id": "node/890854720"
+      "id": "890854720"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/907142997",
+        "@id": "907142997",
         "addr:city": "Dublin",
         "amenity": "bar",
         "name": "Pygmalion",
@@ -3316,12 +3316,12 @@
           53.342172
         ]
       },
-      "id": "node/907142997"
+      "id": "907142997"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/911170200",
+        "@id": "911170200",
         "addr:city": "Dublin",
         "addr:county": "Dublin",
         "addr:housenumber": "40",
@@ -3340,12 +3340,12 @@
           53.3374409
         ]
       },
-      "id": "node/911170200"
+      "id": "911170200"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/913567411",
+        "@id": "913567411",
         "addr:city": "Swords",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3364,12 +3364,12 @@
           53.4562481
         ]
       },
-      "id": "node/913567411"
+      "id": "913567411"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/932249376",
+        "@id": "932249376",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3400,12 +3400,12 @@
           53.3242854
         ]
       },
-      "id": "node/932249376"
+      "id": "932249376"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/937866728",
+        "@id": "937866728",
         "amenity": "pub",
         "name": "The Kingswood Lodge"
       },
@@ -3416,12 +3416,12 @@
           53.3074073
         ]
       },
-      "id": "node/937866728"
+      "id": "937866728"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/941285841",
+        "@id": "941285841",
         "addr:city": "Portmarnock",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3442,12 +3442,12 @@
           53.4351695
         ]
       },
-      "id": "node/941285841"
+      "id": "941285841"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/941319049",
+        "@id": "941319049",
         "addr:city": "Howth",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3469,12 +3469,12 @@
           53.3846515
         ]
       },
-      "id": "node/941319049"
+      "id": "941319049"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/943350476",
+        "@id": "943350476",
         "addr:city": "Dublin",
         "addr:housenumber": "29",
         "addr:street": "Clanbrassil Street Upper",
@@ -3489,12 +3489,12 @@
           53.3304221
         ]
       },
-      "id": "node/943350476"
+      "id": "943350476"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/943350478",
+        "@id": "943350478",
         "addr:city": "Dublin",
         "addr:housenumber": "34-35",
         "addr:street": "Clanbrassil Street Upper",
@@ -3508,12 +3508,12 @@
           53.3300206
         ]
       },
-      "id": "node/943350478"
+      "id": "943350478"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/948948140",
+        "@id": "948948140",
         "addr:city": "Rush",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3532,12 +3532,12 @@
           53.5218348
         ]
       },
-      "id": "node/948948140"
+      "id": "948948140"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/976646849",
+        "@id": "976646849",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3556,12 +3556,12 @@
           53.3429336
         ]
       },
-      "id": "node/976646849"
+      "id": "976646849"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/976835207",
+        "@id": "976835207",
         "amenity": "bar",
         "name": "Clonliffe Harriers Club Bar"
       },
@@ -3572,12 +3572,12 @@
           53.4014689
         ]
       },
-      "id": "node/976835207"
+      "id": "976835207"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/988809177",
+        "@id": "988809177",
         "addr:housenumber": "62a-64",
         "addr:street": "Saint Agnes' Park",
         "amenity": "pub",
@@ -3592,12 +3592,12 @@
           53.3195923
         ]
       },
-      "id": "node/988809177"
+      "id": "988809177"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1030106427",
+        "@id": "1030106427",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3619,12 +3619,12 @@
           53.3218191
         ]
       },
-      "id": "node/1030106427"
+      "id": "1030106427"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1039619303",
+        "@id": "1039619303",
         "amenity": "pub",
         "wheelchair": "yes"
       },
@@ -3635,12 +3635,12 @@
           53.478949
         ]
       },
-      "id": "node/1039619303"
+      "id": "1039619303"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1146292428",
+        "@id": "1146292428",
         "addr:city": "Dublin",
         "addr:county": "Dublin",
         "addr:housenumber": "1-2",
@@ -3658,12 +3658,12 @@
           53.3412997
         ]
       },
-      "id": "node/1146292428"
+      "id": "1146292428"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1146292447",
+        "@id": "1146292447",
         "addr:city": "Dublin",
         "addr:county": "Dublin",
         "addr:housenumber": "17-18",
@@ -3688,12 +3688,12 @@
           53.3402594
         ]
       },
-      "id": "node/1146292447"
+      "id": "1146292447"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1171865905",
+        "@id": "1171865905",
         "addr:city": "Dublin",
         "addr:postal_district": "D15",
         "addr:street": "Blanchardstown Centre",
@@ -3708,12 +3708,12 @@
           53.3955297
         ]
       },
-      "id": "node/1171865905"
+      "id": "1171865905"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1223267149",
+        "@id": "1223267149",
         "addr:city": "Dublin",
         "addr:housenumber": "1",
         "addr:street": "Grand Canal Square",
@@ -3732,12 +3732,12 @@
           53.3433861
         ]
       },
-      "id": "node/1223267149"
+      "id": "1223267149"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1260538148",
+        "@id": "1260538148",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3756,12 +3756,12 @@
           53.3429392
         ]
       },
-      "id": "node/1260538148"
+      "id": "1260538148"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1263991636",
+        "@id": "1263991636",
         "alt_name": "The Graduate",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/thegraduatebarandrestaurant",
@@ -3781,12 +3781,12 @@
           53.2670882
         ]
       },
-      "id": "node/1263991636"
+      "id": "1263991636"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1300613610",
+        "@id": "1300613610",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3809,12 +3809,12 @@
           53.343795
         ]
       },
-      "id": "node/1300613610"
+      "id": "1300613610"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1320104241",
+        "@id": "1320104241",
         "amenity": "pub",
         "name": "Furry Bog",
         "wheelchair": "limited"
@@ -3826,12 +3826,12 @@
           53.2781494
         ]
       },
-      "id": "node/1320104241"
+      "id": "1320104241"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1320207694",
+        "@id": "1320207694",
         "amenity": "pub",
         "name": "Boomers"
       },
@@ -3842,12 +3842,12 @@
           53.3235135
         ]
       },
-      "id": "node/1320207694"
+      "id": "1320207694"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1326700611",
+        "@id": "1326700611",
         "addr:city": "Dublin",
         "addr:housenumber": "32",
         "addr:street": "Ellis Street",
@@ -3865,12 +3865,12 @@
           53.3470952
         ]
       },
-      "id": "node/1326700611"
+      "id": "1326700611"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1326700619",
+        "@id": "1326700619",
         "amenity": "pub",
         "disused": "yes",
         "name": "Noel Leonards (Closed)"
@@ -3882,12 +3882,12 @@
           53.3464035
         ]
       },
-      "id": "node/1326700619"
+      "id": "1326700619"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1326745943",
+        "@id": "1326745943",
         "amenity": "bar",
         "name": "Magic Glasses"
       },
@@ -3898,12 +3898,12 @@
           53.3374044
         ]
       },
-      "id": "node/1326745943"
+      "id": "1326745943"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1326745948",
+        "@id": "1326745948",
         "addr:city": "Dublin",
         "addr:street": "Golden Lane",
         "amenity": "bar",
@@ -3919,12 +3919,12 @@
           53.3408345
         ]
       },
-      "id": "node/1326745948"
+      "id": "1326745948"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1332272327",
+        "@id": "1332272327",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3942,12 +3942,12 @@
           53.3480466
         ]
       },
-      "id": "node/1332272327"
+      "id": "1332272327"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1348370992",
+        "@id": "1348370992",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -3972,12 +3972,12 @@
           53.3525164
         ]
       },
-      "id": "node/1348370992"
+      "id": "1348370992"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1348371058",
+        "@id": "1348371058",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4000,12 +4000,12 @@
           53.3465755
         ]
       },
-      "id": "node/1348371058"
+      "id": "1348371058"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1349656251",
+        "@id": "1349656251",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4022,12 +4022,12 @@
           53.3573517
         ]
       },
-      "id": "node/1349656251"
+      "id": "1349656251"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1373919801",
+        "@id": "1373919801",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4046,12 +4046,12 @@
           53.3433017
         ]
       },
-      "id": "node/1373919801"
+      "id": "1373919801"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1373977813",
+        "@id": "1373977813",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4069,12 +4069,12 @@
           53.3406636
         ]
       },
-      "id": "node/1373977813"
+      "id": "1373977813"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1373979474",
+        "@id": "1373979474",
         "addr:city": "Dublin",
         "addr:street": "The Coombe",
         "amenity": "pub",
@@ -4088,12 +4088,12 @@
           53.3397428
         ]
       },
-      "id": "node/1373979474"
+      "id": "1373979474"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1403120910",
+        "@id": "1403120910",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4111,12 +4111,12 @@
           53.3427402
         ]
       },
-      "id": "node/1403120910"
+      "id": "1403120910"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1404763943",
+        "@id": "1404763943",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4134,12 +4134,12 @@
           53.341684
         ]
       },
-      "id": "node/1404763943"
+      "id": "1404763943"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1404772647",
+        "@id": "1404772647",
         "addr:housenumber": "62",
         "addr:street": "Pimlico",
         "amenity": "pub",
@@ -4152,12 +4152,12 @@
           53.3400639
         ]
       },
-      "id": "node/1404772647"
+      "id": "1404772647"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1416582578",
+        "@id": "1416582578",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4176,12 +4176,12 @@
           53.3402486
         ]
       },
-      "id": "node/1416582578"
+      "id": "1416582578"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1418302667",
+        "@id": "1418302667",
         "amenity": "pub",
         "name": "Gleesons of Booterstown"
       },
@@ -4192,12 +4192,12 @@
           53.3054689
         ]
       },
-      "id": "node/1418302667"
+      "id": "1418302667"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1423546555",
+        "@id": "1423546555",
         "addr:city": "Dublin",
         "addr:street": "Glasnevin Hill",
         "amenity": "pub",
@@ -4210,12 +4210,12 @@
           53.3738004
         ]
       },
-      "id": "node/1423546555"
+      "id": "1423546555"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1423559526",
+        "@id": "1423559526",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4234,12 +4234,12 @@
           53.3443224
         ]
       },
-      "id": "node/1423559526"
+      "id": "1423559526"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1423559556",
+        "@id": "1423559556",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4267,12 +4267,12 @@
           53.3450328
         ]
       },
-      "id": "node/1423559556"
+      "id": "1423559556"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1424006122",
+        "@id": "1424006122",
         "addr:city": "Tallaght",
         "addr:housename": "Marlfield Mall",
         "addr:street": "Kiltipper Way",
@@ -4287,12 +4287,12 @@
           53.2717195
         ]
       },
-      "id": "node/1424006122"
+      "id": "1424006122"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1425374427",
+        "@id": "1425374427",
         "amenity": "pub",
         "name": "The Two Sisters"
       },
@@ -4303,12 +4303,12 @@
           53.3091194
         ]
       },
-      "id": "node/1425374427"
+      "id": "1425374427"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1425999505",
+        "@id": "1425999505",
         "addr:city": "Blackrock",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4328,12 +4328,12 @@
           53.3019262
         ]
       },
-      "id": "node/1425999505"
+      "id": "1425999505"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1426048610",
+        "@id": "1426048610",
         "addr:city": "Dublin",
         "addr:housenumber": "33",
         "addr:street": "Richmond Street South",
@@ -4348,12 +4348,12 @@
           53.3303503
         ]
       },
-      "id": "node/1426048610"
+      "id": "1426048610"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1426051344",
+        "@id": "1426051344",
         "addr:city": "Ranelagh",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4375,12 +4375,12 @@
           53.3266654
         ]
       },
-      "id": "node/1426051344"
+      "id": "1426051344"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1426100409",
+        "@id": "1426100409",
         "amenity": "pub",
         "name": "Morrissey's",
         "wheelchair": "yes"
@@ -4392,12 +4392,12 @@
           53.3368452
         ]
       },
-      "id": "node/1426100409"
+      "id": "1426100409"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1426100412",
+        "@id": "1426100412",
         "addr:housenumber": "41-43",
         "addr:street": "Usher's Quay",
         "amenity": "pub",
@@ -4416,12 +4416,12 @@
           53.3459874
         ]
       },
-      "id": "node/1426100412"
+      "id": "1426100412"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1426131480",
+        "@id": "1426131480",
         "amenity": "pub",
         "name": "Hamlet Pub"
       },
@@ -4432,12 +4432,12 @@
           53.6135166
         ]
       },
-      "id": "node/1426131480"
+      "id": "1426131480"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1431043154",
+        "@id": "1431043154",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4459,12 +4459,12 @@
           53.3454637
         ]
       },
-      "id": "node/1431043154"
+      "id": "1431043154"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1432780730",
+        "@id": "1432780730",
         "addr:city": "Raheny",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4480,12 +4480,12 @@
           53.3882621
         ]
       },
-      "id": "node/1432780730"
+      "id": "1432780730"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1432780731",
+        "@id": "1432780731",
         "addr:city": "Raheny",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4503,12 +4503,12 @@
           53.3888986
         ]
       },
-      "id": "node/1432780731"
+      "id": "1432780731"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1458903111",
+        "@id": "1458903111",
         "addr:city": "Tallaght",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4527,12 +4527,12 @@
           53.2897005
         ]
       },
-      "id": "node/1458903111"
+      "id": "1458903111"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1484713985",
+        "@id": "1484713985",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:housenumber": "68",
@@ -4547,12 +4547,12 @@
           53.382084
         ]
       },
-      "id": "node/1484713985"
+      "id": "1484713985"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1484733482",
+        "@id": "1484733482",
         "addr:street": "Glasnevin Avenue",
         "amenity": "pub",
         "name": "Autobahn Roadhouse"
@@ -4564,12 +4564,12 @@
           53.3897043
         ]
       },
-      "id": "node/1484733482"
+      "id": "1484733482"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1494148993",
+        "@id": "1494148993",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4591,12 +4591,12 @@
           53.3453862
         ]
       },
-      "id": "node/1494148993"
+      "id": "1494148993"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1496722632",
+        "@id": "1496722632",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4619,12 +4619,12 @@
           53.3853244
         ]
       },
-      "id": "node/1496722632"
+      "id": "1496722632"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1496775243",
+        "@id": "1496775243",
         "amenity": "pub",
         "name": "Nubar",
         "opening_hours": "Mo-Fr 08:00-24:00",
@@ -4637,12 +4637,12 @@
           53.3850696
         ]
       },
-      "id": "node/1496775243"
+      "id": "1496775243"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1496777115",
+        "@id": "1496777115",
         "addr:city": "Dublin",
         "addr:housenumber": "243",
         "addr:street": "Swords Road",
@@ -4657,12 +4657,12 @@
           53.3884621
         ]
       },
-      "id": "node/1496777115"
+      "id": "1496777115"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1500501221",
+        "@id": "1500501221",
         "amenity": "pub",
         "name": "Rory O'Connor's"
       },
@@ -4673,12 +4673,12 @@
           53.3159336
         ]
       },
-      "id": "node/1500501221"
+      "id": "1500501221"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1500501224",
+        "@id": "1500501224",
         "alt_name": "The Sub",
         "amenity": "pub",
         "food": "yes",
@@ -4691,12 +4691,12 @@
           53.3161733
         ]
       },
-      "id": "node/1500501224"
+      "id": "1500501224"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1508855041",
+        "@id": "1508855041",
         "amenity": "pub"
       },
       "geometry": {
@@ -4706,12 +4706,12 @@
           53.3628264
         ]
       },
-      "id": "node/1508855041"
+      "id": "1508855041"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1509769787",
+        "@id": "1509769787",
         "amenity": "pub",
         "name": "Barcode"
       },
@@ -4722,12 +4722,12 @@
           53.3629792
         ]
       },
-      "id": "node/1509769787"
+      "id": "1509769787"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1517611787",
+        "@id": "1517611787",
         "addr:street": "Cambell's Row",
         "amenity": "pub",
         "name": "The Hideout House"
@@ -4739,12 +4739,12 @@
           53.3596909
         ]
       },
-      "id": "node/1517611787"
+      "id": "1517611787"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1521409481",
+        "@id": "1521409481",
         "amenity": "pub",
         "name": "Brewery Bar"
       },
@@ -4755,12 +4755,12 @@
           53.3404859
         ]
       },
-      "id": "node/1521409481"
+      "id": "1521409481"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1521570233",
+        "@id": "1521570233",
         "addr:street": "EastPoint Business Park",
         "amenity": "pub",
         "name": "EpiCenter"
@@ -4772,12 +4772,12 @@
           53.3572808
         ]
       },
-      "id": "node/1521570233"
+      "id": "1521570233"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1521601306",
+        "@id": "1521601306",
         "addr:city": "Clontarf",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4801,12 +4801,12 @@
           53.3594872
         ]
       },
-      "id": "node/1521601306"
+      "id": "1521601306"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1521660943",
+        "@id": "1521660943",
         "amenity": "pub",
         "name": "Kyles"
       },
@@ -4817,12 +4817,12 @@
           53.3888556
         ]
       },
-      "id": "node/1521660943"
+      "id": "1521660943"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1526077721",
+        "@id": "1526077721",
         "addr:city": "Dublin",
         "addr:housename": "Northside Shopping Centre",
         "addr:street": "Oscar Traynor Road",
@@ -4837,12 +4837,12 @@
           53.3964581
         ]
       },
-      "id": "node/1526077721"
+      "id": "1526077721"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1529996763",
+        "@id": "1529996763",
         "addr:city": "Dublin",
         "addr:street": "Ardlea Road",
         "alt_name": "A1",
@@ -4856,12 +4856,12 @@
           53.3866526
         ]
       },
-      "id": "node/1529996763"
+      "id": "1529996763"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1529996838",
+        "@id": "1529996838",
         "amenity": "pub",
         "name": "The Roundabout"
       },
@@ -4872,12 +4872,12 @@
           53.383917
         ]
       },
-      "id": "node/1529996838"
+      "id": "1529996838"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1530024649",
+        "@id": "1530024649",
         "addr:city": "Dublin",
         "amenity": "pub",
         "name": "The Goblet",
@@ -4890,12 +4890,12 @@
           53.3802882
         ]
       },
-      "id": "node/1530024649"
+      "id": "1530024649"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1560022630",
+        "@id": "1560022630",
         "amenity": "pub",
         "name": "Harp Bar",
         "toilets:wheelchair": "yes",
@@ -4908,12 +4908,12 @@
           53.4623533
         ]
       },
-      "id": "node/1560022630"
+      "id": "1560022630"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1560022631",
+        "@id": "1560022631",
         "addr:city": "Swords",
         "addr:street": "North Street",
         "amenity": "bar",
@@ -4927,12 +4927,12 @@
           53.4626062
         ]
       },
-      "id": "node/1560022631"
+      "id": "1560022631"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1560022633",
+        "@id": "1560022633",
         "addr:city": "Swords",
         "addr:housename": "River Valley Shopping Centre",
         "addr:street": "Rathingle Road",
@@ -4947,12 +4947,12 @@
           53.4527893
         ]
       },
-      "id": "node/1560022633"
+      "id": "1560022633"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1563623749",
+        "@id": "1563623749",
         "amenity": "pub",
         "name": "Gormleys"
       },
@@ -4963,12 +4963,12 @@
           53.5664719
         ]
       },
-      "id": "node/1563623749"
+      "id": "1563623749"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1593209605",
+        "@id": "1593209605",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -4985,12 +4985,12 @@
           53.3363545
         ]
       },
-      "id": "node/1593209605"
+      "id": "1593209605"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1615384981",
+        "@id": "1615384981",
         "addr:street": "Barry Road",
         "amenity": "pub",
         "name": "An Cappagh Nua"
@@ -5002,12 +5002,12 @@
           53.395102
         ]
       },
-      "id": "node/1615384981"
+      "id": "1615384981"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1684858495",
+        "@id": "1684858495",
         "amenity": "pub",
         "name": "Stoney's"
       },
@@ -5018,12 +5018,12 @@
           53.3552202
         ]
       },
-      "id": "node/1684858495"
+      "id": "1684858495"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1694469691",
+        "@id": "1694469691",
         "amenity": "pub",
         "name": "Jacobs",
         "opening_hours": "Mo-Th 10:30-23:30, Fr,Sa 10:30-00:30, Su 12:30-23:00",
@@ -5036,12 +5036,12 @@
           53.2805016
         ]
       },
-      "id": "node/1694469691"
+      "id": "1694469691"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1711807593",
+        "@id": "1711807593",
         "addr:city": "Dublin",
         "addr:housename": "Point Square Dublin",
         "amenity": "bar",
@@ -5054,12 +5054,12 @@
           53.3487544
         ]
       },
-      "id": "node/1711807593"
+      "id": "1711807593"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1712118211",
+        "@id": "1712118211",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5081,12 +5081,12 @@
           53.3508625
         ]
       },
-      "id": "node/1712118211"
+      "id": "1712118211"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1811909362",
+        "@id": "1811909362",
         "addr:city": "Clondalkin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5106,12 +5106,12 @@
           53.3213469
         ]
       },
-      "id": "node/1811909362"
+      "id": "1811909362"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1811909824",
+        "@id": "1811909824",
         "addr:city": "Clondalkin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5138,12 +5138,12 @@
           53.3209592
         ]
       },
-      "id": "node/1811909824"
+      "id": "1811909824"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1811909881",
+        "@id": "1811909881",
         "addr:city": "Clondalkin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5163,12 +5163,12 @@
           53.3211955
         ]
       },
-      "id": "node/1811909881"
+      "id": "1811909881"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1811909944",
+        "@id": "1811909944",
         "amenity": "pub",
         "name": "The Steering Wheel",
         "wheelchair": "yes"
@@ -5180,12 +5180,12 @@
           53.3207853
         ]
       },
-      "id": "node/1811909944"
+      "id": "1811909944"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1981729348",
+        "@id": "1981729348",
         "amenity": "bar",
         "email": "malahide@gilbertandwright.ie",
         "name": "Gilbert & Wright",
@@ -5199,12 +5199,12 @@
           53.4516473
         ]
       },
-      "id": "node/1981729348"
+      "id": "1981729348"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2004412420",
+        "@id": "2004412420",
         "amenity": "pub",
         "name": "The Kestrel House"
       },
@@ -5215,12 +5215,12 @@
           53.3174091
         ]
       },
-      "id": "node/2004412420"
+      "id": "2004412420"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2004412421",
+        "@id": "2004412421",
         "addr:housenumber": "36",
         "addr:street": "Baldoyle Road",
         "amenity": "pub",
@@ -5234,12 +5234,12 @@
           53.3893347
         ]
       },
-      "id": "node/2004412421"
+      "id": "2004412421"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2004412428",
+        "@id": "2004412428",
         "amenity": "pub",
         "name": "The Halfway House",
         "wheelchair": "yes"
@@ -5251,12 +5251,12 @@
           53.3238179
         ]
       },
-      "id": "node/2004412428"
+      "id": "2004412428"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2004488756",
+        "@id": "2004488756",
         "addr:street": "Davitt Road",
         "amenity": "pub",
         "name": "Marble Arch"
@@ -5268,12 +5268,12 @@
           53.3358378
         ]
       },
-      "id": "node/2004488756"
+      "id": "2004488756"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2004491253",
+        "@id": "2004491253",
         "addr:city": "Dublin",
         "addr:street": "Saint Agnes Road",
         "amenity": "pub",
@@ -5286,12 +5286,12 @@
           53.3206892
         ]
       },
-      "id": "node/2004491253"
+      "id": "2004491253"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2004657419",
+        "@id": "2004657419",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5308,12 +5308,12 @@
           53.3458363
         ]
       },
-      "id": "node/2004657419"
+      "id": "2004657419"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2065157408",
+        "@id": "2065157408",
         "addr:housename": "Liffey Trust Building",
         "addr:housenumber": "117-126",
         "addr:street": "Upper Sheriff Street",
@@ -5328,12 +5328,12 @@
           53.3498005
         ]
       },
-      "id": "node/2065157408"
+      "id": "2065157408"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2065167226",
+        "@id": "2065167226",
         "amenity": "pub",
         "name": "Seabank House"
       },
@@ -5344,12 +5344,12 @@
           53.3548879
         ]
       },
-      "id": "node/2065167226"
+      "id": "2065167226"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2065197334",
+        "@id": "2065197334",
         "addr:housenumber": "35-37",
         "addr:postal_district": "D12",
         "addr:street": "Sundrive Road",
@@ -5363,12 +5363,12 @@
           53.3206435
         ]
       },
-      "id": "node/2065197334"
+      "id": "2065197334"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2065207024",
+        "@id": "2065207024",
         "addr:city": "Dublin",
         "addr:housenumber": "326",
         "addr:street": "Kimmage Road Lower",
@@ -5382,12 +5382,12 @@
           53.3141966
         ]
       },
-      "id": "node/2065207024"
+      "id": "2065207024"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2066250086",
+        "@id": "2066250086",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5404,12 +5404,12 @@
           53.3273937
         ]
       },
-      "id": "node/2066250086"
+      "id": "2066250086"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2068246787",
+        "@id": "2068246787",
         "addr:housenumber": "45",
         "addr:street": "Hogan Place",
         "amenity": "pub",
@@ -5427,12 +5427,12 @@
           53.340843
         ]
       },
-      "id": "node/2068246787"
+      "id": "2068246787"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2071381884",
+        "@id": "2071381884",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5449,12 +5449,12 @@
           53.3550033
         ]
       },
-      "id": "node/2071381884"
+      "id": "2071381884"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2071381885",
+        "@id": "2071381885",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5471,12 +5471,12 @@
           53.3525793
         ]
       },
-      "id": "node/2071381885"
+      "id": "2071381885"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2080832424",
+        "@id": "2080832424",
         "amenity": "pub",
         "name": "The Foxhound Inn"
       },
@@ -5487,12 +5487,12 @@
           53.3859746
         ]
       },
-      "id": "node/2080832424"
+      "id": "2080832424"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2127757454",
+        "@id": "2127757454",
         "addr:city": "Dublin",
         "amenity": "bar",
         "food": "yes",
@@ -5507,12 +5507,12 @@
           53.3387556
         ]
       },
-      "id": "node/2127757454"
+      "id": "2127757454"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2131267850",
+        "@id": "2131267850",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5532,12 +5532,12 @@
           53.3543418
         ]
       },
-      "id": "node/2131267850"
+      "id": "2131267850"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2131267852",
+        "@id": "2131267852",
         "amenity": "pub",
         "name": "The Berkeley"
       },
@@ -5548,12 +5548,12 @@
           53.3561417
         ]
       },
-      "id": "node/2131267852"
+      "id": "2131267852"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2175861132",
+        "@id": "2175861132",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5572,12 +5572,12 @@
           53.3453977
         ]
       },
-      "id": "node/2175861132"
+      "id": "2175861132"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2176085502",
+        "@id": "2176085502",
         "addr:city": "Rathcoole",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5593,12 +5593,12 @@
           53.2818989
         ]
       },
-      "id": "node/2176085502"
+      "id": "2176085502"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2349855098",
+        "@id": "2349855098",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5622,12 +5622,12 @@
           53.3439563
         ]
       },
-      "id": "node/2349855098"
+      "id": "2349855098"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2365544967",
+        "@id": "2365544967",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5646,12 +5646,12 @@
           53.348862
         ]
       },
-      "id": "node/2365544967"
+      "id": "2365544967"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2372306728",
+        "@id": "2372306728",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5671,12 +5671,12 @@
           53.3555164
         ]
       },
-      "id": "node/2372306728"
+      "id": "2372306728"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2372309923",
+        "@id": "2372309923",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5696,12 +5696,12 @@
           53.3556298
         ]
       },
-      "id": "node/2372309923"
+      "id": "2372309923"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2372312459",
+        "@id": "2372312459",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5719,12 +5719,12 @@
           53.3569746
         ]
       },
-      "id": "node/2372312459"
+      "id": "2372312459"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2386542318",
+        "@id": "2386542318",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5741,12 +5741,12 @@
           53.3442729
         ]
       },
-      "id": "node/2386542318"
+      "id": "2386542318"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2389968744",
+        "@id": "2389968744",
         "addr:city": "Howth",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5767,12 +5767,12 @@
           53.3876873
         ]
       },
-      "id": "node/2389968744"
+      "id": "2389968744"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2419698552",
+        "@id": "2419698552",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5798,12 +5798,12 @@
           53.345832
         ]
       },
-      "id": "node/2419698552"
+      "id": "2419698552"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2419699840",
+        "@id": "2419699840",
         "addr:city": "Dublin",
         "addr:street": "Temple Bar",
         "amenity": "bar"
@@ -5815,12 +5815,12 @@
           53.3457161
         ]
       },
-      "id": "node/2419699840"
+      "id": "2419699840"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2435852904",
+        "@id": "2435852904",
         "addr:city": "Blackrock",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -5843,12 +5843,12 @@
           53.3017544
         ]
       },
-      "id": "node/2435852904"
+      "id": "2435852904"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2457893964",
+        "@id": "2457893964",
         "addr:city": "Dalkey",
         "addr:housenumber": "107",
         "postcode": "A96 HX75",
@@ -5868,12 +5868,12 @@
           53.2773116
         ]
       },
-      "id": "node/2457893964"
+      "id": "2457893964"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2522831700",
+        "@id": "2522831700",
         "amenity": "bar",
         "name": "Evie's"
       },
@@ -5884,12 +5884,12 @@
           37.7092451
         ]
       },
-      "id": "node/2522831700"
+      "id": "2522831700"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2573726983",
+        "@id": "2573726983",
         "addr:city": "Dublin",
         "addr:street": "Dorset Street Upper",
         "amenity": "bar",
@@ -5906,12 +5906,12 @@
           53.3574023
         ]
       },
-      "id": "node/2573726983"
+      "id": "2573726983"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2612014313",
+        "@id": "2612014313",
         "amenity": "bar",
         "name": "Tim Young's"
       },
@@ -5922,12 +5922,12 @@
           53.3416494
         ]
       },
-      "id": "node/2612014313"
+      "id": "2612014313"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2625914025",
+        "@id": "2625914025",
         "addr:city": "Stillorgan",
         "addr:county": "Dublin",
         "postcode": "A94 F6Y0",
@@ -5945,12 +5945,12 @@
           53.2792395
         ]
       },
-      "id": "node/2625914025"
+      "id": "2625914025"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2681367476",
+        "@id": "2681367476",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/310437025786688/",
         "name": "The Blarney Inn",
@@ -5963,12 +5963,12 @@
           53.3421258
         ]
       },
-      "id": "node/2681367476"
+      "id": "2681367476"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2685751767",
+        "@id": "2685751767",
         "addr:street": "Skerries Road",
         "amenity": "pub",
         "name": "The Yacht Bar"
@@ -5980,12 +5980,12 @@
           53.547431
         ]
       },
-      "id": "node/2685751767"
+      "id": "2685751767"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2688905835",
+        "@id": "2688905835",
         "addr:city": "Rush",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6003,12 +6003,12 @@
           53.522087
         ]
       },
-      "id": "node/2688905835"
+      "id": "2688905835"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2689455361",
+        "@id": "2689455361",
         "amenity": "pub",
         "name": "The Laurence Lounge"
       },
@@ -6019,12 +6019,12 @@
           53.3430467
         ]
       },
-      "id": "node/2689455361"
+      "id": "2689455361"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2694708631",
+        "@id": "2694708631",
         "amenity": "bar"
       },
       "geometry": {
@@ -6034,12 +6034,12 @@
           53.4535461
         ]
       },
-      "id": "node/2694708631"
+      "id": "2694708631"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2697063080",
+        "@id": "2697063080",
         "amenity": "pub",
         "name": "Downey's"
       },
@@ -6050,12 +6050,12 @@
           53.3423356
         ]
       },
-      "id": "node/2697063080"
+      "id": "2697063080"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2705632268",
+        "@id": "2705632268",
         "addr:city": "Rush",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6074,12 +6074,12 @@
           53.5219157
         ]
       },
-      "id": "node/2705632268"
+      "id": "2705632268"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2859655009",
+        "@id": "2859655009",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6100,12 +6100,12 @@
           53.3438336
         ]
       },
-      "id": "node/2859655009"
+      "id": "2859655009"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2860454401",
+        "@id": "2860454401",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6132,12 +6132,12 @@
           53.3511395
         ]
       },
-      "id": "node/2860454401"
+      "id": "2860454401"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2885369320",
+        "@id": "2885369320",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6156,12 +6156,12 @@
           53.3218142
         ]
       },
-      "id": "node/2885369320"
+      "id": "2885369320"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2893532903",
+        "@id": "2893532903",
         "amenity": "pub",
         "name": "Cleary's"
       },
@@ -6172,12 +6172,12 @@
           53.3416481
         ]
       },
-      "id": "node/2893532903"
+      "id": "2893532903"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2940313238",
+        "@id": "2940313238",
         "addr:city": "Dublin",
         "addr:housename": "Central Hotel",
         "addr:housenumber": "1",
@@ -6199,12 +6199,12 @@
           53.3430838
         ]
       },
-      "id": "node/2940313238"
+      "id": "2940313238"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2980368136",
+        "@id": "2980368136",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6226,12 +6226,12 @@
           53.3359048
         ]
       },
-      "id": "node/2980368136"
+      "id": "2980368136"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2995285120",
+        "@id": "2995285120",
         "addr:postal_district": "D12",
         "addr:street": "Saint Agnes Road",
         "amenity": "pub",
@@ -6244,12 +6244,12 @@
           53.3200915
         ]
       },
-      "id": "node/2995285120"
+      "id": "2995285120"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2997549697",
+        "@id": "2997549697",
         "addr:city": "Dublin",
         "addr:housenumber": "25",
         "addr:street": "South Great George's Street",
@@ -6274,12 +6274,12 @@
           53.3422564
         ]
       },
-      "id": "node/2997549697"
+      "id": "2997549697"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2998757813",
+        "@id": "2998757813",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6301,12 +6301,12 @@
           53.3359626
         ]
       },
-      "id": "node/2998757813"
+      "id": "2998757813"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3005899379",
+        "@id": "3005899379",
         "addr:city": "Dublin",
         "addr:county": "Dublin",
         "addr:housenumber": "159-163",
@@ -6326,12 +6326,12 @@
           53.3237548
         ]
       },
-      "id": "node/3005899379"
+      "id": "3005899379"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3011362776",
+        "@id": "3011362776",
         "addr:city": "Skerries",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6351,12 +6351,12 @@
           53.5848009
         ]
       },
-      "id": "node/3011362776"
+      "id": "3011362776"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3028480445",
+        "@id": "3028480445",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6378,12 +6378,12 @@
           53.3216783
         ]
       },
-      "id": "node/3028480445"
+      "id": "3028480445"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3040092718",
+        "@id": "3040092718",
         "addr:city": "Dublin",
         "addr:housenumber": "12-14",
         "addr:street": "Rathmines Road Upper",
@@ -6397,12 +6397,12 @@
           53.3211247
         ]
       },
-      "id": "node/3040092718"
+      "id": "3040092718"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3040139014",
+        "@id": "3040139014",
         "addr:city": "Dublin",
         "addr:housenumber": "26-32",
         "addr:street": "Rathmines Road Upper",
@@ -6420,12 +6420,12 @@
           53.3207806
         ]
       },
-      "id": "node/3040139014"
+      "id": "3040139014"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3042292872",
+        "@id": "3042292872",
         "addr:city": "Dublin",
         "addr:street": "Earlsfort Terrace",
         "amenity": "bar",
@@ -6438,12 +6438,12 @@
           53.334817
         ]
       },
-      "id": "node/3042292872"
+      "id": "3042292872"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3124957096",
+        "@id": "3124957096",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6460,12 +6460,12 @@
           53.3424332
         ]
       },
-      "id": "node/3124957096"
+      "id": "3124957096"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3130376927",
+        "@id": "3130376927",
         "addr:city": "Dublin",
         "addr:housenumber": "2-4",
         "addr:street": "Joshua Lane",
@@ -6482,12 +6482,12 @@
           53.340163
         ]
       },
-      "id": "node/3130376927"
+      "id": "3130376927"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3139297357",
+        "@id": "3139297357",
         "addr:city": "Newcastle",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6507,12 +6507,12 @@
           53.2997394
         ]
       },
-      "id": "node/3139297357"
+      "id": "3139297357"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3158435067",
+        "@id": "3158435067",
         "addr:city": "Dublin",
         "addr:street": "Summerhill",
         "amenity": "pub",
@@ -6525,12 +6525,12 @@
           53.3563652
         ]
       },
-      "id": "node/3158435067"
+      "id": "3158435067"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3163587327",
+        "@id": "3163587327",
         "access": "private",
         "amenity": "bar",
         "name": "Senior Common Room",
@@ -6543,12 +6543,12 @@
           53.3448626
         ]
       },
-      "id": "node/3163587327"
+      "id": "3163587327"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3196532961",
+        "@id": "3196532961",
         "addr:city": "Dublin",
         "addr:housenumber": "6601",
         "postcode": "94568",
@@ -6563,12 +6563,12 @@
           37.704466
         ]
       },
-      "id": "node/3196532961"
+      "id": "3196532961"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3219472687",
+        "@id": "3219472687",
         "amenity": "pub",
         "name": "Hartstown House"
       },
@@ -6579,12 +6579,12 @@
           53.3926692
         ]
       },
-      "id": "node/3219472687"
+      "id": "3219472687"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3224845421",
+        "@id": "3224845421",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6606,12 +6606,12 @@
           53.3445718
         ]
       },
-      "id": "node/3224845421"
+      "id": "3224845421"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3315487523",
+        "@id": "3315487523",
         "addr:city": "Dublin",
         "addr:housenumber": "16-18",
         "addr:street": "Fishamble Street",
@@ -6629,12 +6629,12 @@
           53.3441347
         ]
       },
-      "id": "node/3315487523"
+      "id": "3315487523"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3423690446",
+        "@id": "3423690446",
         "addr:city": "Dublin Airport",
         "addr:housename": "Maldron Hotel",
         "addr:street": "East Link Road",
@@ -6649,12 +6649,12 @@
           53.4275084
         ]
       },
-      "id": "node/3423690446"
+      "id": "3423690446"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3466369334",
+        "@id": "3466369334",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6680,12 +6680,12 @@
           53.3437169
         ]
       },
-      "id": "node/3466369334"
+      "id": "3466369334"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3470507586",
+        "@id": "3470507586",
         "addr:city": "Dublin",
         "addr:housenumber": "32",
         "addr:street": "Dame Street",
@@ -6709,12 +6709,12 @@
           53.344077
         ]
       },
-      "id": "node/3470507586"
+      "id": "3470507586"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3567190069",
+        "@id": "3567190069",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6736,12 +6736,12 @@
           53.3351088
         ]
       },
-      "id": "node/3567190069"
+      "id": "3567190069"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3571512403",
+        "@id": "3571512403",
         "addr:city": "Swords",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -6759,12 +6759,12 @@
           53.4575968
         ]
       },
-      "id": "node/3571512403"
+      "id": "3571512403"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3580597493",
+        "@id": "3580597493",
         "addr:housename": "O'connnors Village Inn",
         "addr:street": "Main Street, Ballyboughal",
         "amenity": "pub",
@@ -6778,12 +6778,12 @@
           53.5221582
         ]
       },
-      "id": "node/3580597493"
+      "id": "3580597493"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3676943504",
+        "@id": "3676943504",
         "addr:city": "Dublin",
         "addr:street": "Dame Street",
         "amenity": "bar",
@@ -6797,12 +6797,12 @@
           53.3440595
         ]
       },
-      "id": "node/3676943504"
+      "id": "3676943504"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3677080040",
+        "@id": "3677080040",
         "addr:city": "Dublin",
         "addr:housename": "Noctors",
         "addr:street": "Sheriff Street Lower",
@@ -6815,12 +6815,12 @@
           53.3507552
         ]
       },
-      "id": "node/3677080040"
+      "id": "3677080040"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3677094036",
+        "@id": "3677094036",
         "addr:housename": "Connolly Station",
         "postcode": "D01 V6V6",
         "addr:street": "Amiens Street",
@@ -6835,12 +6835,12 @@
           53.3513612
         ]
       },
-      "id": "node/3677094036"
+      "id": "3677094036"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3705003678",
+        "@id": "3705003678",
         "amenity": "pub",
         "name": "The Willows"
       },
@@ -6851,12 +6851,12 @@
           53.2842099
         ]
       },
-      "id": "node/3705003678"
+      "id": "3705003678"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3718522031",
+        "@id": "3718522031",
         "amenity": "pub",
         "name": "The Roselawn Inn",
         "opening_hours": "Mo-Th 16:00-23:00; Fr-Su 12:00-23:00"
@@ -6868,12 +6868,12 @@
           53.3837011
         ]
       },
-      "id": "node/3718522031"
+      "id": "3718522031"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3803973848",
+        "@id": "3803973848",
         "addr:city": "Dublin",
         "addr:housename": "MV Cill Airne",
         "addr:street": "North Wall Quay",
@@ -6891,12 +6891,12 @@
           53.3470317
         ]
       },
-      "id": "node/3803973848"
+      "id": "3803973848"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3834934497",
+        "@id": "3834934497",
         "amenity": "pub",
         "name": "The Carlisle Bar",
         "operator": "Haddington House Hotel"
@@ -6908,12 +6908,12 @@
           53.2920178
         ]
       },
-      "id": "node/3834934497"
+      "id": "3834934497"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3909986251",
+        "@id": "3909986251",
         "addr:city": "Loughlinstown",
         "addr:housename": "Unit 11 Loughlinstown SC",
         "amenity": "pub",
@@ -6926,12 +6926,12 @@
           53.2466599
         ]
       },
-      "id": "node/3909986251"
+      "id": "3909986251"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3926668805",
+        "@id": "3926668805",
         "amenity": "bar",
         "name": "Kennedys Bar"
       },
@@ -6942,12 +6942,12 @@
           53.296478
         ]
       },
-      "id": "node/3926668805"
+      "id": "3926668805"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3939811610",
+        "@id": "3939811610",
         "addr:city": "Dún Laoghaire",
         "addr:housenumber": "26",
         "addr:street": "Georges Street Lower",
@@ -6968,12 +6968,12 @@
           53.2939394
         ]
       },
-      "id": "node/3939811610"
+      "id": "3939811610"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4021198488",
+        "@id": "4021198488",
         "addr:city": "Dublin",
         "amenity": "bar",
         "name": "Premier Bar"
@@ -6985,12 +6985,12 @@
           53.3819717
         ]
       },
-      "id": "node/4021198488"
+      "id": "4021198488"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4022703882",
+        "@id": "4022703882",
         "addr:city": "Dublin",
         "addr:housename": "University College Dublin",
         "amenity": "bar",
@@ -7008,12 +7008,12 @@
           53.3081294
         ]
       },
-      "id": "node/4022703882"
+      "id": "4022703882"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4078397589",
+        "@id": "4078397589",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7037,12 +7037,12 @@
           53.345308
         ]
       },
-      "id": "node/4078397589"
+      "id": "4078397589"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4223248090",
+        "@id": "4223248090",
         "addr:street": "Hardwicke Street",
         "amenity": "bar",
         "name": "Pat Hanway"
@@ -7054,12 +7054,12 @@
           53.356763
         ]
       },
-      "id": "node/4223248090"
+      "id": "4223248090"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4249403390",
+        "@id": "4249403390",
         "addr:city": "Dublin",
         "addr:housenumber": "27",
         "addr:street": "Leeson Street Lower",
@@ -7077,12 +7077,12 @@
           53.3340014
         ]
       },
-      "id": "node/4249403390"
+      "id": "4249403390"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4266126756",
+        "@id": "4266126756",
         "addr:city": "Dundrum",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7108,12 +7108,12 @@
           53.2863405
         ]
       },
-      "id": "node/4266126756"
+      "id": "4266126756"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4267002766",
+        "@id": "4267002766",
         "amenity": "pub",
         "name": "Mezzo"
       },
@@ -7124,12 +7124,12 @@
           40.0996503
         ]
       },
-      "id": "node/4267002766"
+      "id": "4267002766"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4267020889",
+        "@id": "4267020889",
         "amenity": "pub",
         "name": "Brazenhead"
       },
@@ -7140,12 +7140,12 @@
           40.1007272
         ]
       },
-      "id": "node/4267020889"
+      "id": "4267020889"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4267022585",
+        "@id": "4267022585",
         "amenity": "pub",
         "name": "OSCARS"
       },
@@ -7156,12 +7156,12 @@
           40.1011666
         ]
       },
-      "id": "node/4267022585"
+      "id": "4267022585"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4267030214",
+        "@id": "4267030214",
         "addr:city": "Dublin",
         "addr:housenumber": "27",
         "postcode": "43017",
@@ -7178,12 +7178,12 @@
           40.0989514
         ]
       },
-      "id": "node/4267030214"
+      "id": "4267030214"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4329853451",
+        "@id": "4329853451",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7204,12 +7204,12 @@
           53.3322511
         ]
       },
-      "id": "node/4329853451"
+      "id": "4329853451"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4337347089",
+        "@id": "4337347089",
         "addr:housenumber": "21-25",
         "addr:street": "Harcourt Street",
         "amenity": "pub",
@@ -7224,12 +7224,12 @@
           53.3359091
         ]
       },
-      "id": "node/4337347089"
+      "id": "4337347089"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4337941791",
+        "@id": "4337941791",
         "addr:city": "Dublin",
         "addr:street": "Leeson Street Lower",
         "amenity": "pub",
@@ -7243,12 +7243,12 @@
           53.3341764
         ]
       },
-      "id": "node/4337941791"
+      "id": "4337941791"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4349720590",
+        "@id": "4349720590",
         "amenity": "pub"
       },
       "geometry": {
@@ -7258,12 +7258,12 @@
           53.5109341
         ]
       },
-      "id": "node/4349720590"
+      "id": "4349720590"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4357798892",
+        "@id": "4357798892",
         "addr:city": "Dublin",
         "addr:street": "Charlemont Place",
         "amenity": "bar",
@@ -7278,12 +7278,12 @@
           53.3309476
         ]
       },
-      "id": "node/4357798892"
+      "id": "4357798892"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4383657305",
+        "@id": "4383657305",
         "alt_name": "VCC",
         "amenity": "bar",
         "name": "Vintage Cocktail Club",
@@ -7297,12 +7297,12 @@
           53.3450767
         ]
       },
-      "id": "node/4383657305"
+      "id": "4383657305"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4396351895",
+        "@id": "4396351895",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7328,12 +7328,12 @@
           53.337863
         ]
       },
-      "id": "node/4396351895"
+      "id": "4396351895"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4511368747",
+        "@id": "4511368747",
         "addr:street": "Fortunestown Road",
         "amenity": "pub",
         "name": "An Cosán",
@@ -7346,12 +7346,12 @@
           53.2788418
         ]
       },
-      "id": "node/4511368747"
+      "id": "4511368747"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4770224022",
+        "@id": "4770224022",
         "amenity": "pub",
         "name": "Robert Reade Bar and Cafe",
         "name:en": "Robert Reade Bar and Cafe"
@@ -7363,12 +7363,12 @@
           53.3513605
         ]
       },
-      "id": "node/4770224022"
+      "id": "4770224022"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4799036110",
+        "@id": "4799036110",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7396,12 +7396,12 @@
           53.3292976
         ]
       },
-      "id": "node/4799036110"
+      "id": "4799036110"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4804586774",
+        "@id": "4804586774",
         "addr:city": "Templeogue",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7418,12 +7418,12 @@
           53.2934407
         ]
       },
-      "id": "node/4804586774"
+      "id": "4804586774"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4806183922",
+        "@id": "4806183922",
         "amenity": "bar",
         "name": "Olive Green",
         "name:en": "Olive Green"
@@ -7435,12 +7435,12 @@
           53.3362743
         ]
       },
-      "id": "node/4806183922"
+      "id": "4806183922"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4913827407",
+        "@id": "4913827407",
         "addr:housenumber": "1",
         "addr:street": "Walkinstown Cross",
         "amenity": "pub",
@@ -7456,12 +7456,12 @@
           53.3164631
         ]
       },
-      "id": "node/4913827407"
+      "id": "4913827407"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4952552579",
+        "@id": "4952552579",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7478,12 +7478,12 @@
           53.3591428
         ]
       },
-      "id": "node/4952552579"
+      "id": "4952552579"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/4998192522",
+        "@id": "4998192522",
         "addr:city": "Dublin",
         "addr:housenumber": "54",
         "addr:street": "Middle Abbey Street",
@@ -7506,12 +7506,12 @@
           53.3480043
         ]
       },
-      "id": "node/4998192522"
+      "id": "4998192522"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5044580221",
+        "@id": "5044580221",
         "addr:city": "Dublin",
         "addr:street": "Mayor Street Lower",
         "amenity": "bar",
@@ -7527,12 +7527,12 @@
           53.3491745
         ]
       },
-      "id": "node/5044580221"
+      "id": "5044580221"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5044959521",
+        "@id": "5044959521",
         "amenity": "pub",
         "name": "Open Gate Brewery",
         "name:en": "Open Gate Brewery",
@@ -7547,12 +7547,12 @@
           53.3432314
         ]
       },
-      "id": "node/5044959521"
+      "id": "5044959521"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5073432440",
+        "@id": "5073432440",
         "addr:city": "Dublin",
         "addr:housename": "Vault C, The chq Building",
         "addr:street": "Custom House Quay",
@@ -7573,12 +7573,12 @@
           53.3491172
         ]
       },
-      "id": "node/5073432440"
+      "id": "5073432440"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5142751224",
+        "@id": "5142751224",
         "addr:city": "Churchtown",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7602,12 +7602,12 @@
           53.2957712
         ]
       },
-      "id": "node/5142751224"
+      "id": "5142751224"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5155648422",
+        "@id": "5155648422",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7625,12 +7625,12 @@
           53.3420522
         ]
       },
-      "id": "node/5155648422"
+      "id": "5155648422"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5166614627",
+        "@id": "5166614627",
         "addr:city": "Dublin",
         "addr:housename": "Shelbourne Hotel",
         "addr:street": "St. Stephen's Green",
@@ -7650,12 +7650,12 @@
           53.3392353
         ]
       },
-      "id": "node/5166614627"
+      "id": "5166614627"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5171529312",
+        "@id": "5171529312",
         "addr:housename": "Talbot Hotel Stillorgan",
         "addr:street": "Stillorgan Road",
         "amenity": "bar",
@@ -7670,31 +7670,12 @@
           53.2952467
         ]
       },
-      "id": "node/5171529312"
+      "id": "5171529312"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5195314431",
-        "addr:housenumber": "7821",
-        "addr:street": "Amador Valley Boulevard",
-        "amenity": "pub",
-        "contact:phone": "+1 925 828-5996",
-        "name": "Gallagher's Pub"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.9351517,
-          37.7072814
-        ]
-      },
-      "id": "node/5195314431"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/5209264343",
+        "@id": "5209264343",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7716,12 +7697,12 @@
           53.3523379
         ]
       },
-      "id": "node/5209264343"
+      "id": "5209264343"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5245064896",
+        "@id": "5245064896",
         "addr:housename": "Stella Theatre",
         "addr:housenumber": "207-209",
         "addr:street": "Rathmines Road Lower",
@@ -7739,12 +7720,12 @@
           53.3223753
         ]
       },
-      "id": "node/5245064896"
+      "id": "5245064896"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5301569915",
+        "@id": "5301569915",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7766,12 +7747,12 @@
           53.3528545
         ]
       },
-      "id": "node/5301569915"
+      "id": "5301569915"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5362108727",
+        "@id": "5362108727",
         "addr:housenumber": "15",
         "addr:street": "Stephen Street Upper",
         "amenity": "bar",
@@ -7785,12 +7766,12 @@
           53.3414251
         ]
       },
-      "id": "node/5362108727"
+      "id": "5362108727"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5367355656",
+        "@id": "5367355656",
         "addr:housenumber": "4",
         "addr:street": "Aston Quay",
         "alt_name": "Riot",
@@ -7808,12 +7789,12 @@
           53.3462652
         ]
       },
-      "id": "node/5367355656"
+      "id": "5367355656"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5373194431",
+        "@id": "5373194431",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7835,12 +7816,12 @@
           53.3516917
         ]
       },
-      "id": "node/5373194431"
+      "id": "5373194431"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5413409337",
+        "@id": "5413409337",
         "addr:housename": "Bonnington Hotel",
         "addr:street": "Swords Road",
         "amenity": "pub",
@@ -7856,12 +7837,12 @@
           53.3774856
         ]
       },
-      "id": "node/5413409337"
+      "id": "5413409337"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5590277112",
+        "@id": "5590277112",
         "addr:city": "Tallaght",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7883,12 +7864,12 @@
           53.2840894
         ]
       },
-      "id": "node/5590277112"
+      "id": "5590277112"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5590594966",
+        "@id": "5590594966",
         "addr:city": "Dublin",
         "postcode": "D07 RF2Y",
         "addr:street": "Smithfield Terrace",
@@ -7907,12 +7888,12 @@
           53.3496315
         ]
       },
-      "id": "node/5590594966"
+      "id": "5590594966"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5590610025",
+        "@id": "5590610025",
         "addr:city": "Dublin",
         "postcode": "D22 V6Y6",
         "addr:street": "Naas Road",
@@ -7929,12 +7910,12 @@
           53.3137459
         ]
       },
-      "id": "node/5590610025"
+      "id": "5590610025"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5590642309",
+        "@id": "5590642309",
         "addr:city": "Dublin",
         "postcode": "D02 RK37",
         "addr:street": "Pearse Street",
@@ -7953,12 +7934,12 @@
           53.3435319
         ]
       },
-      "id": "node/5590642309"
+      "id": "5590642309"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5590669322",
+        "@id": "5590669322",
         "addr:city": "Dublin",
         "postcode": "D01 P5W9",
         "addr:street": "Great Denmark Street",
@@ -7974,12 +7955,12 @@
           53.3550126
         ]
       },
-      "id": "node/5590669322"
+      "id": "5590669322"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5673840263",
+        "@id": "5673840263",
         "addr:city": "Lucan",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -7996,12 +7977,12 @@
           53.3563012
         ]
       },
-      "id": "node/5673840263"
+      "id": "5673840263"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5678239622",
+        "@id": "5678239622",
         "addr:city": "Dublin",
         "addr:housenumber": "3",
         "addr:street": "Fade Street",
@@ -8020,12 +8001,12 @@
           53.3419024
         ]
       },
-      "id": "node/5678239622"
+      "id": "5678239622"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5729185009",
+        "@id": "5729185009",
         "amenity": "bar",
         "name": "53 South William"
       },
@@ -8036,12 +8017,12 @@
           53.3417027
         ]
       },
-      "id": "node/5729185009"
+      "id": "5729185009"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5759625992",
+        "@id": "5759625992",
         "addr:housename": "Maldron Hotel",
         "addr:street": "Kevin Street Upper",
         "amenity": "bar",
@@ -8054,12 +8035,12 @@
           53.3381976
         ]
       },
-      "id": "node/5759625992"
+      "id": "5759625992"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5787220032",
+        "@id": "5787220032",
         "amenity": "pub",
         "name": "Alfred's"
       },
@@ -8070,12 +8051,12 @@
           53.342004
         ]
       },
-      "id": "node/5787220032"
+      "id": "5787220032"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5838026003",
+        "@id": "5838026003",
         "addr:city": "Rush",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8096,12 +8077,12 @@
           53.5221469
         ]
       },
-      "id": "node/5838026003"
+      "id": "5838026003"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5838266622",
+        "@id": "5838266622",
         "addr:city": "Rush",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8118,12 +8099,12 @@
           53.5228101
         ]
       },
-      "id": "node/5838266622"
+      "id": "5838266622"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5838266624",
+        "@id": "5838266624",
         "addr:city": "Rush",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8139,12 +8120,12 @@
           53.5226857
         ]
       },
-      "id": "node/5838266624"
+      "id": "5838266624"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5838266625",
+        "@id": "5838266625",
         "addr:city": "Rush",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8162,12 +8143,12 @@
           53.5227272
         ]
       },
-      "id": "node/5838266625"
+      "id": "5838266625"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5838769296",
+        "@id": "5838769296",
         "addr:city": "Ballyfermot",
         "addr:street": "Decies Road",
         "amenity": "bar",
@@ -8180,12 +8161,12 @@
           53.3410001
         ]
       },
-      "id": "node/5838769296"
+      "id": "5838769296"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/5866396179",
+        "@id": "5866396179",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8206,12 +8187,12 @@
           53.3389208
         ]
       },
-      "id": "node/5866396179"
+      "id": "5866396179"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6073174873",
+        "@id": "6073174873",
         "addr:city": "Swords",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8230,12 +8211,12 @@
           53.4582892
         ]
       },
-      "id": "node/6073174873"
+      "id": "6073174873"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6179001918",
+        "@id": "6179001918",
         "addr:city": "Dún Laoghaire",
         "addr:housenumber": "88",
         "addr:street": "Georges Street Lower",
@@ -8261,12 +8242,12 @@
           53.2929709
         ]
       },
-      "id": "node/6179001918"
+      "id": "6179001918"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6245890989",
+        "@id": "6245890989",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8290,12 +8271,12 @@
           53.3428463
         ]
       },
-      "id": "node/6245890989"
+      "id": "6245890989"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6248574948",
+        "@id": "6248574948",
         "addr:city": "Ballymun",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8313,12 +8294,12 @@
           53.3966916
         ]
       },
-      "id": "node/6248574948"
+      "id": "6248574948"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6302603646",
+        "@id": "6302603646",
         "amenity": "pub"
       },
       "geometry": {
@@ -8328,12 +8309,12 @@
           53.3202127
         ]
       },
-      "id": "node/6302603646"
+      "id": "6302603646"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6313184154",
+        "@id": "6313184154",
         "addr:street": "Main Street",
         "amenity": "pub",
         "brewery": "various",
@@ -8347,12 +8328,12 @@
           53.2300112
         ]
       },
-      "id": "node/6313184154"
+      "id": "6313184154"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6313378889",
+        "@id": "6313378889",
         "amenity": "pub",
         "name": "Crough's Pub"
       },
@@ -8363,12 +8344,12 @@
           53.2867241
         ]
       },
-      "id": "node/6313378889"
+      "id": "6313378889"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6344025089",
+        "@id": "6344025089",
         "addr:housenumber": "42-44",
         "addr:street": "Main Street",
         "amenity": "pub",
@@ -8382,12 +8363,12 @@
           53.3959848
         ]
       },
-      "id": "node/6344025089"
+      "id": "6344025089"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6421028834",
+        "@id": "6421028834",
         "amenity": "bar"
       },
       "geometry": {
@@ -8397,12 +8378,12 @@
           53.2863303
         ]
       },
-      "id": "node/6421028834"
+      "id": "6421028834"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6551427836",
+        "@id": "6551427836",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8420,12 +8401,12 @@
           53.3405771
         ]
       },
-      "id": "node/6551427836"
+      "id": "6551427836"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6659452185",
+        "@id": "6659452185",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8444,12 +8425,12 @@
           53.3456553
         ]
       },
-      "id": "node/6659452185"
+      "id": "6659452185"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6659454386",
+        "@id": "6659454386",
         "addr:housenumber": "2",
         "addr:street": "Temple Lane South",
         "amenity": "bar",
@@ -8465,12 +8446,12 @@
           53.3450247
         ]
       },
-      "id": "node/6659454386"
+      "id": "6659454386"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6666742585",
+        "@id": "6666742585",
         "addr:city": "Dublin",
         "amenity": "bar",
         "contact:facebook": "https://www.facebook.com/farrierdraper",
@@ -8485,12 +8466,12 @@
           53.3424295
         ]
       },
-      "id": "node/6666742585"
+      "id": "6666742585"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6676979026",
+        "@id": "6676979026",
         "addr:city": "Sutton",
         "addr:county": "Dublin",
         "addr:housename": "Marine Hotel",
@@ -8508,12 +8489,12 @@
           53.3887467
         ]
       },
-      "id": "node/6676979026"
+      "id": "6676979026"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6685608660",
+        "@id": "6685608660",
         "addr:street": "Sweetman House, 41 a, Stapolin, Dublin 13",
         "amenity": "bar",
         "name": "The Hot Sandwich Company",
@@ -8527,12 +8508,12 @@
           53.3993112
         ]
       },
-      "id": "node/6685608660"
+      "id": "6685608660"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6782589728",
+        "@id": "6782589728",
         "addr:city": "Dublin",
         "addr:street": "St. Stephen's Green",
         "amenity": "pub",
@@ -8549,12 +8530,12 @@
           53.339626
         ]
       },
-      "id": "node/6782589728"
+      "id": "6782589728"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6795621382",
+        "@id": "6795621382",
         "addr:city": "Dublin",
         "addr:street": "Cardiffsbridge Road",
         "amenity": "pub"
@@ -8566,12 +8547,12 @@
           53.3852484
         ]
       },
-      "id": "node/6795621382"
+      "id": "6795621382"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6796636983",
+        "@id": "6796636983",
         "addr:city": "Howth",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8590,12 +8571,12 @@
           53.3887912
         ]
       },
-      "id": "node/6796636983"
+      "id": "6796636983"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6825116786",
+        "@id": "6825116786",
         "amenity": "bar",
         "name": "PINS Mechanical Company",
         "phone": "+1-614-761-3933",
@@ -8608,12 +8589,12 @@
           40.1011456
         ]
       },
-      "id": "node/6825116786"
+      "id": "6825116786"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6935441685",
+        "@id": "6935441685",
         "amenity": "bar",
         "name": "The Bus Bar"
       },
@@ -8624,12 +8605,12 @@
           53.5804482
         ]
       },
-      "id": "node/6935441685"
+      "id": "6935441685"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6969068085",
+        "@id": "6969068085",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8648,12 +8629,12 @@
           53.3481815
         ]
       },
-      "id": "node/6969068085"
+      "id": "6969068085"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/6985146685",
+        "@id": "6985146685",
         "addr:housenumber": "2",
         "addr:street": "Nassau Street",
         "amenity": "pub",
@@ -8671,12 +8652,12 @@
           53.342118
         ]
       },
-      "id": "node/6985146685"
+      "id": "6985146685"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7017217477",
+        "@id": "7017217477",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8700,12 +8681,12 @@
           53.3534835
         ]
       },
-      "id": "node/7017217477"
+      "id": "7017217477"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7080281085",
+        "@id": "7080281085",
         "amenity": "bar",
         "name": "Vaso"
       },
@@ -8716,12 +8697,12 @@
           40.1007319
         ]
       },
-      "id": "node/7080281085"
+      "id": "7080281085"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7138761089",
+        "@id": "7138761089",
         "amenity": "bar",
         "name": "Ohana",
         "website": "https://www.ohanadublin.ie/",
@@ -8734,12 +8715,12 @@
           53.3362565
         ]
       },
-      "id": "node/7138761089"
+      "id": "7138761089"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7659422639",
+        "@id": "7659422639",
         "amenity": "pub",
         "name": "The Library Bar",
         "operator": "Haddington House Hotel"
@@ -8751,28 +8732,12 @@
           53.2920486
         ]
       },
-      "id": "node/7659422639"
+      "id": "7659422639"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8342411417",
-        "amenity": "bar",
-        "name": "16-Bit Bar+Arcade"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.1097854,
-          40.1015602
-        ]
-      },
-      "id": "node/8342411417"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/8521097190",
+        "@id": "8521097190",
         "amenity": "bar",
         "name": "Manhattan"
       },
@@ -8783,12 +8748,12 @@
           53.3426816
         ]
       },
-      "id": "node/8521097190"
+      "id": "8521097190"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8521097200",
+        "@id": "8521097200",
         "amenity": "bar",
         "name": "Chasers"
       },
@@ -8799,12 +8764,12 @@
           53.3424752
         ]
       },
-      "id": "node/8521097200"
+      "id": "8521097200"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/8952186013",
+        "@id": "8952186013",
         "addr:city": "Dublin",
         "addr:housenumber": "2",
         "addr:street": "Sandymount Green",
@@ -8819,12 +8784,12 @@
           53.3322548
         ]
       },
-      "id": "node/8952186013"
+      "id": "8952186013"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9122380611",
+        "@id": "9122380611",
         "addr:city": "Dublin",
         "addr:street": "North Wall Quay",
         "amenity": "pub",
@@ -8839,12 +8804,12 @@
           53.3471813
         ]
       },
-      "id": "node/9122380611"
+      "id": "9122380611"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9161175040",
+        "@id": "9161175040",
         "addr:city": "Tallaght",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8861,12 +8826,12 @@
           53.2876286
         ]
       },
-      "id": "node/9161175040"
+      "id": "9161175040"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9202222409",
+        "@id": "9202222409",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8883,12 +8848,12 @@
           53.3598337
         ]
       },
-      "id": "node/9202222409"
+      "id": "9202222409"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9221320417",
+        "@id": "9221320417",
         "addr:city": "Dublin",
         "addr:street": "Nassau Street",
         "amenity": "bar",
@@ -8903,12 +8868,12 @@
           53.3430326
         ]
       },
-      "id": "node/9221320417"
+      "id": "9221320417"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9238631400",
+        "@id": "9238631400",
         "addr:city": "Dublin",
         "addr:housenumber": "14",
         "addr:street": "Fade Street",
@@ -8924,12 +8889,12 @@
           53.3420846
         ]
       },
-      "id": "node/9238631400"
+      "id": "9238631400"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9264108045",
+        "@id": "9264108045",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -8952,12 +8917,12 @@
           53.3464079
         ]
       },
-      "id": "node/9264108045"
+      "id": "9264108045"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9322108900",
+        "@id": "9322108900",
         "addr:city": "Dublin",
         "addr:county": "Dublin",
         "addr:housename": "Goldenbridge Industrial Estate",
@@ -8980,12 +8945,12 @@
           53.3359672
         ]
       },
-      "id": "node/9322108900"
+      "id": "9322108900"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9334710259",
+        "@id": "9334710259",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9002,12 +8967,12 @@
           53.3432175
         ]
       },
-      "id": "node/9334710259"
+      "id": "9334710259"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9350482020",
+        "@id": "9350482020",
         "addr:city": "Dublin",
         "addr:housename": "Terminal 2",
         "addr:street": "Dublin Airport",
@@ -9024,12 +8989,12 @@
           53.4262478
         ]
       },
-      "id": "node/9350482020"
+      "id": "9350482020"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9352848206",
+        "@id": "9352848206",
         "addr:city": "Raheny",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9048,12 +9013,12 @@
           53.378369
         ]
       },
-      "id": "node/9352848206"
+      "id": "9352848206"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9419310806",
+        "@id": "9419310806",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9072,12 +9037,12 @@
           53.3423642
         ]
       },
-      "id": "node/9419310806"
+      "id": "9419310806"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9518890001",
+        "@id": "9518890001",
         "addr:city": "Baldoyle",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9098,12 +9063,12 @@
           53.3979933
         ]
       },
-      "id": "node/9518890001"
+      "id": "9518890001"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9526776464",
+        "@id": "9526776464",
         "addr:city": "Swords",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9127,12 +9092,12 @@
           53.4304004
         ]
       },
-      "id": "node/9526776464"
+      "id": "9526776464"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9580191788",
+        "@id": "9580191788",
         "amenity": "pub",
         "name": "Brady's Shankill"
       },
@@ -9143,12 +9108,12 @@
           53.2300139
         ]
       },
-      "id": "node/9580191788"
+      "id": "9580191788"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9975511835",
+        "@id": "9975511835",
         "addr:city": "Dublin",
         "addr:housenumber": "18",
         "addr:street": "Crumlin Road",
@@ -9163,12 +9128,12 @@
           53.3317901
         ]
       },
-      "id": "node/9975511835"
+      "id": "9975511835"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/9984256982",
+        "@id": "9984256982",
         "addr:city": "Dublin",
         "addr:housename": "Roe & Co Distillery",
         "addr:housenumber": "92",
@@ -9187,12 +9152,12 @@
           53.3438898
         ]
       },
-      "id": "node/9984256982"
+      "id": "9984256982"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10004624748",
+        "@id": "10004624748",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9212,12 +9177,12 @@
           53.3371366
         ]
       },
-      "id": "node/10004624748"
+      "id": "10004624748"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10013398691",
+        "@id": "10013398691",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9252,12 +9217,12 @@
           53.3449368
         ]
       },
-      "id": "node/10013398691"
+      "id": "10013398691"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10016178636",
+        "@id": "10016178636",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9294,12 +9259,12 @@
           53.3421535
         ]
       },
-      "id": "node/10016178636"
+      "id": "10016178636"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10078115749",
+        "@id": "10078115749",
         "addr:city": "Dublin",
         "addr:county": "Dublin",
         "addr:housenumber": "1",
@@ -9341,12 +9306,12 @@
           53.3334693
         ]
       },
-      "id": "node/10078115749"
+      "id": "10078115749"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10136276602",
+        "@id": "10136276602",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9364,12 +9329,12 @@
           53.3420529
         ]
       },
-      "id": "node/10136276602"
+      "id": "10136276602"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10265129685",
+        "@id": "10265129685",
         "addr:city": "Dublin",
         "addr:housename": "72-74 Queen Street, Smithfield, Dublin 7",
         "addr:housenumber": "72-74",
@@ -9389,12 +9354,12 @@
           53.3476043
         ]
       },
-      "id": "node/10265129685"
+      "id": "10265129685"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10275525043",
+        "@id": "10275525043",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9416,12 +9381,12 @@
           53.3525394
         ]
       },
-      "id": "node/10275525043"
+      "id": "10275525043"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10568217814",
+        "@id": "10568217814",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9446,12 +9411,12 @@
           53.331314
         ]
       },
-      "id": "node/10568217814"
+      "id": "10568217814"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10576430555",
+        "@id": "10576430555",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9469,12 +9434,12 @@
           53.3483928
         ]
       },
-      "id": "node/10576430555"
+      "id": "10576430555"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10601110758",
+        "@id": "10601110758",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9500,12 +9465,12 @@
           53.3407047
         ]
       },
-      "id": "node/10601110758"
+      "id": "10601110758"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10675853050",
+        "@id": "10675853050",
         "addr:city": "Castleknock",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9522,12 +9487,12 @@
           53.3661312
         ]
       },
-      "id": "node/10675853050"
+      "id": "10675853050"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10745666702",
+        "@id": "10745666702",
         "amenity": "bar",
         "name": "The Local"
       },
@@ -9538,12 +9503,12 @@
           53.3032488
         ]
       },
-      "id": "node/10745666702"
+      "id": "10745666702"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10765828306",
+        "@id": "10765828306",
         "addr:city": "Dublin",
         "addr:street": "Ormond Quay Lower",
         "amenity": "bar",
@@ -9558,12 +9523,12 @@
           53.3465593
         ]
       },
-      "id": "node/10765828306"
+      "id": "10765828306"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10792357138",
+        "@id": "10792357138",
         "amenity": "bar",
         "name": "Centurion Bar"
       },
@@ -9574,12 +9539,12 @@
           53.3274636
         ]
       },
-      "id": "node/10792357138"
+      "id": "10792357138"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10832402317",
+        "@id": "10832402317",
         "amenity": "bar",
         "level": "1"
       },
@@ -9590,12 +9555,12 @@
           53.2794669
         ]
       },
-      "id": "node/10832402317"
+      "id": "10832402317"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/10994405522",
+        "@id": "10994405522",
         "addr:city": "Dublin",
         "addr:housenumber": "101",
         "postcode": "D08 FHP9",
@@ -9611,12 +9576,12 @@
           53.3406332
         ]
       },
-      "id": "node/10994405522"
+      "id": "10994405522"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/11026623981",
+        "@id": "11026623981",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9635,12 +9600,12 @@
           53.3484357
         ]
       },
-      "id": "node/11026623981"
+      "id": "11026623981"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/11027856209",
+        "@id": "11027856209",
         "addr:city": "Swords",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9657,12 +9622,12 @@
           53.4394296
         ]
       },
-      "id": "node/11027856209"
+      "id": "11027856209"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/11030599280",
+        "@id": "11030599280",
         "addr:city": "Dublin",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9687,12 +9652,12 @@
           53.3469981
         ]
       },
-      "id": "node/11030599280"
+      "id": "11030599280"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/11038174107",
+        "@id": "11038174107",
         "amenity": "bar",
         "name": "The Whiskey Reserve",
         "website": "https://thewhiskeyreserve.com/",
@@ -9705,12 +9670,12 @@
           53.3452284
         ]
       },
-      "id": "node/11038174107"
+      "id": "11038174107"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/11088881129",
+        "@id": "11088881129",
         "addr:city": "Balbriggan",
         "addr:country": "IE",
         "addr:county": "Dublin",
@@ -9727,12 +9692,12 @@
           53.5958142
         ]
       },
-      "id": "node/11088881129"
+      "id": "11088881129"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/11290217421",
+        "@id": "11290217421",
         "amenity": "bar",
         "name": "The Bar",
         "wheelchair": "yes"
@@ -9744,12 +9709,12 @@
           53.4126589
         ]
       },
-      "id": "node/11290217421"
+      "id": "11290217421"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/11384483172",
+        "@id": "11384483172",
         "amenity": "bar",
         "min_age": "18",
         "name": "The Sin Bin"
@@ -9761,12 +9726,12 @@
           53.3413348
         ]
       },
-      "id": "node/11384483172"
+      "id": "11384483172"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/11522240569",
+        "@id": "11522240569",
         "amenity": "bar",
         "name": "Disndat"
       },
@@ -9777,12 +9742,12 @@
           53.3436679
         ]
       },
-      "id": "node/11522240569"
+      "id": "11522240569"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/11572594365",
+        "@id": "11572594365",
         "addr:city": "Dundrum",
         "addr:county": "Dublin",
         "postcode": "D14 V9R3",
@@ -9806,7 +9771,9 @@
           53.289046
         ]
       },
-      "id": "node/11572594365"
+      "id": "11572594365"
     }
+
   ]
 }
+

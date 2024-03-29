@@ -1,0 +1,744 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-29T14:30:22Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "258712590",
+        "amenity": "pub",
+        "food": "yes",
+        "name": "Wiarus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5341318,
+          53.4274474
+        ]
+      },
+      "id": "258712590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "267249762",
+        "amenity": "pub",
+        "name": "Boston",
+        "smoking": "isolated",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5521724,
+          53.4267104
+        ]
+      },
+      "id": "267249762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "267249891",
+        "amenity": "pub",
+        "name": "Irish Pub Dublin",
+        "opening_hours": "Mo-We 13:00-01:00; Th-Sa 13:00+; Su 14:00-01:00",
+        "smoking": "separated",
+        "website": "https://www.irishpub.com.pl/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5493937,
+          53.4258471
+        ]
+      },
+      "id": "267249891"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "267250333",
+        "amenity": "pub",
+        "name": "Propaganda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.539927,
+          53.4263313
+        ]
+      },
+      "id": "267250333"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "267250800",
+        "addr:housenumber": "111",
+        "addr:street": "aleja Bohaterów Warszawy",
+        "alt_name": "Tawerna",
+        "amenity": "pub",
+        "cuisine": "grill",
+        "food": "yes",
+        "name": "Taverna Cutty Sark",
+        "opening_hours": "14:00-01:00",
+        "website": "http://www.cuttysark.pl/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5329174,
+          53.4339759
+        ]
+      },
+      "id": "267250800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "267250873",
+        "amenity": "pub",
+        "name": "Szafa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5310089,
+          53.4222423
+        ]
+      },
+      "id": "267250873"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "270938379",
+        "amenity": "pub",
+        "name": "Free Blues Club"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.530764,
+          53.412882
+        ]
+      },
+      "id": "270938379"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "370160977",
+        "amenity": "pub",
+        "food": "yes",
+        "name": "Pod Wierzbą"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.6608398,
+          53.3662513
+        ]
+      },
+      "id": "370160977"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "479366640",
+        "amenity": "pub",
+        "email": "theofficeszczecin@gmail.com",
+        "lgbtq": "primary",
+        "name": "The Office",
+        "opening_hours": "Mo-Th 16:00-23:00; Fr-Sa 16:00-02:00, Su 14:00-22:00",
+        "phone": "+48798630760",
+        "takeaway": "yes",
+        "website": "https://beerfy.com/pubs/the-office"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5600026,
+          53.42383
+        ]
+      },
+      "id": "479366640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "487621995",
+        "amenity": "pub",
+        "name": "Poziom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.6614845,
+          53.3771907
+        ]
+      },
+      "id": "487621995"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "496242221",
+        "addr:housenumber": "38",
+        "addr:street": "Śląska",
+        "amenity": "pub",
+        "name": "E. Wedel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5475842,
+          53.4320644
+        ]
+      },
+      "id": "496242221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "503951509",
+        "amenity": "pub",
+        "name": "Happy Seven"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.6621773,
+          53.3771249
+        ]
+      },
+      "id": "503951509"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "508571061",
+        "amenity": "pub",
+        "name": "Piwnica Kany",
+        "website": "http://www.kana.art.pl/onas_piwnica.html",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5596086,
+          53.4278737
+        ]
+      },
+      "id": "508571061"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "534940688",
+        "amenity": "pub",
+        "name": "Pub pod Klonem"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5763414,
+          53.3525214
+        ]
+      },
+      "id": "534940688"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "534947507",
+        "amenity": "pub",
+        "name": "Inter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5914642,
+          53.3636617
+        ]
+      },
+      "id": "534947507"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "559822789",
+        "amenity": "pub",
+        "name": "Tabu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5526428,
+          53.4366039
+        ]
+      },
+      "id": "559822789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "1559061275",
+        "amenity": "pub",
+        "food": "yes",
+        "microbrewery": "yes",
+        "name": "Stara Komenda",
+        "opening_hours": "Mo-Fr 13:00-24:00; Sa,Su 00:00-01:00,13:00-24:00",
+        "website": "http://www.starakomenda.pl"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5510187,
+          53.4217286
+        ]
+      },
+      "id": "1559061275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "1715909526",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "name": "Seta i Galareta",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5438635,
+          53.4294048
+        ]
+      },
+      "id": "1715909526"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "1744079715",
+        "amenity": "pub",
+        "name": "Pub Loża"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5512252,
+          53.4526644
+        ]
+      },
+      "id": "1744079715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "1744171534",
+        "addr:city": "Szczecin",
+        "addr:housenumber": "18",
+        "addr:postcode": "70-263",
+        "addr:street": "Mariana Langiewicza",
+        "amenity": "pub",
+        "name": "Kredens",
+        "opening_hours": "Mo-Su 11:00-02:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5384513,
+          53.4229395
+        ]
+      },
+      "id": "1744171534"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "1761217966",
+        "amenity": "pub",
+        "name": "Piwiarnia",
+        "wifi": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5123993,
+          53.4422821
+        ]
+      },
+      "id": "1761217966"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "1764584084",
+        "amenity": "pub",
+        "contact:city": "Szczecin",
+        "contact:housenumber": "67",
+        "contact:postcode": "70-382",
+        "contact:street": "Jagiellońska",
+        "name": "Olimpic Bilard Club",
+        "sport": "billiards"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.531123,
+          53.4327986
+        ]
+      },
+      "id": "1764584084"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "2524499278",
+        "amenity": "pub",
+        "contact:city": "Szczecin",
+        "contact:facebook": "https://www.facebook.com/film.czeski",
+        "contact:housenumber": "3-4",
+        "contact:street": "aleja Papieża Jana Pawła II",
+        "email": "ceskyfilm.szczecin@gmail.com",
+        "name": "Český film",
+        "opening_hours": "Mo-Su 00:00-04:00,16:00-24:00; Tu-Fr 00:00-02:00,16:00-24:00",
+        "phone": "+48608359007",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5519948,
+          53.4298408
+        ]
+      },
+      "id": "2524499278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "2552942599",
+        "amenity": "pub",
+        "check_date": "2023-06-25",
+        "name": "Porto Grande",
+        "opening_hours": "Su-Th 12:00-00:00; Fr-Sa 12:00-01:00",
+        "website": "http://www.portograndepub.pl/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5720536,
+          53.4329296
+        ]
+      },
+      "id": "2552942599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "2581998705",
+        "amenity": "pub",
+        "name": "Pokój",
+        "opening_hours": "Mo-Su 14:00+",
+        "payment:cash": "yes",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5431164,
+          53.4303155
+        ]
+      },
+      "id": "2581998705"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "2581998706",
+        "amenity": "pub",
+        "food": "yes",
+        "name": "p'Art One Pub",
+        "opening_hours": "Mo-Fr 10:00-18:00; Sa 10:00-16:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5446521,
+          53.4315464
+        ]
+      },
+      "id": "2581998706"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "2582001024",
+        "amenity": "pub",
+        "club": "music",
+        "food": "yes",
+        "name": "Browar Polski",
+        "opening_hours": "Mo-Sa 12:00+ ; Su 15:00+",
+        "website": "http://www.browarpolski.com.pl/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5542324,
+          53.4207758
+        ]
+      },
+      "id": "2582001024"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "2834790299",
+        "addr:city": "Szczecin",
+        "addr:housenumber": "64",
+        "addr:postcode": "70-479",
+        "addr:street": "aleja Wojska Polskiego",
+        "amenity": "pub",
+        "email": "klubmuzycznyabsurd@poczta.pl",
+        "name": "Klub Muzyczny Absurd",
+        "opening_hours": "mo-we 19:00-02:00; th19:00-04:00; fr-sa19:00-05:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5394526,
+          53.4334607
+        ]
+      },
+      "id": "2834790299"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "3731055506",
+        "amenity": "pub",
+        "name": "Nowy Browar Szczecin",
+        "opening_hours": "Mo-Tu 09:00-00:00, Fr 09:00-02:00; Sa 11:00-02:00, Su 11:00-00:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5498824,
+          53.4238548
+        ]
+      },
+      "id": "3731055506"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "3952801204",
+        "addr:city": "Szczecin",
+        "addr:street": "Księcia Bogusława X",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "name": "Pijalnia Wódki i Piwa",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5443578,
+          53.430496
+        ]
+      },
+      "id": "3952801204"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "4346918693",
+        "addr:housenumber": "2",
+        "addr:postcode": "70-206",
+        "addr:street": "Dworcowa",
+        "amenity": "pub",
+        "cuisine": "polish",
+        "internet_access": "wlan",
+        "name": "Piwnica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5536185,
+          53.4222415
+        ]
+      },
+      "id": "4346918693"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "4565557405",
+        "amenity": "pub",
+        "name": "EXP Pub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5566465,
+          53.4276537
+        ]
+      },
+      "id": "4565557405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "5023042037",
+        "amenity": "pub",
+        "name": "Kicker Pub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5612424,
+          53.424339
+        ]
+      },
+      "id": "5023042037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "5023042054",
+        "amenity": "pub",
+        "name": "Pub Coolturka"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5437625,
+          53.4271247
+        ]
+      },
+      "id": "5023042054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "5326201279",
+        "amenity": "pub",
+        "name": "Kobi - bilard",
+        "sport": "billiards"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5534103,
+          53.4283364
+        ]
+      },
+      "id": "5326201279"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "5413298774",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "name": "Promil",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.544457,
+          53.430736
+        ]
+      },
+      "id": "5413298774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "6153818313",
+        "amenity": "pub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5395275,
+          53.4316804
+        ]
+      },
+      "id": "6153818313"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "6214319178",
+        "amenity": "pub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5826897,
+          53.4499721
+        ]
+      },
+      "id": "6214319178"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "6329782797",
+        "amenity": "pub",
+        "name": "Browar pod Zamkiem"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5618945,
+          53.4260634
+        ]
+      },
+      "id": "6329782797"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "6853939740",
+        "amenity": "pub",
+        "name": "Maxton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4855595,
+          53.4499038
+        ]
+      },
+      "id": "6853939740"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "7983063046",
+        "amenity": "pub",
+        "name": "Sok z żuka"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5344525,
+          53.4323321
+        ]
+      },
+      "id": "7983063046"
+    }
+  ]
+}

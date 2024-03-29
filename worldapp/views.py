@@ -7,12 +7,15 @@ from django.contrib.gis.geos import Point
 from django.db.models import Q
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.http import require_POST
 from .models import *
 from django import forms
 from .forms import UserLoginForm, UserRegisterForm, UsernameUpdateForm, CustomPasswordChangeForm, PubForm
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Pub
+
 
 
 def user_register(request):
@@ -80,17 +83,21 @@ def worldapp(request):
         context = {'title': 'AWMCA Map'}
         return render(request, 'worldapp/worldapp.html', context)
 
-def update_location(request):
-    data = json.loads(request.body)
-    lat = data['latitude']
-    lng = data['longitude']
+# def update_location(request):
+#     data = json.loads(request.body)
+#     lat = data.get('latitude')
+#     lng = data.get('longitude')
+#
+#     if lat is None or lng is None:
+#         return JsonResponse({'error': 'Latitude or longitude missing in request'}, status=400)
+#
+#     request.user.last_location = Point(lng, lat)
+#
+#     request.user.save()
+#     request.user.refresh_from_db()
+#
+#     return JsonResponse('Item Added', safe=False)
 
-    request.user.last_location = Point(lng, lat)
-
-    request.user.save()
-    request.user.refresh_from_db()
-
-    return JsonResponse('Item Added', safe=False)
 
 def is_admin(user):
     return user.is_superuser  # or any other condition you want to check
@@ -174,3 +181,23 @@ class PubsGeoJSON(APIView):
             ],
         }
         return Response(geojson)
+
+
+@login_required
+def toggle_favourite(request, pub_id):
+    # Get the pub instance
+    pub = Pub.objects.get(id=pub_id)
+
+    # Check if the pub is already favorited by the user
+    favourite = Favourite.objects.filter(user=request.user, pub=pub).first()
+
+    # If the pub was already favorited, remove it from favorites
+    if favourite:
+        favourite.delete()
+        status = 'removed'
+    else:
+        # Create a new favourite
+        Favourite.objects.create(user=request.user, pub=pub)
+        status = 'added'
+
+    return JsonResponse({'status': status})

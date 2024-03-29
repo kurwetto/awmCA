@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-from .models import Artist, Song, Album, Pub
+from .models import Artist, Song, Album, Pub, User, Favourite
+
 
 @admin.register(Artist)
 class ArtistAdmin(admin.ModelAdmin):
@@ -16,4 +17,9 @@ class AlbumAdmin(admin.ModelAdmin):
 
 @admin.register(Pub)
 class PubAdmin(admin.ModelAdmin):
-    list_display = ("id", "name", "amenity", "addr_city", "addr_country", "addr_county", "addr_housename", "addr_housenumber", "postcode", "addr_street", "phone", "website", "wheelchair", "location")
+    list_display = ("id", "name", "amenity", "addr_city", "addr_country", "addr_county", "addr_housename", "addr_housenumber", "postcode", "addr_street", "phone", "website", "wheelchair", "location", "artist")
+
+class FavouriteAdmin(admin.ModelAdmin):
+    list_display = ('user', 'pub')
+
+admin.site.register(Favourite, FavouriteAdmin)
