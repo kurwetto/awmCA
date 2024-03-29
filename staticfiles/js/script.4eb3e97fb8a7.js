@@ -23,6 +23,19 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 L.control.locate().addTo(map);
 
+// // Puts map into a centered box.
+// setTimeout(() => {
+//     const mapContainer = document.getElementById('map');
+//     mapContainer.style.position = 'absolute';
+//     mapContainer.style.top = '60%';
+//     mapContainer.style.left = '50%';
+//     mapContainer.style.transform = 'translate(-50%, -65%)';
+//     mapContainer.style.width = '800px'; // Set the desired width
+//     mapContainer.style.height = '600px'; // Set the desired height
+//     map.setView([map.getCenter().lat, map.getCenter().lng], map.getZoom());
+//     map.invalidateSize(); // Invalidate the size to redraw the map
+// }, 100);
+
 // Icon initialization
 const icon = L.icon({
     iconUrl: '/static/icon.png',
@@ -205,7 +218,9 @@ function showDirectionsToClosestPub() {
 function showDirections(pubName, lat, lng) {
     if (gpsMarker) {
         // Remove existing route if any
-
+        if (window.route) {
+            map.removeControl(window.route);
+        }
 
         // Create a route from user's location to the selected pub
         window.route = L.Routing.control({

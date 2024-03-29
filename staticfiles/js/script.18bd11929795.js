@@ -8,20 +8,33 @@ const directionsButton = document.getElementById('directionsButton');
 directionsButton.addEventListener('click', showDirectionsToClosestPub);
 const searchButton = document.getElementById('searchButton');
 
-// Map initialization
-const map = L.map("map", {
-    doubleClickZoom: false
-}).locate({
-    setView: true,
-    watch: true,
-    maxZoom: 16
-});
+// // Map initialization
+// const map = L.map("map", {
+//     doubleClickZoom: false
+// }).locate({
+//     setView: true,
+//     watch: true,
+//     maxZoom: 16
+// });
 // Reset the matchingPubs array
 matchingPubs = markers;
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 L.control.locate().addTo(map);
+
+// // Puts map into a centered box.
+// setTimeout(() => {
+//     const mapContainer = document.getElementById('map');
+//     mapContainer.style.position = 'absolute';
+//     mapContainer.style.top = '60%';
+//     mapContainer.style.left = '50%';
+//     mapContainer.style.transform = 'translate(-50%, -65%)';
+//     mapContainer.style.width = '800px'; // Set the desired width
+//     mapContainer.style.height = '600px'; // Set the desired height
+//     map.setView([map.getCenter().lat, map.getCenter().lng], map.getZoom());
+//     map.invalidateSize(); // Invalidate the size to redraw the map
+// }, 100);
 
 // Icon initialization
 const icon = L.icon({
@@ -205,7 +218,9 @@ function showDirectionsToClosestPub() {
 function showDirections(pubName, lat, lng) {
     if (gpsMarker) {
         // Remove existing route if any
-
+        if (window.route) {
+            map.removeControl(window.route);
+        }
 
         // Create a route from user's location to the selected pub
         window.route = L.Routing.control({

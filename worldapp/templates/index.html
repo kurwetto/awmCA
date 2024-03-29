@@ -29,6 +29,7 @@
         #map {
             width: 100%;
             height: 100vh;
+            position: relative;
         }
 
         .container {
@@ -46,8 +47,10 @@
             line-height: 1.6;
         }
 
-        .directions-button {
-            background-color: #007bff;
+        .directions-button,
+        .search-input,
+        .search-button {
+            background-color: rgba(0, 100, 0, 0.5); /* Use rgba color with alpha value */
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -55,23 +58,32 @@
             cursor: pointer;
             border-radius: 5px;
             margin-bottom: 20px;
+            z-index: 1001; /* Ensure the button appears on top of the map */
+            position: absolute; /* Position absolutely within the map container */
         }
 
-        .directions-button:hover {
-            background-color: #0056b3;
+        .directions-button:hover,
+        .search-button:hover {
+            background-color: rgba(0, 86, 179, 0.7); /* Use a slightly darker color on hover */
+        }
+
+        .search-input {
+            top: 150px; /* Adjust the top position */
+            left: 20px; /* Adjust the left position */
+        }
+
+        .search-button {
+            top: 200px; /* Adjust the top position */
+            left: 20px; /* Adjust the left position */
+        }
+        .directions-button {
+            bottom: 20px; /* Adjust the bottom position */
+            left: 20px; /* Adjust the left position */
         }
     </style>
 </head>
 
 <body>
-
-    <div class="container text-center">
-        <h1>Welcome to Musivents!</h1>
-        <button id="directionsButton" class="directions-button">Show Directions to Closest Pub</button>
-        <input type="text" id="searchInput" placeholder="Search for pubs...">
-        <button id="searchButton">Search</button>
-        </div>
-
     <!-- Bootstrap JS -->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -88,6 +100,12 @@
     <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
 
     <div id="map"></div>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search for pubs...">
+        <button id="searchButton" class="search-button">Search</button>
+        <button id="directionsButton" class="directions-button">Get Directions</button>
+
+
+
 </body>
 
 </html>

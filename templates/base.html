@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    {% include 'inc/_nav.html' %}
+{#    {% include 'inc/_nav.html' %}#}
     <div class="container">
         {% if messages %}
             {% for message in messages %}
@@ -42,7 +42,6 @@
         {% endif %}
     </div>
     {% block content %}CONTENT{% endblock %}
-    {% include 'inc/_footer.html' %}
 
 
     <!-- bootstrap js -->

@@ -41,19 +41,23 @@
 {% endif %}
 
   {% if artists %}
-    <div class="result-box">
-      <h3>Matching Artists</h3>
-      <ul>
-        {% for artist in artists %}
-          <li>{{ artist.artistName }}</li>
-          <!-- Display other artist details as needed -->
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
+  <div class="result-box">
+    <h3>Matching Artists</h3>
+    <ul>
+      {% for artist in artists %}
+        <li>
+          <h4>{{ artist.artistName }}</h4>
+          {% for album in artist.album_set.all %}
+            <h5>Album: {{ album.albumName }}</h5>
+            {% for song in album.song_set.all %}
+              <p>Song: {{ song.songName }}</p>
+            {% endfor %}
+          {% endfor %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
 
-  {% if not pubs and not artists %}
-    <p>No results found.</p>
-  {% endif %}
 
 {% endblock %}

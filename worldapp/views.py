@@ -119,7 +119,7 @@ def search_artists(request):
     query = request.GET.get('q')
     artists = None
     if query:
-        artists = Artist.objects.filter(Q(artistName__icontains=query))
+        artists = Artist.objects.filter(Q(artistName__icontains=query)).prefetch_related('album_set', 'album_set__song_set')
     else:
         artists = Artist.objects.none()
 
