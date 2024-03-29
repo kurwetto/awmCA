@@ -34,6 +34,9 @@ class UserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
+
+
+
 class User(AbstractBaseUser):
     email = models.EmailField(verbose_name='Email Address', max_length=255, unique=True, null=False, blank=False)
     first_name = models.CharField(verbose_name='First Name', max_length=35, blank=False)
@@ -134,3 +137,22 @@ class Song(models.Model):
 
     def __str__(self):
         return self.songName
+
+class Pub(models.Model):
+    id = models.CharField(max_length=255, primary_key=True)
+    amenity = models.CharField(max_length=255)
+    name = models.CharField(max_length=255)
+    addr_city = models.CharField(max_length=255, null=True)
+    addr_country = models.CharField(max_length=255, null=True)
+    addr_county = models.CharField(max_length=255, null=True)
+    addr_housename = models.CharField(max_length=255, null=True)
+    addr_housenumber = models.CharField(max_length=255, null=True)
+    postcode = models.CharField(max_length=255, null=True)
+    addr_street = models.CharField(max_length=255, null=True)
+    phone = models.CharField(max_length=255, null=True)
+    website = models.URLField(max_length=255, null=True)
+    wheelchair = models.CharField(max_length=255, null=True)
+    artist = models.ForeignKey(Artist, on_delete=models.SET_NULL, null=True)
+    songURL = models.CharField(max_length=255, null=True)  # Add this line
+    location = models.PointField()
+

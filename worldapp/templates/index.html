@@ -68,11 +68,10 @@
     <div class="container text-center">
         <h1>Welcome to Musivents!</h1>
         <button id="directionsButton" class="directions-button">Show Directions to Closest Pub</button>
-    </div>
+        <input type="text" id="searchInput" placeholder="Search for pubs...">
+        <button id="searchButton">Search</button>
+        </div>
 
-    <script>
-
-    </script>
     <!-- Bootstrap JS -->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -88,13 +87,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
     <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
 
-    <script>
-        document.getElementById('directionsButton').addEventListener('click', function () {
-            // Your code to show directions to closest pub goes here
-            alert('Directions to closest pub will be shown here!');
-        });
-    </script>
-
+    <div id="map"></div>
 </body>
 
 </html>

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Search Results</h2>
+
+  <form method="get" action="{% url 'search_pubs' %}">
+    <input type="text" name="q" placeholder="Search Pubs...">
+    <input type="submit" value="Search">
+  </form>
+
+  <form method="get" action="{% url 'search_artists' %}">
+    <input type="text" name="q" placeholder="Search Artists...">
+    <input type="submit" value="Search">
+  </form>
+
+  <style>
+    .result-box {
+      border: 1px solid #000;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
+
+{% if pubs %}
+  <div class="result-box">
+    <h3>Matching Pubs</h3>
+    <ul>
+      {% for pub in pubs %}
+        <li>
+          {{ pub.name }}
+          <!-- Display other pub details as needed -->
+          <form method="post" action="{% url 'edit_pub' pub.id %}">
+            {% csrf_token %}
+            {{ pub.form.as_p }}
+            <button type="submit">Save changes</button>
+          </form>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+  {% if artists %}
+    <div class="result-box">
+      <h3>Matching Artists</h3>
+      <ul>
+        {% for artist in artists %}
+          <li>{{ artist.artistName }}</li>
+          <!-- Display other artist details as needed -->
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if not pubs and not artists %}
+    <p>No results found.</p>
+  {% endif %}
+
+{% endblock %}

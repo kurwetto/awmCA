@@ -1,155 +1,155 @@
-{
-  "type": "FeatureCollection",
-  "generator": "overpass-turbo",
-  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2024-02-02T13:37:45Z",
-  "features": [
     {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/122079566",
-        "amenity": "pub",
-        "name": "Boot Inn"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.2642817,
-          53.4318903
-        ]
-      },
-      "id": "node/122079566"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/130156802",
-        "addr:city": "Dublin",
-        "addr:country": "IE",
-        "addr:county": "Dublin",
-        "addr:housename": "Beresford Hotel",
-        "addr:housenumber": "21",
-        "postcode": "D01 T9R2",
-        "addr:street": "Store Street",
-        "amenity": "pub",
-        "name": "Le Monde Café Bar",
-        "phone": "+353 1 8134700",
-        "website": "https://www.beresfordhotelifsc.com/en/bar/",
-        "wheelchair": "no"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.2527615,
-          53.3501917
-        ]
-      },
-      "id": "node/130156802"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/132186038",
-        "addr:city": "Balinteer",
-        "addr:country": "IE",
-        "addr:county": "Dublin",
-        "addr:housename": "SuperValu Shopping Centre",
-        "postcode": "D16 X894",
-        "addr:street": "Ballinteer Avenue",
-        "amenity": "pub",
-        "contact:facebook": "https://www.facebook.com/ballinteer",
-        "email": "ballinteerhouse@gmail.com",
-        "name": "Ballinteer House",
-        "wheelchair": "limited"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.2545959,
-          53.2747643
-        ]
-      },
-      "id": "node/132186038"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/132228340",
-        "addr:housenumber": "116",
-        "postcode": "A94 X2C6",
-        "addr:street": "Rock Road",
-        "amenity": "pub",
-        "contact:facebook": "https://www.facebook.com/The-Old-Punchbowl-Booterstown-Dublin-157954084245890/",
-        "contact:instagram": "https://www.instagram.com/explore/locations/254107079/",
-        "food": "yes",
-        "live_music": "yes",
-        "name": "The Old Punch Bowl",
-        "opening_hours": "Su 12:00-23:00; Mo-Th 11:00-23:30; Fr,Sa 11:00-00:30",
-        "phone": "+353-1-283-2356",
-        "website": "http://theoldpunchbowl.ie/",
-        "wheelchair": "limited",
-        "wheelchair:description:de": "Tische nicht unterfahrbar nur im Biergarten"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.1966601,
-          53.3087656
-        ]
-      },
-      "id": "node/132228340"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/132775981",
-        "accommodation": "yes",
-        "addr:city": "Dublin",
-        "addr:country": "IE",
-        "addr:housenumber": "1",
-        "addr:street": "Lombard Street East",
-        "amenity": "pub",
-        "name": "The Lombard",
-        "opening_hours": "Mo-Th 09:00-23:30; Fr-Sa 09:30-01:30; Su 10:00-23:00",
-        "source": "visually identified",
-        "toilets:wheelchair": "yes",
-        "wheelchair": "limited"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.2490239,
-          53.3441892
-        ]
-      },
-      "id": "node/132775981"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/132811831",
-        "addr:city": "Palmerstown",
-        "addr:country": "IE",
-        "addr:county": "Dublin",
-        "postcode": "D20 TR50",
-        "addr:street": "Old Lucan Road",
-        "amenity": "pub",
-        "diet:vegetarian": "no",
-        "food": "yes",
-        "name": "Palmerstown House",
-        "operator": "Louis Fitzgerald Group",
-        "website": "https://palmerstownhousepub.ie/",
-        "wheelchair": "yes"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -6.3706215,
-          53.356444
-        ]
-      },
-      "id": "node/132811831"
-    },
+      "type": "FeatureCollection",
+      "generator": "overpass-turbo",
+      "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+      "timestamp": "2024-02-02T13:37:45Z",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "@id": "node/122079566",
+            "amenity": "pub",
+            "name": "Boot Inn"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -6.2642817,
+              53.4318903
+            ]
+          },
+          "id": "node/122079566"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "@id": "node/130156802",
+            "addr:city": "Dublin",
+            "addr:country": "IE",
+            "addr:county": "Dublin",
+            "addr:housename": "Beresford Hotel",
+            "addr:housenumber": "21",
+            "postcode": "D01 T9R2",
+            "addr:street": "Store Street",
+            "amenity": "pub",
+            "name": "Le Monde Café Bar",
+            "phone": "+353 1 8134700",
+            "website": "https://www.beresfordhotelifsc.com/en/bar/",
+            "wheelchair": "no"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -6.2527615,
+              53.3501917
+            ]
+          },
+          "id": "node/130156802"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "@id": "node/132186038",
+            "addr:city": "Balinteer",
+            "addr:country": "IE",
+            "addr:county": "Dublin",
+            "addr:housename": "SuperValu Shopping Centre",
+            "postcode": "D16 X894",
+            "addr:street": "Ballinteer Avenue",
+            "amenity": "pub",
+            "contact:facebook": "https://www.facebook.com/ballinteer",
+            "email": "ballinteerhouse@gmail.com",
+            "name": "Ballinteer House",
+            "wheelchair": "limited"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -6.2545959,
+              53.2747643
+            ]
+          },
+          "id": "node/132186038"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "@id": "node/132228340",
+            "addr:housenumber": "116",
+            "postcode": "A94 X2C6",
+            "addr:street": "Rock Road",
+            "amenity": "pub",
+            "contact:facebook": "https://www.facebook.com/The-Old-Punchbowl-Booterstown-Dublin-157954084245890/",
+            "contact:instagram": "https://www.instagram.com/explore/locations/254107079/",
+            "food": "yes",
+            "live_music": "yes",
+            "name": "The Old Punch Bowl",
+            "opening_hours": "Su 12:00-23:00; Mo-Th 11:00-23:30; Fr,Sa 11:00-00:30",
+            "phone": "+353-1-283-2356",
+            "website": "http://theoldpunchbowl.ie/",
+            "wheelchair": "limited",
+            "wheelchair:description:de": "Tische nicht unterfahrbar nur im Biergarten"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -6.1966601,
+              53.3087656
+            ]
+          },
+          "id": "node/132228340"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "@id": "node/132775981",
+            "accommodation": "yes",
+            "addr:city": "Dublin",
+            "addr:country": "IE",
+            "addr:housenumber": "1",
+            "addr:street": "Lombard Street East",
+            "amenity": "pub",
+            "name": "The Lombard",
+            "opening_hours": "Mo-Th 09:00-23:30; Fr-Sa 09:30-01:30; Su 10:00-23:00",
+            "source": "visually identified",
+            "toilets:wheelchair": "yes",
+            "wheelchair": "limited"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -6.2490239,
+              53.3441892
+            ]
+          },
+          "id": "node/132775981"
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "@id": "node/132811831",
+            "addr:city": "Palmerstown",
+            "addr:country": "IE",
+            "addr:county": "Dublin",
+            "postcode": "D20 TR50",
+            "addr:street": "Old Lucan Road",
+            "amenity": "pub",
+            "diet:vegetarian": "no",
+            "food": "yes",
+            "name": "Palmerstown House",
+            "operator": "Louis Fitzgerald Group",
+            "website": "https://palmerstownhousepub.ie/",
+            "wheelchair": "yes"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -6.3706215,
+              53.356444
+            ]
+          },
+          "id": "node/132811831"
+        },
     {
       "type": "Feature",
       "properties": {
@@ -1605,9 +1605,7 @@
         "@id": "node/504986812",
         "addr:street": "Blackthorn Drive",
         "amenity": "bar",
-        "name": "Crystal Bar",
-        "songURL": "/media/songs/Shakira_-_Hips_Dont_Lie_Lyrics_ft._Wyclef_Jean.mp3",
-        "artist": "Shakira"
+        "name": "Crystal Bar"
       },
       "geometry": {
         "type": "Point",
@@ -1626,9 +1624,7 @@
         "addr:street": "Cedar Road",
         "amenity": "pub",
         "name": "Ollie's Lounge & Bar",
-        "wheelchair": "limited",
-        "songURL": "/media/songs/Purrple_Cat_-_Sea_of_Stars_2.mp3",
-        "artist": "Purrple Cat"
+        "wheelchair": "limited"
       },
       "geometry": {
         "type": "Point",
@@ -1706,22 +1702,6 @@
         ]
       },
       "id": "node/538103859"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/538464481",
-        "amenity": "pub",
-        "name": "Dublin Inn"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -75.2022292,
-          40.371779
-        ]
-      },
-      "id": "node/538464481"
     },
     {
       "type": "Feature",
@@ -7119,9 +7099,7 @@
         "name": "Brickyard",
         "phone": "+35312987410",
         "website": "https://www.brickyard.ie",
-        "wheelchair": "yes",
-        "songURL": "No artists preforming at the moment",
-        "artist": "None"
+        "wheelchair": "yes"
       },
       "geometry": {
         "type": "Point",
@@ -7858,28 +7836,6 @@
         ]
       },
       "id": "node/5373194431"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/5402622960",
-        "addr:housenumber": "7046",
-        "addr:street": "Village Parkway",
-        "amenity": "pub",
-        "contact:phone": "+1 925 361-5724",
-        "contact:website": "http://www.threesheetscraftbeer.com/",
-        "name": "Three Sheets Craft Beer Bar",
-        "opening_hours": "Mo-We 15:00-22:00;Th-Sa 12:00-24:00;Su 12:00-21:00",
-        "outdoor_seating": "yes"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.9261595,
-          37.7084029
-        ]
-      },
-      "id": "node/5402622960"
     },
     {
       "type": "Feature",
@@ -8800,22 +8756,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/7996144788",
-        "amenity": "pub",
-        "name": "New Dublin Hotel"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.354663,
-          -34.4533872
-        ]
-      },
-      "id": "node/7996144788"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/8342411417",
         "amenity": "bar",
         "name": "16-Bit Bar+Arcade"
@@ -9109,27 +9049,6 @@
         ]
       },
       "id": "node/9352848206"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/9359185917",
-        "addr:city": "Dublin",
-        "addr:housenumber": "6711",
-        "postcode": "43017",
-        "addr:state": "OH",
-        "addr:street": "Dublin Center Drive",
-        "amenity": "bar",
-        "name": "Revelry Tavern"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.0967928,
-          40.1059228
-        ]
-      },
-      "id": "node/9359185917"
     },
     {
       "type": "Feature",
