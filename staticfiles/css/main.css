@@ -56,3 +56,13 @@ p {
     cursor: pointer;
 }
 
+.floating-button {
+    position: absolute;
+    background-color: yellowgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1002; /* Ensure the button appears on top of the map */
+}

@@ -1,17 +1,25 @@
-<nav class="navbar" style="background-color: rgba(0, 100, 0, 0.5);">
-  <div class="container-fluid d-flex justify-content-between align-items-center">
-    <a class="navbar-brand" style="color: #ffffff; margin-right: 50px;" href="{% url 'worldapp' %}">MUSIVENTS</a>
-    <form class="d-flex">
-        {% if user.is_authenticated %}
-            <a href="{% url 'profile_settings' %}" class="btn" style="background-color: yellowgreen; margin-right: 10px;">Profile Settings</a>
-            {% if user.is_staff %}
-                <a href="{% url 'update' %}" class="btn" style="background-color: yellowgreen; margin-right: 10px;">Admin Update Events</a>
-            {% endif %}
-            <a href="{% url 'logout' %}" class="btn" style="background-color: yellowgreen;">Logout</a>
-        {% else %}
-            <a href="{% url 'login' %}" class="btn" style="background-color: yellowgreen;">Login</a>
-            <a href="{% url 'register' %}" class="btn" style="background-color: yellowgreen; margin-left: 10px;">Register</a>
+<div class="container-fluid d-flex justify-content-between align-items-center">
+    {% if user.is_authenticated %}
+        <a href="{% url 'profile_settings' %}" class="floating-button" style="top: 12.5px; right: 200px;">Profile Settings</a>
+        {% if user.is_staff %}
+            <a href="{% url 'update' %}" class="floating-button" style="top: 12.5px; right: 360px;">Admin Update Events</a>
         {% endif %}
-    </form>
-  </div>
-</nav>
+        <a href="{% url 'logout' %}" class="floating-button" style="top: 12.5px; right: 100px;">Logout</a>
+    {% else %}
+        <a href="{% url 'login' %}" class="floating-button" style="top: 12.5px; right: 170px;">Login</a>
+        <a href="{% url 'register' %}" class="floating-button" style="top: 12.5px; right: 330px;">Register</a>
+    {% endif %}
+</div>
+
+<style>
+    .floating-button {
+    position: absolute;
+    background-color: yellowgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1002; /* Ensure the button appears on top of the map */
+}
+</style>

@@ -8,7 +8,7 @@ const directionsButton = document.getElementById('directionsButton');
 directionsButton.addEventListener('click', showDirectionsToClosestPub);
 const searchButton = document.getElementById('searchButton');
 
-// Map initialization
+// Map initialization with default tile layer
 const map = L.map("map", {
     doubleClickZoom: false
 }).locate({
@@ -16,12 +16,32 @@ const map = L.map("map", {
     watch: true,
     maxZoom: 16
 });
+
+// Default tile layer (OpenStreetMap)
+const defaultTileLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+
+// Satellite tile layer (Google Maps)
+const satelliteTileLayer = L.tileLayer("https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}", {
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+});
+
+// Add default tile layer to map
+defaultTileLayer.addTo(map);
+
+// Layer control
+const baseLayers = {
+    "Default": defaultTileLayer,
+    "Satellite": satelliteTileLayer
+};
+
+// Add layer control to switch between map layers
+L.control.layers(baseLayers).addTo(map);
+
 // Reset the matchingPubs array
 matchingPubs = markers;
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-L.control.locate().addTo(map);
 
 // Icon initialization
 const icon = L.icon({
@@ -205,7 +225,9 @@ function showDirectionsToClosestPub() {
 function showDirections(pubName, lat, lng) {
     if (gpsMarker) {
         // Remove existing route if any
-
+        if (window.route) {
+            map.removeControl(window.route);
+        }
 
         // Create a route from user's location to the selected pub
         window.route = L.Routing.control({

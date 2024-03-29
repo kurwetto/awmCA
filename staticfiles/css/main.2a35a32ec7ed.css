@@ -64,5 +64,5 @@ p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1002; /* Ensure the button appears on top of the map */
+    z-index: 1000; /* Ensure the button appears on top of the map */
 }

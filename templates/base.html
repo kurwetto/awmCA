@@ -29,19 +29,19 @@
 </head>
 
 <body>
-{#    {% include 'inc/_nav.html' %}#}
-    <div class="container">
-        {% if messages %}
-            {% for message in messages %}
-                {% if message.tags == 'error' %}
-                <div class="alert alert-danger" role="alert">{{ message }}</div>
-                {% else %}
-                <div class="alert alert-{{ message.tags }}" role="alert">{{ message }}</div>
-                {% endif %}
-            {% endfor %}
-        {% endif %}
-    </div>
-    {% block content %}CONTENT{% endblock %}
+{% include 'inc/_nav.html' %}
+<div class="container">
+    {% if messages %}
+        {% for message in messages %}
+            {% if message.tags == 'error' %}
+            <div class="alert alert-danger" role="alert">{{ message }}</div>
+            {% else %}
+            <div class="alert alert-{{ message.tags }}" role="alert">{{ message }}</div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</div>
+{% block content %}CONTENT{% endblock %}
 
 
     <!-- bootstrap js -->

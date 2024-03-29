@@ -28,8 +28,10 @@
 
         #map {
             width: 100%;
-            height: 100vh;
-            position: relative;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
 
         .container {
@@ -47,10 +49,17 @@
             line-height: 1.6;
         }
 
+        body, html {
+    overflow: hidden;
+            margin: 0;
+            padding: 0;
+}
+
+
         .directions-button,
         .search-input,
         .search-button {
-            background-color: rgba(0, 100, 0, 0.5); /* Use rgba color with alpha value */
+            background-color: rgba(20, 100, 0, 0.6); /* Use rgba color with alpha value */
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -64,21 +73,21 @@
 
         .directions-button:hover,
         .search-button:hover {
-            background-color: rgba(0, 86, 179, 0.7); /* Use a slightly darker color on hover */
+            background-color: rgba(0, 100, 0, 0.8); /* Use a slightly darker color on hover */
         }
 
         .search-input {
-            top: 150px; /* Adjust the top position */
+            bottom: 10px; /* Adjust the top position */
             left: 20px; /* Adjust the left position */
         }
 
         .search-button {
-            top: 200px; /* Adjust the top position */
+            bottom: 60px; /* Adjust the top position */
             left: 20px; /* Adjust the left position */
         }
         .directions-button {
-            bottom: 20px; /* Adjust the bottom position */
-            left: 20px; /* Adjust the left position */
+            bottom: 10px; /* Adjust the bottom position */
+            left: 250px; /* Adjust the left position */
         }
     </style>
 </head>
@@ -103,8 +112,6 @@
         <input type="text" id="searchInput" class="search-input" placeholder="Search for pubs...">
         <button id="searchButton" class="search-button">Search</button>
         <button id="directionsButton" class="directions-button">Get Directions</button>
-
-
 
 </body>
 
