@@ -43,13 +43,14 @@ L.control.layers(baseLayers).addTo(map);
 // Reset the matchingPubs array
 matchingPubs = markers;
 
-let defaultIcon = L.icon({
+// Icon initialization
+const defaultIcon = L.icon({
     iconUrl: '/static/icon.png',
     iconSize: [40, 40]
 });
 
-let favoritedIcon = L.icon({
-    iconUrl: '/static/pub.png', // Update the path to your favorited icon
+let favoriteIcon = L.icon({
+    iconUrl: '/static/pub.png',
     iconSize: [40, 40]
 });
 
@@ -75,43 +76,6 @@ function playAudio(url) {
         }
 
 
-        function getCookie(name) {
-    let cookieValue = null;
-    if (document.cookie && document.cookie !== '') {
-        let cookies = document.cookie.split(';');
-        for (let i = 0; i < cookies.length; i++) {
-            let cookie = cookies[i].trim();
-            // Does this cookie string begin with the name we want?
-            if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                break;
-            }
-        }
-    }
-    return cookieValue;
-}
-       function toggleFavorite(pubId) {
-    // Send an AJAX request to the backend to toggle the favorite status
-    fetch(`/toggle_favourite/${pubId}/`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'X-CSRFToken': getCookie('csrftoken') // Function to get CSRF token from cookie
-        },
-        credentials: 'same-origin' // Include cookies in the request
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.status === 'added') {
-            // Pub was added to favorites, update UI accordingly (change button color, etc.)
-            console.log('Pub added to favorites');
-        } else if (data.status === 'removed') {
-            // Pub was removed from favorites, update UI accordingly (change button color, etc.)
-            console.log('Pub removed from favorites');
-        }
-    })
-    .catch(error => console.error('Error:', error));
-}
 fetch('/pubs_geojson/')
     .then(function (response) {
         return response.json();
@@ -125,17 +89,11 @@ fetch('/pubs_geojson/')
 function addMarkersToMap(data) {
     L.geoJson(data, {
         pointToLayer: function (feature, latlng) {
-            // Assuming you have an isFavorited property in the GeoJSON data indicating whether the pub is favorited
-            let isFavorited = feature.properties.isFavorited;
-            // Choose the icon based on whether the pub is favorited
-            let icon = isFavorited ? favoriteIcon : defaultIcon;
-
-            let marker = L.marker(latlng, { icon: icon });
-            markers.push(marker);
-            feature.marker = marker; // Add the marker to the feature
+            let marker = L.marker(latlng, { icon: defaultIcon, pubId: feature.properties.id });
+            markers.push(marker); // Add the marker to the array
             return marker;
         },
-         onEachFeature: function (feature, layer) {
+        onEachFeature: function (feature, layer) {
             let pubContent = "";
 
             if (feature.properties.name) {
@@ -180,6 +138,46 @@ function addMarkersToMap(data) {
             });
         },
     }).addTo(map);
+}
+
+
+        function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        let cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            let cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+       function toggleFavorite(pubId) {
+    // Send an AJAX request to the backend to toggle the favorite status
+    fetch(`/toggle_favourite/${pubId}/`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCookie('csrftoken') // Function to get CSRF token from cookie
+        },
+        credentials: 'same-origin' // Include cookies in the request
+    })
+    .then(response => response.json())
+    .then(data => {
+        let marker = markers.find(marker => marker.options.pubId === pubId);
+        if (data.status === 'added') {
+            // Pub was added to favorites, update UI accordingly
+            marker.setIcon(favoriteIcon);
+        } else if (data.status === 'removed') {
+            // Pub was removed from favorites, update UI accordingly
+            marker.setIcon(defaultIcon);
+        }
+    })
+    .catch(error => console.error('Error:', error));
 }
 
 // Current Location

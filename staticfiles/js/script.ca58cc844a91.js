@@ -43,13 +43,14 @@ L.control.layers(baseLayers).addTo(map);
 // Reset the matchingPubs array
 matchingPubs = markers;
 
-let defaultIcon = L.icon({
+// Icon initialization
+const defaultIcon = L.icon({
     iconUrl: '/static/icon.png',
     iconSize: [40, 40]
 });
 
-let favoritedIcon = L.icon({
-    iconUrl: '/static/pub.png', // Update the path to your favorited icon
+let favoriteIcon = L.icon({
+    iconUrl: '/static/pub.png',
     iconSize: [40, 40]
 });
 
@@ -102,12 +103,13 @@ function playAudio(url) {
     })
     .then(response => response.json())
     .then(data => {
+        let marker = markers.find(marker => marker.options.pubId === pubId);
         if (data.status === 'added') {
-            // Pub was added to favorites, update UI accordingly (change button color, etc.)
-            console.log('Pub added to favorites');
+            // Pub was added to favorites, update UI accordingly
+            marker.setIcon(favoriteIcon);
         } else if (data.status === 'removed') {
-            // Pub was removed from favorites, update UI accordingly (change button color, etc.)
-            console.log('Pub removed from favorites');
+            // Pub was removed from favorites, update UI accordingly
+            marker.setIcon(defaultIcon);
         }
     })
     .catch(error => console.error('Error:', error));
@@ -125,17 +127,11 @@ fetch('/pubs_geojson/')
 function addMarkersToMap(data) {
     L.geoJson(data, {
         pointToLayer: function (feature, latlng) {
-            // Assuming you have an isFavorited property in the GeoJSON data indicating whether the pub is favorited
-            let isFavorited = feature.properties.isFavorited;
-            // Choose the icon based on whether the pub is favorited
-            let icon = isFavorited ? favoriteIcon : defaultIcon;
-
-            let marker = L.marker(latlng, { icon: icon });
-            markers.push(marker);
-            feature.marker = marker; // Add the marker to the feature
+            let marker = L.marker(latlng, { icon: defaultIcon, pubId: feature.properties.id });
+            markers.push(marker); // Add the marker to the array
             return marker;
         },
-         onEachFeature: function (feature, layer) {
+        onEachFeature: function (feature, layer) {
             let pubContent = "";
 
             if (feature.properties.name) {

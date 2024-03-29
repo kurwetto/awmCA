@@ -43,9 +43,13 @@ L.control.layers(baseLayers).addTo(map);
 // Reset the matchingPubs array
 matchingPubs = markers;
 
-// Icon initialization
-const icon = L.icon({
+let defaultIcon = L.icon({
     iconUrl: '/static/icon.png',
+    iconSize: [40, 40]
+});
+
+let favoritedIcon = L.icon({
+    iconUrl: '/static/pub.png', // Update the path to your favorited icon
     iconSize: [40, 40]
 });
 
@@ -121,11 +125,17 @@ fetch('/pubs_geojson/')
 function addMarkersToMap(data) {
     L.geoJson(data, {
         pointToLayer: function (feature, latlng) {
+            // Assuming you have an isFavorited property in the GeoJSON data indicating whether the pub is favorited
+            let isFavorited = feature.properties.isFavorited;
+            // Choose the icon based on whether the pub is favorited
+            let icon = isFavorited ? favoriteIcon : defaultIcon;
+
             let marker = L.marker(latlng, { icon: icon });
-            markers.push(marker); // Add the marker to the array
+            markers.push(marker);
+            feature.marker = marker; // Add the marker to the feature
             return marker;
         },
-        onEachFeature: function (feature, layer) {
+         onEachFeature: function (feature, layer) {
             let pubContent = "";
 
             if (feature.properties.name) {
