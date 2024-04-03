@@ -54,12 +54,13 @@ def user_logout(request):
     logout(request)
     return redirect('login')
 
-
+def discover(request):
+    return render(request, 'worldapp/discover.html')
 
 @login_required
 def profile_settings(request):
     if request.method == 'POST':
-        user_form = UsernameUpdateForm(request.POST, instance=request.user)
+        user_form = UsernameUpdateForm(request.POST, request.FILES, instance=request.user)
         if 'change_password' in request.POST:
             password_form = CustomPasswordChangeForm(request.user, request.POST)
             if password_form.is_valid():
@@ -74,7 +75,15 @@ def profile_settings(request):
     else:
         user_form = UsernameUpdateForm(instance=request.user)
         password_form = CustomPasswordChangeForm(request.user)
-    return render(request, 'worldapp/profile_settings.html', {'user_form': user_form, 'password_form': password_form})
+
+    # Get the favourite pubs of the current user
+    favourite_pubs = Pub.objects.filter(favourite__user=request.user)
+
+    return render(request, 'worldapp/profile_settings.html', {
+        'user_form': user_form,
+        'password_form': password_form,
+        'favourite_pubs': favourite_pubs
+    })
 
 def worldapp(request):
     if not request.user.is_authenticated:
@@ -201,3 +210,19 @@ def toggle_favourite(request, pub_id):
         status = 'added'
 
     return JsonResponse({'status': status})
+
+# views.py
+# views.py
+def discover_artists(request):
+    query = request.GET.get('q')
+    artists = None
+    if query:
+        artists = Artist.objects.filter(Q(artistName__icontains=query)).prefetch_related('album_set',
+                                                                                         'album_set__song_set')
+    else:
+        artists = Artist.objects.none()
+
+    context = {
+        'artists': artists,
+    }
+    return render(request, 'discover.html', context)

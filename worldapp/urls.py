@@ -14,6 +14,7 @@ urlpatterns = [
     path('register/', user_register, name='register'),
     path('update/', update, name="update"),
     path('profile_settings/', profile_settings, name='profile_settings'),
+    path('discover/', discover, name='discover'),
 
     path('', worldapp, name='worldapp'),
     # path('update_location/', update_location, name="update_location"),
@@ -22,6 +23,7 @@ urlpatterns = [
     path('edit_pub/<path:pub_id>/', edit_pub, name='edit_pub'),
     path('pubs_geojson/', PubsGeoJSON.as_view(), name='pubs_geojson'),
     path('toggle_favourite/<int:pub_id>/', toggle_favourite, name='toggle_favourite'),
+    path('discover/', discover_artists, name='discover_artists'),
 
 
 

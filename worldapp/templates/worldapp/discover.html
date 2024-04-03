@@ -1,0 +1,28 @@
+<!-- discover.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h2 class="my-4">Discover Artists</h2>
+    <div class="card mb-4">
+      <div class="card-body">
+        <form method="get">
+          <input type="text" name="q" placeholder="Search Artists">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          {% for artist in artists %}
+            <li class="list-group-item">{{ artist.artistName }}</li>
+          {% empty %}
+            <li class="list-group-item">No artists found.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}

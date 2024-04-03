@@ -6548,26 +6548,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "3196532961",
-        "addr:city": "Dublin",
-        "addr:housenumber": "6601",
-        "postcode": "94568",
-        "addr:street": "Dublin Boulevard",
-        "amenity": "bar",
-        "name": "Caps and Taps"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.911603,
-          37.704466
-        ]
-      },
-      "id": "3196532961"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "3219472687",
         "amenity": "pub",
         "name": "Hartstown House"
@@ -8682,22 +8662,6 @@
         ]
       },
       "id": "7017217477"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "7080281085",
-        "amenity": "bar",
-        "name": "Vaso"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.1094401,
-          40.1007319
-        ]
-      },
-      "id": "7080281085"
     },
     {
       "type": "Feature",

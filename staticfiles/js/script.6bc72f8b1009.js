@@ -17,6 +17,20 @@ const map = L.map("map", {
     maxZoom: 16
 });
 
+// Add the datepicker input field
+let datePicker = $('<input type="text" id="datepicker">');
+$("#map").append(datePicker);
+
+// Initialize the datepicker
+$("#datepicker").datepicker();
+
+// Position the datepicker on the map
+$("#datepicker").css({
+    "position": "absolute",
+    "top": "10px",
+    "left": "10px",
+    "z-index": "1100" // Ensure the datepicker is above the map
+});
 
 // Default tile layer (OpenStreetMap)
 const defaultTileLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
