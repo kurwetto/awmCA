@@ -123,9 +123,19 @@ class Album(models.Model):
     def __str__(self):
         return self.albumName
 
+class Genre(models.Model):
+    name = models.CharField(_("Genre Name"), max_length=50)
+
+    class Meta:
+        verbose_name = _("Genre")
+        verbose_name_plural = _("Genres")
+
+    def __str__(self):
+        return self.name
 
 class Song(models.Model):
     album = models.ForeignKey("Album", verbose_name=_("Song Album"), on_delete=models.CASCADE)
+    genre = models.ForeignKey("Genre", verbose_name=_("Song Genre"), on_delete=models.CASCADE)
     songThumbnail = models.ImageField(_("Song Thumbnail"), upload_to='thumbnail/',
                                       help_text=".jpg, .png, .jpeg, .gif, .svg supported")
     song = models.FileField(_("Song"), upload_to='songs/', help_text=".mp3 supported only", )
@@ -139,6 +149,11 @@ class Song(models.Model):
 
     def __str__(self):
         return self.songName
+
+class Play(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    song = models.ForeignKey(Song, on_delete=models.CASCADE)
+    played_at = models.DateTimeField(auto_now_add=True)
 
 class Pub(models.Model):
     id = models.CharField(max_length=255, primary_key=True)

@@ -16,7 +16,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{song.songName}}</h5>
                             <h6 class="card-title">Artist - {{song.album.artist.artistName}}</h6>
-                            <p class="card-text">From - {{song.album}}</p>
+                            <p class="card-text">Album - {{song.album}}</p>
                             <p class="card-text"><small class="text-muted">Last updated {{song.last_updated | timesince}} ago</small></p>
                         </div>
                     </div>
@@ -28,7 +28,7 @@
                             </svg>
                         </div>
                         <div class="audio-file d-none">
-                            <audio controls>
+                            <audio controls data-song-id="{{ song.id }}">
                                 <source src="{{song.song.url}}" type="audio/mpeg">
                                 Your browser does not support the audio tag.
                               </audio>

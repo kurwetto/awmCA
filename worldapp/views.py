@@ -4,6 +4,8 @@ from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.gis.geos import Point
+from django.core.exceptions import ObjectDoesNotExist
+from django.contrib.auth import get_user
 from django.db.models import Q
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
@@ -15,6 +17,7 @@ from .forms import UserLoginForm, UserRegisterForm, UsernameUpdateForm, CustomPa
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Pub
+from django.shortcuts import get_object_or_404
 
 
 
@@ -241,3 +244,17 @@ def search_songs(request):
 
     context = {'search_result': search_result, 'search_query': search_query}
     return render(request, 'worldapp/search_results.html', context)
+
+
+
+@login_required
+def record_play(request, song_id):
+    # Get the song instance
+    song = get_object_or_404(Song, id=song_id)
+
+    # Create a new Play instance
+    user = get_user(request)  # Get the User instance
+    play = Play(user=user, song=song)
+    play.save()
+
+    return JsonResponse({'status': 'success'})

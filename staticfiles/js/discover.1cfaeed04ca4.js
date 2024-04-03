@@ -1,18 +1,3 @@
-function getCookie(name) {
-    let cookieValue = null;
-    if (document.cookie && document.cookie !== '') {
-        const cookies = document.cookie.split(';');
-        for (let i = 0; i < cookies.length; i++) {
-            const cookie = jQuery.trim(cookies[i]);
-            if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                break;
-            }
-        }
-    }
-    return cookieValue;
-}
-
 var $ = jQuery.noConflict();
 $(document).ready((function () {
     $(document).on("click", ".play-button svg", function (params) {
@@ -35,17 +20,19 @@ $(document).ready((function () {
         audioFile.play()
 
         // Send a POST request to the server
-       $.ajax({
-            url: '/record_play/' + songId + '/',  // Include the song id in the URL
-            method: 'POST',
-            headers: { "X-CSRFToken": getCookie('csrftoken') },  // Include the CSRF token
-            success: function(data) {
-                console.log("Play recorded successfully.");
-            },
-            error: function(data) {
-                console.log("Error recording play.");
-            }
-        });
+        $.ajax({
+                url: '/record_play/' + songId + '/',  // Include the song id in the URL
+                method: 'POST',
+                data: {
+                    'csrfmiddlewaretoken': '{{ csrf_token }}'  // Include the CSRF token
+                },
+                success: function(data) {
+                    console.log("Play recorded successfully.");
+                },
+                error: function(data) {
+                    console.log("Error recording play.");
+                }
+            });
 
     })
 
