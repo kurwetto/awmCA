@@ -43,8 +43,13 @@ L.control.layers(baseLayers).addTo(map);
 // Reset the matchingPubs array
 matchingPubs = markers;
 
-let icon = L.icon({
+let defaultIcon = L.icon({
     iconUrl: '/static/icon.png',
+    iconSize: [40, 40]
+});
+
+let favoritedIcon = L.icon({
+    iconUrl: '/static/pub.png',
     iconSize: [40, 40]
 });
 
@@ -120,12 +125,20 @@ fetch('/pubs_geojson/')
 function addMarkersToMap(data) {
     L.geoJson(data, {
         pointToLayer: function (feature, latlng) {
-            let marker = L.marker(latlng, { icon: icon });
-            markers.push(marker); // Add the marker to the array
+            let marker = L.marker(latlng, { icon: feature.properties.isFavorited ? favoritedIcon : defaultIcon });
+            markers.push(marker);
+            feature.marker = marker; // Add the marker to the feature
             return marker;
         },
-        onEachFeature: function (feature, layer) {
+         onEachFeature: function (feature, layer) {
             let pubContent = "";
+
+            /// Assuming you have an isFavorited property in the GeoJSON data indicating whether the pub is favorited
+            let isFavorited = feature.properties.isFavorited;
+            // If the pub is favorited, use the favorited icon
+            if (isFavorited) {
+                feature.marker.setIcon(favoriteIcon); // Update the icon of the marker
+            }
 
             if (feature.properties.name) {
                 pubContent += "<p>Name: " + feature.properties.name + "</p>";
@@ -174,7 +187,7 @@ function addMarkersToMap(data) {
 // Current Location
 let gpsMarker, gpsCircleMarker;
 function onLocationFound(e) {
-    let radius = Math.floor(e.accuracy / 2);
+    let radius = e.accuracy / 2;
     let popupContent = `You are within ${radius} meters from this point`;
 
     if (!gpsMarker) {
@@ -284,3 +297,4 @@ function showDirections(pubName, lat, lng) {
         alert('Location not found. Please enable location services.');
     }
 }
+

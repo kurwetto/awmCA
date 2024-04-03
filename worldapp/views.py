@@ -18,6 +18,7 @@ from .models import Pub
 
 
 
+
 def user_register(request):
     if request.user.is_authenticated:
         return redirect('worldapp')
@@ -55,7 +56,9 @@ def user_logout(request):
     return redirect('login')
 
 def discover(request):
-    return render(request, 'worldapp/discover.html')
+    allSongs = Song.objects.all().order_by('-last_updated')
+    return render(request, template_name="worldapp/discover.html", context={"allSongs" : allSongs})
+
 
 @login_required
 def profile_settings(request):
@@ -116,6 +119,7 @@ def is_admin(user):
 def update(request):
     return render(request, 'worldapp/update.html')
 
+@user_passes_test(is_admin)
 def search_pubs(request):
     query = request.GET.get('q')
     pubs = None
@@ -131,6 +135,8 @@ def search_pubs(request):
         'pubs': pubs,
     }
     return render(request, 'worldapp/update.html', context)
+
+@user_passes_test(is_admin)
 def search_artists(request):
     query = request.GET.get('q')
     artists = None
@@ -211,18 +217,27 @@ def toggle_favourite(request, pub_id):
 
     return JsonResponse({'status': status})
 
-# views.py
-# views.py
 def discover_artists(request):
-    query = request.GET.get('q')
-    artists = None
-    if query:
-        artists = Artist.objects.filter(Q(artistName__icontains=query)).prefetch_related('album_set',
-                                                                                         'album_set__song_set')
-    else:
-        artists = Artist.objects.none()
+    artists = Artist.objects.all().prefetch_related('album_set', 'album_set__song_set')
 
     context = {
         'artists': artists,
     }
-    return render(request, 'discover.html', context)
+    return render(request, 'worldapp/discover.html', context)
+
+
+def search_songs(request):
+
+    search_query = request.GET.get('search', None)
+
+    if search_query:
+        search_result = Song.objects.filter(
+            Q(songName__icontains=search_query) |
+            Q(album__albumName__icontains=search_query) |
+            Q(album__artist__artistName__icontains=search_query)
+        ).distinct()
+    else:
+        search_result = Song.objects.all()
+
+    context = {'search_result': search_result, 'search_query': search_query}
+    return render(request, 'worldapp/search_results.html', context)

@@ -17,7 +17,6 @@ const map = L.map("map", {
     maxZoom: 16
 });
 
-
 // Default tile layer (OpenStreetMap)
 const defaultTileLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -44,13 +43,8 @@ L.control.layers(baseLayers).addTo(map);
 // Reset the matchingPubs array
 matchingPubs = markers;
 
-let defaultIcon = L.icon({
+let icon = L.icon({
     iconUrl: '/static/icon.png',
-    iconSize: [40, 40]
-});
-
-let favoritedIcon = L.icon({
-    iconUrl: '/static/pub.png', // Update the path to your favorited icon
     iconSize: [40, 40]
 });
 
@@ -126,17 +120,11 @@ fetch('/pubs_geojson/')
 function addMarkersToMap(data) {
     L.geoJson(data, {
         pointToLayer: function (feature, latlng) {
-            // Assuming you have an isFavorited property in the GeoJSON data indicating whether the pub is favorited
-            let isFavorited = feature.properties.isFavorited;
-            // Choose the icon based on whether the pub is favorited
-            let icon = isFavorited ? favoriteIcon : defaultIcon;
-
             let marker = L.marker(latlng, { icon: icon });
-            markers.push(marker);
-            feature.marker = marker; // Add the marker to the feature
+            markers.push(marker); // Add the marker to the array
             return marker;
         },
-         onEachFeature: function (feature, layer) {
+        onEachFeature: function (feature, layer) {
             let pubContent = "";
 
             if (feature.properties.name) {
@@ -186,7 +174,7 @@ function addMarkersToMap(data) {
 // Current Location
 let gpsMarker, gpsCircleMarker;
 function onLocationFound(e) {
-    let radius = e.accuracy / 2;
+    let radius = Math.floor(e.accuracy / 2);
     let popupContent = `You are within ${radius} meters from this point`;
 
     if (!gpsMarker) {
@@ -296,4 +284,3 @@ function showDirections(pubName, lat, lng) {
         alert('Location not found. Please enable location services.');
     }
 }
-

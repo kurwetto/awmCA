@@ -268,7 +268,7 @@
         "brewery": "Carlsberg;Bulmers;Heineken",
         "contact:facebook": "https://www.facebook.com/kavanaghsmarino",
         "internet_access": "yes",
-        "name": "Marino House (Kavanagh's)",
+        "name": "Marino House (Kavanaghs)",
         "opening_hours": "Mo-Th 10:30-23:30, Fr-Sa 10:30-00:30, Su 12:30-23:00",
         "phone": "+353 1 8332786"
       },
@@ -461,7 +461,7 @@
         "alt_name:en": "Ballyboden House",
         "amenity": "pub",
         "email": "info@buglerspub.com",
-        "name": "Bugler's Pub",
+        "name": "Buglers Pub",
         "phone": "+353-1-4932358",
         "website": "http://www.buglerspub.com/",
         "wheelchair": "yes"
@@ -633,10 +633,10 @@
         "@id": "306276661",
         "addr:city": "Dublin",
         "addr:housename": "Tara Street Station",
-        "addr:street": "George's Quay",
+        "addr:street": "Georges Quay",
         "alt_name": "Sub Lounge",
         "amenity": "pub",
-        "name": "O'Reilly's",
+        "name": "OReillys",
         "wheelchair": "yes"
       },
       "geometry": {
@@ -715,7 +715,7 @@
         "addr:street": "Main Street",
         "amenity": "pub",
         "brewery": "various",
-        "name": "Brady's",
+        "name": "Bradys",
         "smoking": "outside"
       },
       "geometry": {
@@ -848,7 +848,7 @@
         "@id": "312574927",
         "addr:street": "Seafort Avenue",
         "amenity": "pub",
-        "name": "O'Reilly"
+        "name": "OReilly"
       },
       "geometry": {
         "type": "Point",
@@ -1060,7 +1060,7 @@
       "properties": {
         "@id": "358543320",
         "addr:housenumber": "27",
-        "addr:street": "Dolphin's Barn Street",
+        "addr:street": "Dolphins Barn Street",
         "amenity": "pub",
         "name": "Lowes Bar"
       },
@@ -1105,7 +1105,7 @@
         "addr:county": "Dublin",
         "addr:housenumber": "36",
         "postcode": "D02 AX50",
-        "addr:street": "George's Street Great South",
+        "addr:street": "Georges Street Great South",
         "amenity": "pub",
         "name": "Hogan’s Bar",
         "wheelchair": "yes"
@@ -1172,7 +1172,7 @@
         "addr:county": "Dublin",
         "addr:housenumber": "238",
         "postcode": "D6W RF44",
-        "addr:street": "Harold's Cross Road",
+        "addr:street": "Harolds Cross Road",
         "amenity": "pub",
         "internet_access": "wlan",
         "name": "McGarry’s Bar",
@@ -1194,7 +1194,7 @@
         "addr:city": "Dublin",
         "addr:street": "Terenure Road East",
         "amenity": "pub",
-        "name": "Coman's",
+        "name": "Comans",
         "outdoor_seating": "no",
         "website": "https://comans.ie/"
       },
@@ -1330,7 +1330,7 @@
         "addr:county": "Dublin",
         "addr:housenumber": "19",
         "postcode": "D01 E796",
-        "addr:street": "O'Connell Street Upper",
+        "addr:street": "OConnell Street Upper",
         "amenity": "pub",
         "check_date:opening_hours": "2022-11-22",
         "indoor_seating": "yes",
@@ -1359,7 +1359,7 @@
         "postcode": "D01 YK51",
         "addr:street": "Talbot Street",
         "amenity": "pub",
-        "brewery": "Guinness;smithwick;Carlsberg;hop housse 13 lager;o'haras irish stout;o'haras irish red;Heineken",
+        "brewery": "Guinness;smithwick;Carlsberg;hop housse 13 lager;oharas irish stout;oharas irish red;Heineken",
         "diet:vegan": "yes",
         "diet:vegetarian": "yes",
         "food": "yes",
@@ -1385,7 +1385,7 @@
         "postcode": "D02 CX67",
         "addr:street": "Crown Alley",
         "amenity": "pub",
-        "brewery": "guinness;carlsberg;heineken;Smithwick's",
+        "brewery": "guinness;carlsberg;heineken;Smithwicks",
         "internet_access": "wlan",
         "name": "The Old Storehouse",
         "wheelchair": "no"
@@ -1623,7 +1623,7 @@
         "addr:housename": "Balally Shopping Centre",
         "addr:street": "Cedar Road",
         "amenity": "pub",
-        "name": "Ollie's Lounge & Bar",
+        "name": "Ollies Lounge & Bar",
         "wheelchair": "limited"
       },
       "geometry": {
@@ -1835,7 +1835,7 @@
         "addr:county": "Dublin",
         "addr:housenumber": "11",
         "postcode": "D02 V628",
-        "addr:street": "George's Street Great South",
+        "addr:street": "Georges Street Great South",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/GlobeBarDublin/",
         "name": "The Globe  - CLOSED",
@@ -2062,7 +2062,7 @@
         "addr:street": "Mount Street Lower",
         "amenity": "pub",
         "indoor_seating": "yes",
-        "name": "Oil Can Harry's",
+        "name": "Oil Can Harrys",
         "outdoor_seating": "yes",
         "website": "http://oilcanharrys.ie/"
       },
@@ -2319,7 +2319,7 @@
         "addr:housenumber": "7",
         "addr:street": "Leeson Street Lower",
         "amenity": "pub",
-        "name": "Hourican's (Closed)",
+        "name": "Houricans (Closed)",
         "wheelchair": "no"
       },
       "geometry": {
@@ -2396,7 +2396,7 @@
         "postcode": "D07 PF51",
         "addr:street": "North King Street",
         "amenity": "pub",
-        "name": "Delaney's",
+        "name": "Delaneys",
         "phone": "+35318730824",
         "smoking": "outside",
         "wheelchair": "yes"
@@ -2546,7 +2546,7 @@
         "addr:housenumber": "17",
         "postcode": "A96 HP60",
         "addr:street": "Georges Street Upper",
-        "alt_name": "O'Neill's",
+        "alt_name": "ONeills",
         "amenity": "pub",
         "check_date": "2023-05-22",
         "contact:facebook": "https://www.facebook.com/oneillsthepub",
@@ -3000,7 +3000,7 @@
         "addr:street": "South Circular Road",
         "amenity": "pub",
         "name": "The Circular",
-        "old_name:2011-2013": "McCauley's",
+        "old_name:2011-2013": "McCauleys",
         "old_name:2019": "Anchor",
         "website": "https://thecircular.ie",
         "wheelchair": "yes"
@@ -3027,7 +3027,7 @@
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/guinansbar",
         "name": "Guinan’s",
-        "old_name": "The Tram;J.K. Stoutman's",
+        "old_name": "The Tram;J.K. Stoutmans",
         "phone": "+353870656802",
         "wheelchair": "no"
       },
@@ -3130,7 +3130,7 @@
         "addr:housenumber": "29",
         "addr:street": "Richmond Street South",
         "amenity": "pub",
-        "name": "J. O'Connell"
+        "name": "J. OConnell"
       },
       "geometry": {
         "type": "Point",
@@ -3168,7 +3168,7 @@
         "addr:county": "Dublin",
         "addr:housename": "Heuston Station",
         "postcode": "D08 E2CV",
-        "addr:street": "Saint John's Road West",
+        "addr:street": "Saint Johns Road West",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/TheGalwayHooker",
         "cuisine": "carvery",
@@ -3353,7 +3353,7 @@
         "postcode": "K67 WV44",
         "addr:street": "Malahide Road",
         "amenity": "bar",
-        "name": "Wright's Café Bar",
+        "name": "Wrights Café Bar",
         "outdoor_seating": "no",
         "website": "https://wrightscafebar.ie"
       },
@@ -3579,9 +3579,9 @@
       "properties": {
         "@id": "988809177",
         "addr:housenumber": "62a-64",
-        "addr:street": "Saint Agnes' Park",
+        "addr:street": "Saint Agnes Park",
         "amenity": "pub",
-        "name": "Frehill's Tavern",
+        "name": "Frehills Tavern",
         "outdoor_seating": "no",
         "smoking": "no"
       },
@@ -3953,7 +3953,7 @@
         "addr:county": "Dublin",
         "addr:housenumber": "33-34",
         "postcode": "D01 E0W2",
-        "addr:street": "O'Connell Street Upper",
+        "addr:street": "OConnell Street Upper",
         "amenity": "pub",
         "diet:vegan": "yes",
         "food": "yes",
@@ -4382,7 +4382,7 @@
       "properties": {
         "@id": "1426100409",
         "amenity": "pub",
-        "name": "Morrissey's",
+        "name": "Morrisseys",
         "wheelchair": "yes"
       },
       "geometry": {
@@ -4399,7 +4399,7 @@
       "properties": {
         "@id": "1426100412",
         "addr:housenumber": "41-43",
-        "addr:street": "Usher's Quay",
+        "addr:street": "Ushers Quay",
         "amenity": "pub",
         "cuisine": "czech",
         "indoor_seating": "yes",
@@ -4578,7 +4578,7 @@
         "addr:street": "Wellington Quay",
         "amenity": "pub",
         "email": "info@theworkmansclub.com",
-        "name": "The Workman's Club",
+        "name": "The Workmans Club",
         "toilets:wheelchair": "no",
         "website": "https://theworkmansclub.com",
         "wheelchair": "limited",
@@ -4664,7 +4664,7 @@
       "properties": {
         "@id": "1500501221",
         "amenity": "pub",
-        "name": "Rory O'Connor's"
+        "name": "Rory OConnors"
       },
       "geometry": {
         "type": "Point",
@@ -4728,7 +4728,7 @@
       "type": "Feature",
       "properties": {
         "@id": "1517611787",
-        "addr:street": "Cambell's Row",
+        "addr:street": "Cambells Row",
         "amenity": "pub",
         "name": "The Hideout House"
       },
@@ -5009,7 +5009,7 @@
       "properties": {
         "@id": "1684858495",
         "amenity": "pub",
-        "name": "Stoney's"
+        "name": "Stoneys"
       },
       "geometry": {
         "type": "Point",
@@ -5684,8 +5684,8 @@
         "postcode": "D01 F5Y8",
         "addr:street": "Dorset Street Lower",
         "amenity": "pub",
-        "brewery": "smithwick's;various",
-        "name": "Delahunty's",
+        "brewery": "smithwicks;various",
+        "name": "Delahuntys",
         "outdoor_seating": "no",
         "smoking": "no"
       },
@@ -5873,22 +5873,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "2522831700",
-        "amenity": "bar",
-        "name": "Evie's"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -121.92694,
-          37.7092451
-        ]
-      },
-      "id": "2522831700"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "2573726983",
         "addr:city": "Dublin",
         "addr:street": "Dorset Street Upper",
@@ -5913,7 +5897,7 @@
       "properties": {
         "@id": "2612014313",
         "amenity": "bar",
-        "name": "Tim Young's"
+        "name": "Tim Youngs"
       },
       "geometry": {
         "type": "Point",
@@ -6041,7 +6025,7 @@
       "properties": {
         "@id": "2697063080",
         "amenity": "pub",
-        "name": "Downey's"
+        "name": "Downeys"
       },
       "geometry": {
         "type": "Point",
@@ -6163,7 +6147,7 @@
       "properties": {
         "@id": "2893532903",
         "amenity": "pub",
-        "name": "Cleary's"
+        "name": "Clearys"
       },
       "geometry": {
         "type": "Point",
@@ -6215,7 +6199,7 @@
         "food": "yes",
         "name": "Camden Bites & Brews",
         "old_name": "Great Deals",
-        "old_name:2017": "DeSelby's",
+        "old_name:2017": "DeSelbys",
         "old_name:2018": "Kamden",
         "wheelchair": "yes"
       },
@@ -6252,7 +6236,7 @@
         "@id": "2997549697",
         "addr:city": "Dublin",
         "addr:housenumber": "25",
-        "addr:street": "South Great George's Street",
+        "addr:street": "South Great Georges Street",
         "amenity": "bar",
         "brewery": "various",
         "contact:facebook": "https://www.facebook.com/The-Chelsea-Drugstore-1591948204357064/",
@@ -6311,7 +6295,7 @@
         "addr:county": "Dublin",
         "addr:housenumber": "159-163",
         "postcode": "D6W WN22",
-        "addr:street": "Harold's Cross Road",
+        "addr:street": "Harolds Cross Road",
         "amenity": "pub",
         "contact:facebook": "http://www.facebook.com/Peggykellys",
         "email": "info@peggykellys.ie",
@@ -6388,7 +6372,7 @@
         "addr:housenumber": "12-14",
         "addr:street": "Rathmines Road Upper",
         "amenity": "pub",
-        "name": "Rody Boland's"
+        "name": "Rody Bolands"
       },
       "geometry": {
         "type": "Point",
@@ -6407,7 +6391,7 @@
         "addr:housenumber": "26-32",
         "addr:street": "Rathmines Road Upper",
         "amenity": "pub",
-        "name": "Mother Reilly's Bar & Restaurant",
+        "name": "Mother Reillys Bar & Restaurant",
         "outdoor_seating": "yes",
         "phone": "+353-1-4975486",
         "smoking": "outside",
@@ -6449,7 +6433,7 @@
         "addr:county": "Dublin",
         "addr:housenumber": "174",
         "postcode": "D08 CY51",
-        "addr:street": "James's Street",
+        "addr:street": "Jamess Street",
         "amenity": "pub",
         "name": "Kenny’s"
       },
@@ -6516,7 +6500,7 @@
         "addr:city": "Dublin",
         "addr:street": "Summerhill",
         "amenity": "pub",
-        "name": "Cú Chulainn's at Croke Park"
+        "name": "Cú Chulainns at Croke Park"
       },
       "geometry": {
         "type": "Point",
@@ -6640,7 +6624,7 @@
         "addr:county": "Dublin",
         "addr:housenumber": "4",
         "postcode": "D02 NR59",
-        "addr:street": "George's Street Great South",
+        "addr:street": "Georges Street Great South",
         "amenity": "bar",
         "contact:facebook": "https://www.facebook.com/J.T.Pims",
         "contact:twitter": "JTPims1",
@@ -6676,7 +6660,7 @@
         "email": "bookings@mulliganandhaines.ie",
         "food": "yes",
         "name": "Mulligan and Haines",
-        "old_name": "Sweeney's",
+        "old_name": "Sweeneys",
         "outdoor_seating": "no",
         "phone": "+353 1 882-4355",
         "website": "https://www.mulliganandhaines.ie/",
@@ -6745,10 +6729,10 @@
       "type": "Feature",
       "properties": {
         "@id": "3580597493",
-        "addr:housename": "O'connnors Village Inn",
+        "addr:housename": "Oconnnors Village Inn",
         "addr:street": "Main Street, Ballyboughal",
         "amenity": "pub",
-        "name": "O'Connors Village Inn",
+        "name": "OConnors Village Inn",
         "smoking": "isolated"
       },
       "geometry": {
@@ -6767,7 +6751,7 @@
         "addr:city": "Dublin",
         "addr:street": "Dame Street",
         "amenity": "bar",
-        "name": "Hely's Bar",
+        "name": "Helys Bar",
         "old_name": "Le Petit Parisien"
       },
       "geometry": {
@@ -6931,11 +6915,11 @@
         "addr:city": "Dún Laoghaire",
         "addr:housenumber": "26",
         "addr:street": "Georges Street Lower",
-        "alt_name": "O'Loughlins",
+        "alt_name": "OLoughlins",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/pages/OLoughlins/2242810939288715",
-        "name": "M O'Loughlin",
-        "old_name": "Tim O'Loughlins",
+        "name": "M OLoughlin",
+        "old_name": "Tim OLoughlins",
         "opening_hours": "Mo off; Tu-Th 11:30-23:00; Fr-Sa 11:30-23:30; Su 12:15-15:00,19:00-23:00",
         "phone": "+353-1-280-7391",
         "start_date": "1929",
@@ -7093,76 +7077,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "4267002766",
-        "amenity": "pub",
-        "name": "Mezzo"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.1141557,
-          40.0996503
-        ]
-      },
-      "id": "4267002766"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "4267020889",
-        "amenity": "pub",
-        "name": "Brazenhead"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.1138341,
-          40.1007272
-        ]
-      },
-      "id": "4267020889"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "4267022585",
-        "amenity": "pub",
-        "name": "OSCARS"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.1138403,
-          40.1011666
-        ]
-      },
-      "id": "4267022585"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "4267030214",
-        "addr:city": "Dublin",
-        "addr:housenumber": "27",
-        "postcode": "43017",
-        "addr:state": "OH",
-        "addr:street": "High Street",
-        "amenity": "pub",
-        "name": "The Dublin Village Tavern",
-        "start_date": "1889"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.1138939,
-          40.0989514
-        ]
-      },
-      "id": "4267030214"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "4329853451",
         "addr:city": "Dublin",
         "addr:country": "IE",
@@ -7193,7 +7107,7 @@
         "addr:housenumber": "21-25",
         "addr:street": "Harcourt Street",
         "amenity": "pub",
-        "name": "Dicey's Garden",
+        "name": "Diceys Garden",
         "website": "https://www.russellcourthotel.ie/diceys-garden/",
         "wheelchair": "no"
       },
@@ -7613,7 +7527,7 @@
         "@id": "5166614627",
         "addr:city": "Dublin",
         "addr:housename": "Shelbourne Hotel",
-        "addr:street": "St. Stephen's Green",
+        "addr:street": "St. Stephens Green",
         "amenity": "bar",
         "name": "The Saddle Room",
         "opening_hours": "Mo-Su 17:30-22:00",
@@ -7713,7 +7627,7 @@
         "postcode": "D01 CK74",
         "addr:street": "Parnell Street",
         "addr:suburb": "Rotunda",
-        "alt_name": "Fibber's Rock and Roll Bar",
+        "alt_name": "Fibbers Rock and Roll Bar",
         "amenity": "pub",
         "name": "Fibber Magee’s",
         "operator": "Murray Pub Group",
@@ -8022,7 +7936,7 @@
       "properties": {
         "@id": "5787220032",
         "amenity": "pub",
-        "name": "Alfred's"
+        "name": "Alfreds"
       },
       "geometry": {
         "type": "Point",
@@ -8298,7 +8212,7 @@
         "addr:street": "Main Street",
         "amenity": "pub",
         "brewery": "various",
-        "name": "Mickey Byrne's Bar",
+        "name": "Mickey Byrnes Bar",
         "smoking": "outside"
       },
       "geometry": {
@@ -8315,7 +8229,7 @@
       "properties": {
         "@id": "6313378889",
         "amenity": "pub",
-        "name": "Crough's Pub"
+        "name": "Croughs Pub"
       },
       "geometry": {
         "type": "Point",
@@ -8333,7 +8247,7 @@
         "addr:housenumber": "42-44",
         "addr:street": "Main Street",
         "amenity": "pub",
-        "name": "Cú Chulainn's",
+        "name": "Cú Chulainns",
         "wheelchair": "yes"
       },
       "geometry": {
@@ -8369,7 +8283,7 @@
         "addr:county": "Dublin",
         "addr:housename": "Centenary House",
         "postcode": "D02 AK30",
-        "addr:street": "Anne's Lane",
+        "addr:street": "Annes Lane",
         "amenity": "bar",
         "name": "Zozimus Bar",
         "wheelchair": "no"
@@ -8495,7 +8409,7 @@
       "properties": {
         "@id": "6782589728",
         "addr:city": "Dublin",
-        "addr:street": "St. Stephen's Green",
+        "addr:street": "St. Stephens Green",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/thewelldublin/",
         "name": "The Well",
@@ -8556,24 +8470,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "6825116786",
-        "amenity": "bar",
-        "name": "PINS Mechanical Company",
-        "phone": "+1-614-761-3933",
-        "website": "https://www.pinsbar.com/dublin"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.1099551,
-          40.1011456
-        ]
-      },
-      "id": "6825116786"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "6935441685",
         "amenity": "bar",
         "name": "The Bus Bar"
@@ -8620,7 +8516,7 @@
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/JPMooneys/",
         "indoor_seating": "yes",
-        "name": "J.P. Mooney's",
+        "name": "J.P. Mooneys",
         "outdoor_seating": "no",
         "website": "http://jpmooneys.com/",
         "wheelchair": "no"
@@ -8739,7 +8635,7 @@
         "addr:street": "Sandymount Green",
         "amenity": "bar",
         "level": "0",
-        "name": "Mario's Cafe Bar"
+        "name": "Marios Cafe Bar"
       },
       "geometry": {
         "type": "Point",
@@ -8864,7 +8760,7 @@
         "addr:county": "Dublin",
         "addr:housenumber": "4-5",
         "postcode": "D02 Y773",
-        "addr:street": "Sir John Rogerson's Quay",
+        "addr:street": "Sir John Rogersons Quay",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/dockerspub.ie",
         "contact:instagram": "@dockerspub",
@@ -9063,7 +8959,7 @@
       "properties": {
         "@id": "9580191788",
         "amenity": "pub",
-        "name": "Brady's Shankill"
+        "name": "Bradys Shankill"
       },
       "geometry": {
         "type": "Point",
@@ -9101,7 +8997,7 @@
         "addr:city": "Dublin",
         "addr:housename": "Roe & Co Distillery",
         "addr:housenumber": "92",
-        "addr:street": "James's Street",
+        "addr:street": "Jamess Street",
         "amenity": "bar",
         "contact:instagram": "https://www.instagram.com/roeandcowhiskey/",
         "contact:tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186605-d17593600-Reviews-Roe_Co_Distillery-Dublin_County_Dublin.html",
@@ -9206,7 +9102,7 @@
         "internet_access:fee": "customers",
         "internet_access:ssid": "kennedys123",
         "level": "0",
-        "name": "Kennedy's",
+        "name": "Kennedys",
         "opening_hours": "Mo-Th 10:30-23:30; Fr-Sa 10:30-00:30; Su 12:00-23:00",
         "outdoor_seating": "yes",
         "ref:vatin": "IE336978NH",
@@ -9247,7 +9143,7 @@
         "food": "yes",
         "internet_access": "wlan",
         "internet_access:fee": "no",
-        "name": "Keavan's Port",
+        "name": "Keavans Port",
         "note": "Has places to change<br>Has TV screens<br>Has meeting facilites",
         "opening_hours": "Mo,Tu,We,Th 07:00-24:00; Fr,Sa 07:00-25:00; Su 07:00-23:30",
         "outdoor_seating": "yes",
@@ -9329,7 +9225,7 @@
         "addr:county": "Dublin",
         "addr:housenumber": "35",
         "postcode": "D01 K2X5",
-        "addr:street": "O'Connell Street Upper",
+        "addr:street": "OConnell Street Upper",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/thomasclarkesdublin/",
         "diet:vegan": "yes",

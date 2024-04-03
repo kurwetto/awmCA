@@ -23,10 +23,8 @@ urlpatterns = [
     path('edit_pub/<path:pub_id>/', edit_pub, name='edit_pub'),
     path('pubs_geojson/', PubsGeoJSON.as_view(), name='pubs_geojson'),
     path('toggle_favourite/<int:pub_id>/', toggle_favourite, name='toggle_favourite'),
-    path('discover/', discover_artists, name='discover_artists'),
-
-
-
+    path('discover_artists/', discover_artists, name='discover_artists'),
+    path('search/', search_songs, name='search_songs'),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

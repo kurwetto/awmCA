@@ -174,7 +174,7 @@ function addMarkersToMap(data) {
 // Current Location
 let gpsMarker, gpsCircleMarker;
 function onLocationFound(e) {
-    let radius = Math.floor(e.accuracy / 2);
+    let radius = e.accuracy / 2;
     let popupContent = `You are within ${radius} meters from this point`;
 
     if (!gpsMarker) {
