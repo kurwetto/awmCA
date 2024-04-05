@@ -35,5 +35,20 @@
       </div>
     </div>
   </div>
+
+    <button id="recommend-button">Recommend a Song</button>
+<div id="recommendations"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#recommend-button").click(function(){
+    $.get("/recommend/", function(data, status){
+      $("#recommendations").html(data);
+    });
+  });
+});
+</script>
+
 {% endblock %}
 ```

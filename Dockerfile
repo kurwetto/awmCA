@@ -22,6 +22,7 @@ ENV SECURE_DEPLOY=True
 COPY ENV.yml /usr/src/app
 RUN conda env create -n awmCA --file ENV.yml
 RUN /opt/conda/envs/awmCA/bin/pip install djangorestframework
+RUN /opt/conda/envs/awmCA/bin/pip install spotipy
 # Make RUN commands use the new environment
 # See https://pythonspeed.com/articles/activate-conda-dockerfile/ for explanation
 RUN echo "conda activate awmCA" >> ~/.bashrc

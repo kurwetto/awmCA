@@ -1,4 +1,6 @@
 import json
+from collections import Counter
+
 from django.contrib import messages
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
@@ -18,10 +20,39 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Pub
 from django.shortcuts import get_object_or_404
+from django.shortcuts import redirect
+from django.conf import settings
+import spotipy
+from spotipy.oauth2 import SpotifyOAuth
+import random
+import string
+import logging
+from django.db.models import Count
+from sklearn.neighbors import KNeighborsClassifier
+import pandas as pd
+from django.http import HttpResponse
+from sklearn.neighbors import NearestNeighbors
+from django.shortcuts import render
 
 
 
+# Prepare Data
+all_songs = Song.objects.all()
+genre_values = [song.genre.name for song in all_songs]
 
+# Get all possible genre names
+all_genre_names = list(set(genre_values))
+
+# Initialize a DataFrame with all possible genre names as columns
+data = pd.DataFrame(columns=all_genre_names)
+
+# Encode genre values into dummy variables and fill the DataFrame
+for genre in all_genre_names:
+    data[genre] = [1 if song_genre == genre else 0 for song_genre in genre_values]
+
+# Train KNN Model
+knn = NearestNeighbors(n_neighbors=1)
+knn.fit(data)
 def user_register(request):
     if request.user.is_authenticated:
         return redirect('worldapp')
@@ -258,3 +289,68 @@ def record_play(request, song_id):
     play.save()
 
     return JsonResponse({'status': 'success'})
+
+def generate_random_string(length):
+    return ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(length))
+
+def spotify_login(APIView):
+    scope = 'user-read-private user-read-email'
+    state = generate_random_string(16)
+    sp_oauth = SpotifyOAuth(client_id=settings.SPOTIFY_CLIENT_ID,
+                            redirect_uri=settings.SPOTIFY_REDIRECT_URI,
+                            client_secret=settings.SPOTIFY_CLIENT_SECRET,
+                            scope=scope,
+                            state=state)
+    auth_url = sp_oauth.get_authorize_url()
+    return redirect(auth_url)
+
+
+def spotify_callback(request):
+    sp_oauth = SpotifyOAuth(client_id=settings.SPOTIFY_CLIENT_ID,
+                            client_secret=settings.SPOTIFY_CLIENT_SECRET,
+                            redirect_uri=settings.SPOTIFY_REDIRECT_URI)
+    code = request.GET.get('code')
+    token_info = sp_oauth.get_access_token(code)
+
+    # save the token_info in your preferred way (session, database, etc.)
+    request.session['spotify_token_info'] = token_info
+
+    return redirect('worldapp')  # or where you want to redirect the user
+
+
+
+import random
+
+def recommend_song(request):
+    user = request.user
+
+    # Check if there are any songs played by the user
+    plays = Play.objects.filter(user=user)
+    if not plays.exists():
+        return HttpResponse("No songs played by the user yet.")
+
+    # Get the most played song by the user
+    most_played_song = plays.values('song__genre__name')\
+        .annotate(song_count=Count('song'))\
+        .order_by('-song_count')\
+        .first()
+
+    if most_played_song is None:
+        return HttpResponse("No most played song found for the user.")
+
+    all_songs = Song.objects.all()
+
+    # Fetch genre name from the most played song
+    most_played_genre_name = most_played_song.get('song__genre__name')
+
+    # Filter songs by genre
+    same_genre_songs = all_songs.filter(genre__name=most_played_genre_name)
+
+    if not same_genre_songs.exists():
+        return HttpResponse("No songs of the same genre found.")
+
+    # Shuffle the queryset to get a random song
+    random_song = same_genre_songs.order_by('?').first()
+
+    return HttpResponse(f"Recommended song: {random_song.songName} by {random_song.album.artist.artistName}")
+

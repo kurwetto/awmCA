@@ -240,3 +240,7 @@ SPOTIFY_SCOPES = ['user-read-playback-state', 'user-modify-playback-state']
 #       "type": "image/png"
 #     }
 # ]
+
+SPOTIFY_CLIENT_SECRET = '58f0cefdb44f4d97978baca4d9362b29'
+SPOTIFY_CLIENT_ID = 'b9def44198fc490796da7b149564603e'
+SPOTIFY_REDIRECT_URI = 'http://127.0.0.1:8000/callback'
