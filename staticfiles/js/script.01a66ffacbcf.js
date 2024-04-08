@@ -10,18 +10,12 @@ const searchButton = document.getElementById('searchButton');
 
 // Map initialization with default tile layer
 const map = L.map("map", {
-    doubleClickZoom: false,
-    zoomControl: false
+    doubleClickZoom: false
 }).locate({
     setView: true,
     watch: true,
     maxZoom: 16
 });
-
-// Add a new zoom control in the top right corner
-L.control.zoom({
-    position: 'topright'
-}).addTo(map);
 
 // Default tile layer (OpenStreetMap)
 const defaultTileLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -113,6 +107,7 @@ function playAudio(url) {
     })
     .catch(error => console.error('Error:', error));
 }
+
 fetch('/pubs_geojson/')
     .then(function (response) {
         return response.json();
@@ -145,16 +140,17 @@ function addMarkersToMap(data) {
             if (feature.properties.artist) {
                 pubContent += "<p>Artist Preforming: " + feature.properties.artist + "</p>";
             }
-           if (feature.properties.songURL) {
-    pubContent += `
-        <audio id="audio_${feature.properties['@id']}" src="${feature.properties.songURL}"></audio>
-        <button class="myButton" onclick="toggleAudio('audio_${feature.properties['@id']}')">Play Sample</button>
-    `;
-}
-// Add "Show Directions" button to the popup content
-pubContent += `<button class="myButton" onclick="showDirections('${feature.properties.name}', ${layer.getLatLng().lat}, ${layer.getLatLng().lng})">Show Directions</button>`;
-pubContent += `<button class="myButton" onclick="toggleFavorite(${feature.properties.id})">Favorite</button>`;
-
+            pubContent += '<div class="popup-buttons">';
+            if (feature.properties.songURL) {
+                pubContent += `
+                    <audio id="audio_${feature.properties['@id']}" src="${feature.properties.songURL}"></audio>
+                    <button onclick="toggleAudio('audio_${feature.properties['@id']}')">Play Sample</button>
+                `;
+            }
+             // Add "Show Directions" button to the popup content
+            pubContent += `<button onclick="showDirections('${feature.properties.name}', ${layer.getLatLng().lat}, ${layer.getLatLng().lng})">Show Directions</button>`;
+            pubContent += `<button onclick="toggleFavorite(${feature.properties.id})">Favorite</button>`;
+            pubContent += '</div>'; // Close the container div
             layer.bindPopup(pubContent);
 
             // Add click event to the map to show all markers and remove directions

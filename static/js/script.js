@@ -2,6 +2,7 @@
 let markers = [];
 let geoJsonData; // Variable to store the GeoJSON data
 let matchingPubs = [];
+let favoritePubs = [];
 
 // Add event listener to the directions button
 const directionsButton = document.getElementById('directionsButton');
@@ -10,7 +11,8 @@ const searchButton = document.getElementById('searchButton');
 
 // Map initialization with default tile layer
 const map = L.map("map", {
-    doubleClickZoom: false
+    doubleClickZoom: false,
+    zoomControl: false
 }).locate({
     setView: true,
     watch: true,
@@ -40,11 +42,21 @@ const baseLayers = {
 // Add layer control to switch between map layers
 L.control.layers(baseLayers).addTo(map);
 
+// Add a new zoom control in the top right corner
+L.control.zoom({
+    position: 'topright'
+}).addTo(map);
+
 // Reset the matchingPubs array
 matchingPubs = markers;
 
 let icon = L.icon({
     iconUrl: '/static/icon.png',
+    iconSize: [40, 40]
+});
+
+let favouriteIcon = L.icon({
+    iconUrl: '/static/pub.png',
     iconSize: [40, 40]
 });
 
@@ -117,37 +129,37 @@ fetch('/pubs_geojson/')
     });
 
 
-function addMarkersToMap(data) {
-    L.geoJson(data, {
-        pointToLayer: function (feature, latlng) {
-            let marker = L.marker(latlng, { icon: icon });
-            markers.push(marker); // Add the marker to the array
-            return marker;
-        },
-        onEachFeature: function (feature, layer) {
-            let pubContent = "";
+    function addMarkersToMap(data) {
+        L.geoJson(data, {
+            pointToLayer: function (feature, latlng) {
+                let marker = L.marker(latlng, { icon: icon });
+                markers.push(marker); // Add the marker to the array
+                return marker;
+            },
+            onEachFeature: function (feature, layer) {
+                let pubContent = "";
 
-            if (feature.properties.name) {
-                pubContent += "<p>Name: " + feature.properties.name + "</p>";
-            }
-            if (feature.properties.postcode) {
-                pubContent += "<p>Address: " + feature.properties.postcode + "</p>";
-            }
-            if (feature.properties.wheelchair) {
-                pubContent += "<p>Wheelchair Access: " + feature.properties.wheelchair + "</p>";
-            }
-            if (feature.properties.artist) {
-                pubContent += "<p>Artist Preforming: " + feature.properties.artist + "</p>";
-            }
-            if (feature.properties.songURL) {
-                pubContent += `
-                    <audio id="audio_${feature.properties['@id']}" src="${feature.properties.songURL}"></audio>
-                    <button onclick="toggleAudio('audio_${feature.properties['@id']}')">Play Sample</button>
-                `;
-            }
-             // Add "Show Directions" button to the popup content
-            pubContent += `<button onclick="showDirections('${feature.properties.name}', ${layer.getLatLng().lat}, ${layer.getLatLng().lng})">Show Directions</button>`;
-            pubContent += `<button onclick="toggleFavorite(${feature.properties.id})">Favorite</button>`;
+                if (feature.properties.name) {
+                    pubContent += "<p>Name: " + feature.properties.name + "</p>";
+                }
+                if (feature.properties.postcode) {
+                    pubContent += "<p>Address: " + feature.properties.postcode + "</p>";
+                }
+                if (feature.properties.wheelchair) {
+                    pubContent += "<p>Wheelchair Access: " + feature.properties.wheelchair + "</p>";
+                }
+                if (feature.properties.artist) {
+                    pubContent += "<p>Artist Preforming: " + feature.properties.artist + "</p>";
+                }
+               if (feature.properties.songURL) {
+        pubContent += `
+            <audio id="audio_${feature.properties['@id']}" src="${feature.properties.songURL}"></audio>
+            <button class="myButton" onclick="toggleAudio('audio_${feature.properties['@id']}')">Play Sample</button>
+        `;
+    }
+// Add "Show Directions" button to the popup content
+pubContent += `<button class="myButton" onclick="showDirections('${feature.properties.name}', ${layer.getLatLng().lat}, ${layer.getLatLng().lng})">Show Directions</button>`;
+pubContent += `<button class="myButton" onclick="toggleFavorite(${feature.properties.id})">Favorite</button>`;
 
             layer.bindPopup(pubContent);
 

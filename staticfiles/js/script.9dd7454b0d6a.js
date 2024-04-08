@@ -10,18 +10,12 @@ const searchButton = document.getElementById('searchButton');
 
 // Map initialization with default tile layer
 const map = L.map("map", {
-    doubleClickZoom: false,
-    zoomControl: false
+    doubleClickZoom: false
 }).locate({
     setView: true,
     watch: true,
     maxZoom: 16
 });
-
-// Add a new zoom control in the top right corner
-L.control.zoom({
-    position: 'topright'
-}).addTo(map);
 
 // Default tile layer (OpenStreetMap)
 const defaultTileLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {

@@ -36,8 +36,12 @@
     </div>
   </div>
 
-    <button id="recommend-button">Recommend a Song</button>
-<div id="recommendations"></div>
+  <div class="text-center mt-4">
+    <p>Press the recommend button to use our machine learning algorithm to recommend you a song we think you'd like!</p>
+    <button id="recommend-button" class="btn btn-primary">Recommend a Song</button>
+    <div id="recommendations" class="text-center"></div>
+  </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
@@ -51,4 +55,3 @@ $(document).ready(function(){
 </script>
 
 {% endblock %}
-```

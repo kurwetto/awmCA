@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    margin-top: 30px;
+    text-align: center; /* Center text within the container */
+}
+
+h1, h2, h3 {
+    color: Blue;
+}
+
+p {
+    line-height: 1.6;
+}
+
+#togglePlay {
+    background-color: #1db954; /* Spotify green color */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#togglePlay:hover {
+    background-color: #168f48; /* Darker green color on hover */
+}
+
+#directions {
+    width: 30%;
+    height: 500px;
+    float: left;
+}
+
+.my-routing-control .leaflet-routing-container {
+    position: relative;
+}
+
+.my-routing-control .leaflet-routing-container::before {
+    content: '×';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background: white;
+    cursor: pointer;
+}
+
+.floating-button {
+    position: absolute;
+    background-color: yellowgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1002; /* Ensure the button appears on top of the map */
+}
+
+/* Style for popup buttons */
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.popup-buttons button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.popup-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Style for audio play button */
+.popup-buttons button.audio-button {
+    background-color: #008CBA;
+}
+
+.popup-buttons button.audio-button:hover {
+    background-color: #007bb3;
+}

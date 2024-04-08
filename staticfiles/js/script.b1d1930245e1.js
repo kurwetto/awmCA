@@ -7,21 +7,18 @@ let matchingPubs = [];
 const directionsButton = document.getElementById('directionsButton');
 directionsButton.addEventListener('click', showDirectionsToClosestPub);
 const searchButton = document.getElementById('searchButton');
+const displayUserFavoritedPubsButton = document.getElementById('displayUserFavoritedPubsButton'); // Replace 'displayFavoritedPubsButton' with the ID of your button
+displayUserFavoritedPubsButton.addEventListener('click', displayUserFavoritedPubsButton);
+
 
 // Map initialization with default tile layer
 const map = L.map("map", {
-    doubleClickZoom: false,
-    zoomControl: false
+    doubleClickZoom: false
 }).locate({
     setView: true,
     watch: true,
     maxZoom: 16
 });
-
-// Add a new zoom control in the top right corner
-L.control.zoom({
-    position: 'topright'
-}).addTo(map);
 
 // Default tile layer (OpenStreetMap)
 const defaultTileLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -113,6 +110,52 @@ function playAudio(url) {
     })
     .catch(error => console.error('Error:', error));
 }
+
+// Function to fetch and display user's favorited pubs
+favoritePubsButton.addEventListener('click', function() {
+    // Send a GET request to the backend to fetch the user's favorited pubs
+    fetch('/user_favorited_pubs/')  // Replace '/user_favorited_pubs/' with the actual endpoint URL
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            // Clear the map of existing markers
+            map.eachLayer(function (layer) {
+                if (layer instanceof L.Marker) {
+                    map.removeLayer(layer);
+                }
+            });
+
+            // Update matchingPubs to only include the pubs that the user has favorited
+            matchingPubs = markers.filter(marker => data.includes(marker.feature.properties.name.toLowerCase()));
+
+            if (window.route) {
+                map.removeControl(window.route);
+                window.route = null;
+            }
+
+            // Iterate over all the markers
+            for (var i = 0; i < markers.length; i++) {
+                var marker = markers[i];
+
+                // Get the name of the pub associated with the marker
+                var pubName = marker.feature.properties.name.toLowerCase();
+
+                // If the pub name is in the user's favorited pubs, show the marker
+                if (data.includes(pubName)) {
+                    marker.addTo(map);
+                }
+                // Otherwise, remove the marker from the map
+                else {
+                    map.removeLayer(marker);
+                }
+            }
+        })
+        .catch(function (error) {
+            console.error('Error fetching favorited pubs:', error);
+        });
+});
+
 fetch('/pubs_geojson/')
     .then(function (response) {
         return response.json();
@@ -145,15 +188,15 @@ function addMarkersToMap(data) {
             if (feature.properties.artist) {
                 pubContent += "<p>Artist Preforming: " + feature.properties.artist + "</p>";
             }
-           if (feature.properties.songURL) {
-    pubContent += `
-        <audio id="audio_${feature.properties['@id']}" src="${feature.properties.songURL}"></audio>
-        <button class="myButton" onclick="toggleAudio('audio_${feature.properties['@id']}')">Play Sample</button>
-    `;
-}
-// Add "Show Directions" button to the popup content
-pubContent += `<button class="myButton" onclick="showDirections('${feature.properties.name}', ${layer.getLatLng().lat}, ${layer.getLatLng().lng})">Show Directions</button>`;
-pubContent += `<button class="myButton" onclick="toggleFavorite(${feature.properties.id})">Favorite</button>`;
+            if (feature.properties.songURL) {
+                pubContent += `
+                    <audio id="audio_${feature.properties['@id']}" src="${feature.properties.songURL}"></audio>
+                    <button onclick="toggleAudio('audio_${feature.properties['@id']}')">Play Sample</button>
+                `;
+            }
+             // Add "Show Directions" button to the popup content
+            pubContent += `<button onclick="showDirections('${feature.properties.name}', ${layer.getLatLng().lat}, ${layer.getLatLng().lng})">Show Directions</button>`;
+            pubContent += `<button onclick="toggleFavorite(${feature.properties.id})">Favorite</button>`;
 
             layer.bindPopup(pubContent);
 

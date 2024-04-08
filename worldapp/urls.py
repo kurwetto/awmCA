@@ -29,6 +29,7 @@ urlpatterns = [
     path('spotify_login/', spotify_login, name='spotify_login'),
     path('callback/', spotify_callback, name='spotify_callback'),
     path('recommend/', recommend_song, name='recommend_song'),
+    path('get_favourite_pubs/', get_favourite_pubs, name='get_favourite_pubs'),
 
 
 

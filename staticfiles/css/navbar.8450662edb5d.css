@@ -1,0 +1,46 @@
+.floating-button {
+    position: absolute;
+    background-color: yellowgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1002; /* Ensure the button appears on top of the map */
+}
+
+/* Adjust the positioning for different buttons as needed */
+.floating-button.home {
+    bottom: 30px;
+    right: 50px;
+}
+
+.floating-button.profile-settings {
+    top: 12.5px;
+    right: 200px;
+}
+
+.floating-button.discover-artists {
+    top: 12.5px;
+    right: 360px;
+}
+
+.floating-button.admin-update-events {
+    top: 12.5px;
+    right: 520px;
+}
+
+.floating-button.logout {
+    top: 12.5px;
+    right: 100px;
+}
+
+.floating-button.login {
+    top: 12.5px;
+    right: 170px;
+}
+
+.floating-button.register {
+    top: 12.5px;
+    right: 330px;
+}
