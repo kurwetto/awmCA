@@ -1,26 +1,41 @@
 <!-- discover.html -->
+
 {% extends 'base2.html' %}
 
+
+
 {% block content %}
-
-<style>
-    /* Custom CSS for Discover Page */
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .card {
-        margin-bottom: 20px;
-    }
-</style>
-
-<a href="{% url 'spotify_login' %}" class="btn btn-primary">Connect with Spotify</a>
-
-
+<div class="container" style="margin-left: 175px; margin-right: 175px;"> <!-- Add margin-left and margin-right styles -->
+    <h1 class="text-center mt-4">Discover New Artists</h1>
+    <p class="text-center">Here are some songs we think you'd like!</p>
+    <hr>
+{% comment %}<a href="{% url 'spotify_login' %}" class="btn btn-primary">Connect with Spotify</a>{% endcomment %}
 
 {% load static %}
-<div class="container">
+
+
+          <div class="text-center mt-4">
+    <p>Press the recommend button to use our machine learning algorithm to recommend you a song we think you'd like!</p>
+    <button id="recommend-button" class="btn btn-primary">Recommend a Song</button>
+              <p>___</p>
+    <div id="recommendations" class="text-center"></div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#recommend-button").click(function(){
+    $.get("/recommend/", function(data, status){
+      $("#recommendations").html(data);
+    });
+  });
+});
+</script>
+
+<div class="container" style="margin-left: 175px; margin-right: 175px;"> <!-- Add margin-left and margin-right styles -->
+    <h1 class="text-center mt-4">Browse Songs</h1>
+
     {% for song in allSongs %}
     <div class="card mb-3">
         <div class="row g-0">
@@ -53,5 +68,8 @@
     </div>
     {% endfor %}
 </div>
+
+
+
 
 {% endblock content %}

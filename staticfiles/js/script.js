@@ -2,6 +2,7 @@
 let markers = [];
 let geoJsonData; // Variable to store the GeoJSON data
 let matchingPubs = [];
+let favoritePubs = [];
 
 // Add event listener to the directions button
 const directionsButton = document.getElementById('directionsButton');
@@ -17,11 +18,6 @@ const map = L.map("map", {
     watch: true,
     maxZoom: 16
 });
-
-// Add a new zoom control in the top right corner
-L.control.zoom({
-    position: 'topright'
-}).addTo(map);
 
 // Default tile layer (OpenStreetMap)
 const defaultTileLayer = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -46,12 +42,22 @@ const baseLayers = {
 // Add layer control to switch between map layers
 L.control.layers(baseLayers).addTo(map);
 
+// Add a new zoom control in the top right corner
+L.control.zoom({
+    position: 'topright'
+}).addTo(map);
+
 // Reset the matchingPubs array
 matchingPubs = markers;
 
 let icon = L.icon({
     iconUrl: '/static/icon.png',
     iconSize: [40, 40]
+});
+
+let favouriteIcon = L.icon({
+    iconUrl: '/static/pub.png',
+    iconSize: [72.5, 72.5]
 });
 
 // Audio initialization
@@ -113,44 +119,58 @@ function playAudio(url) {
     })
     .catch(error => console.error('Error:', error));
 }
-fetch('/pubs_geojson/')
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        geoJsonData = data; // Store the data
-        addMarkersToMap(data); // Add markers to the map
+fetch('/get_user_favorites/')
+    .then(response => response.json())
+    .then(data => {
+        favoritePubs = data;
+        // Proceed to fetch GeoJSON data
+        fetch('/pubs_geojson/')
+            .then(response => response.json())
+            .then(data => {
+                geoJsonData = data; // Store the data
+                addMarkersToMap(data); // Add markers to the map
+            });
     });
 
 
-function addMarkersToMap(data) {
-    L.geoJson(data, {
+
+    function addMarkersToMap(data) {
+       L.geoJson(data, {
         pointToLayer: function (feature, latlng) {
-            let marker = L.marker(latlng, { icon: icon });
+            let markerIcon = favoritePubs.find(fav => fav.pub_id === feature.properties.id) ? favouriteIcon : icon;
+            let marker = L.marker(latlng, { icon: markerIcon });
             markers.push(marker); // Add the marker to the array
             return marker;
         },
-        onEachFeature: function (feature, layer) {
-            let pubContent = "";
+            onEachFeature: function (feature, layer) {
+                let pubContent = "";
 
-            if (feature.properties.name) {
-                pubContent += "<p>Name: " + feature.properties.name + "</p>";
-            }
-            if (feature.properties.postcode) {
-                pubContent += "<p>Address: " + feature.properties.postcode + "</p>";
-            }
-            if (feature.properties.wheelchair) {
-                pubContent += "<p>Wheelchair Access: " + feature.properties.wheelchair + "</p>";
-            }
-            if (feature.properties.artist) {
-                pubContent += "<p>Artist Preforming: " + feature.properties.artist + "</p>";
-            }
-           if (feature.properties.songURL) {
-    pubContent += `
-        <audio id="audio_${feature.properties['@id']}" src="${feature.properties.songURL}"></audio>
-        <button class="myButton" onclick="toggleAudio('audio_${feature.properties['@id']}')">Play Sample</button>
-    `;
+                if (feature.properties.name) {
+                    pubContent += "<p>Name: " + feature.properties.name + "</p>";
+                }
+                if (feature.properties.postcode) {
+                    pubContent += "<p>Address: " + feature.properties.postcode + "</p>";
+                }
+                if (feature.properties.wheelchair) {
+                    pubContent += "<p>Wheelchair Access: " + feature.properties.wheelchair + "</p>";
+                }
+                if (feature.properties.artist) {
+                    pubContent += "<p>Artist Preforming: " + feature.properties.artist + "</p>";
+                }
+                if (feature.properties.date) {
+    console.log("Date from properties: ", feature.properties.date); // Log the date
+    let date = new Date(feature.properties.date);
+    console.log("Parsed date: ", date); // Log the parsed date
+    pubContent += "<p>Date: " + date.toDateString() + "</p>";
 }
+               if (feature.properties.songURL) {
+        pubContent += `
+            <audio id="audio_${feature.properties['@id']}" src="${feature.properties.songURL}"></audio>
+            <button class="myButton" onclick="toggleAudio('audio_${feature.properties['@id']}')">Play Sample</button>
+        `;
+    }
+
+
 // Add "Show Directions" button to the popup content
 pubContent += `<button class="myButton" onclick="showDirections('${feature.properties.name}', ${layer.getLatLng().lat}, ${layer.getLatLng().lng})">Show Directions</button>`;
 pubContent += `<button class="myButton" onclick="toggleFavorite(${feature.properties.id})">Favorite</button>`;
@@ -196,17 +216,29 @@ function onLocationFound(e) {
 
 map.on("locationfound", onLocationFound);
 
-searchButton.addEventListener('click', function() {
+// Add an event listener to the search input field for keypress event
+document.getElementById('searchInput').addEventListener('keypress', function(event) {
+    // Check if the pressed key is Enter (key code 13)
+    if (event.key === 'Enter') {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
+        // Call the search function
+        performSearch();
+    }
+});
+// Function to perform the search
+function performSearch() {
     // Get the search query from the search input field
     var searchQuery = document.getElementById('searchInput').value.toLowerCase();
 
-    // Update matchingP ubs to only include the pubs that match the search term
+    // Update matchingPubs to only include the pubs that match the search term
     matchingPubs = markers.filter(marker => marker.feature.properties.name.toLowerCase().includes(searchQuery));
 
     if (window.route) {
-                    map.removeControl(window.route);
-                    window.route = null;
-                }
+        map.removeControl(window.route);
+        window.route = null;
+    }
 
     // Iterate over all the markers
     for (var i = 0; i < markers.length; i++) {
@@ -224,7 +256,7 @@ searchButton.addEventListener('click', function() {
             map.removeLayer(marker);
         }
     }
-});
+}
 
 function showDirectionsToClosestPub() {
     // Check if the user's location has been found

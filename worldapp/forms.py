@@ -138,6 +138,7 @@ class UserAdminChangeForm(forms.ModelForm):
 class PubForm(forms.ModelForm):
     artist = forms.ModelChoiceField(queryset=Artist.objects.all())
     songURL = forms.ChoiceField(choices=[])
+    date = forms.DateTimeField(input_formats=['%Y-%m-%d %H:%M'])  # Add this line
 
     def __init__(self, *args, **kwargs):
         super(PubForm, self).__init__(*args, **kwargs)
@@ -145,4 +146,4 @@ class PubForm(forms.ModelForm):
 
     class Meta:
         model = Pub
-        fields = ['artist', 'songURL']
+        fields = ['artist', 'songURL', 'date']  # Add 'date' here

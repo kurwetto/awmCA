@@ -395,7 +395,7 @@
         "amenity": "pub",
         "internet_access": "wlan",
         "internet_access:fee": "no",
-        "name": "Fallon’s"
+        "name": "Fallons"
       },
       "geometry": {
         "type": "Point",
@@ -516,7 +516,7 @@
         "diet:vegetarian": "yes",
         "food": "yes",
         "indoor_seating": "yes",
-        "name": "Harkin’s",
+        "name": "Harkins",
         "old_name": "The Old Harbour",
         "outdoor_seating": "yes",
         "payment:credit_cards": "yes",
@@ -543,7 +543,7 @@
         "postcode": "D6W XN76",
         "addr:street": "Terenure Road North",
         "amenity": "pub",
-        "name": "Vaughan’s Eagle House",
+        "name": "Vaughans Eagle House",
         "wheelchair": "no"
       },
       "geometry": {
@@ -565,7 +565,7 @@
         "postcode": "D6W TX40",
         "addr:street": "Terenure Place",
         "amenity": "pub",
-        "name": "Brady’s",
+        "name": "Bradys",
         "wheelchair": "limited"
       },
       "geometry": {
@@ -877,7 +877,7 @@
         "food": "yes",
         "indoor_seating": "yes",
         "name": "Horse Show House",
-        "operator": "Madigan’s",
+        "operator": "Madigans",
         "outdoor_seating": "yes",
         "phone": "+35316689424",
         "website": "https://www.horseshowhouse.ie/",
@@ -937,7 +937,7 @@
         "amenity": "pub",
         "check_date": "2023-04-07",
         "indoor_seating": "yes",
-        "name": "Mary Mac’s",
+        "name": "Mary Macs",
         "outdoor_seating": "yes",
         "website": "https://www.paddycullens.com/",
         "website:menu": "https://www.paddycullens.com/food/",
@@ -965,7 +965,7 @@
         "addr:suburb": "Ballsbridge",
         "amenity": "pub",
         "indoor_seating": "yes",
-        "name": "Crowe’s",
+        "name": "Crowes",
         "outdoor_seating": "yes",
         "website": "http://crowespub.ie/",
         "website:menu": "http://crowespub.ie/dinner-menu/",
@@ -1044,7 +1044,7 @@
         "contact:facebook": "https://www.facebook.com/The-Saint-Public-House-Inchicore-110645618401535",
         "contact:twitter": "@TheSaintDublin8",
         "name": "The Saint",
-        "old_name": "Timothy Crough’s"
+        "old_name": "Timothy Croughs"
       },
       "geometry": {
         "type": "Point",
@@ -1107,7 +1107,7 @@
         "postcode": "D02 AX50",
         "addr:street": "Georges Street Great South",
         "amenity": "pub",
-        "name": "Hogan’s Bar",
+        "name": "Hogans Bar",
         "wheelchair": "yes"
       },
       "geometry": {
@@ -1153,7 +1153,7 @@
         "postcode": "D24 R5X0",
         "addr:street": "Main Street",
         "amenity": "pub",
-        "name": "Molloy’s The Foxes Covert"
+        "name": "Molloys The Foxes Covert"
       },
       "geometry": {
         "type": "Point",
@@ -1175,7 +1175,7 @@
         "addr:street": "Harolds Cross Road",
         "amenity": "pub",
         "internet_access": "wlan",
-        "name": "McGarry’s Bar",
+        "name": "McGarrys Bar",
         "wheelchair": "yes"
       },
       "geometry": {
@@ -1309,7 +1309,7 @@
         "postcode": "D07 T227",
         "addr:street": "Queen Street",
         "amenity": "pub",
-        "name": "Frank Ryan’s",
+        "name": "Frank Ryans",
         "opening_hours": "Mo-Th 16:00-23:30; Fr-Sa 16:00-00:30; Su 18:00-23:00"
       },
       "geometry": {
@@ -1334,7 +1334,7 @@
         "amenity": "pub",
         "check_date:opening_hours": "2022-11-22",
         "indoor_seating": "yes",
-        "name": "Madigan’s",
+        "name": "Madigans",
         "opening_hours:signed": "no",
         "outdoor_seating": "yes",
         "wheelchair": "limited"
@@ -1432,7 +1432,7 @@
         "postcode": "D08 FF97",
         "addr:street": "Emmet Road",
         "amenity": "pub",
-        "name": "Coffey’s"
+        "name": "Coffeys"
       },
       "geometry": {
         "type": "Point",
@@ -1498,7 +1498,7 @@
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/pmacsdundrum",
         "email": "pmacsdundrum@gmail.com",
-        "name": "P. Mac’s",
+        "name": "P. Macs",
         "old_name": "Winters Bar",
         "outdoor_seating": "yes",
         "phone": "+35312157963",
@@ -1690,7 +1690,7 @@
         "addr:housenumber": "159",
         "postcode": "D07 HA21",
         "addr:street": "Phibsborough Road",
-        "alt_name": "Mohan’s",
+        "alt_name": "Mohans",
         "amenity": "pub",
         "name": "The Hut"
       },
@@ -1714,7 +1714,7 @@
         "postcode": "D06 K8K7",
         "addr:street": "Sandford Road",
         "amenity": "pub",
-        "name": "R. McSorley’s",
+        "name": "R. McSorleys",
         "website": "https://mcsorleys.ie/",
         "wheelchair": "limited"
       },
@@ -1737,7 +1737,7 @@
         "postcode": "K36 DP28",
         "addr:street": "New Street",
         "amenity": "pub",
-        "name": "Fowler’s",
+        "name": "Fowlers",
         "toilets:wheelchair": "yes",
         "wheelchair": "yes"
       },
@@ -1760,7 +1760,7 @@
         "postcode": "K36 VY57",
         "addr:street": "Main Street",
         "amenity": "pub",
-        "name": "Duffy’s"
+        "name": "Duffys"
       },
       "geometry": {
         "type": "Point",
@@ -1786,7 +1786,7 @@
         "contact:instagram": "@gibneys.malahide",
         "contact:twitter": "@gibneysmalahide",
         "email": "info@gibneys.com",
-        "name": "Gibney’s",
+        "name": "Gibneys",
         "phone": "+35318450606",
         "website": "http://www.gibneys.com",
         "wheelchair": "yes"
@@ -1884,7 +1884,7 @@
         "addr:housenumber": "18-20",
         "postcode": "K32 VK57",
         "addr:street": "Bridge Street",
-        "alt_name": "Fanning’s",
+        "alt_name": "Fannings",
         "amenity": "pub",
         "name": "The Central"
       },
@@ -1949,7 +1949,7 @@
         "postcode": "D06 W8X4",
         "addr:street": "Ranelagh",
         "amenity": "pub",
-        "name": "Birchall’s"
+        "name": "Birchalls"
       },
       "geometry": {
         "type": "Point",
@@ -2086,7 +2086,7 @@
         "postcode": "A96 X8N8",
         "addr:street": "Georges Street Upper",
         "amenity": "pub",
-        "name": "McLoughlin’s",
+        "name": "McLoughlins",
         "old_name": "Kozie II",
         "opening_hours": "Mo-Su 12:00-23:00+",
         "phone": "+353-1-284-6025"
@@ -2175,7 +2175,7 @@
         "addr:street": "Marine Road",
         "amenity": "pub",
         "food": "yes",
-        "name": "Hardy’s Bar & Bistro",
+        "name": "Hardys Bar & Bistro",
         "phone": "+353-1-230-0030",
         "website": "https://www.royalmarine.ie/hardys-bar-and-bistro.html",
         "wheelchair": "limited"
@@ -2272,8 +2272,8 @@
         "amenity": "pub",
         "cuisine": "sandwich",
         "internet_access": "wlan",
-        "name": "Birchall’s",
-        "old_name": "Sheary’s",
+        "name": "Birchalls",
+        "old_name": "Shearys",
         "phone": "+35314531381"
       },
       "geometry": {
@@ -2422,7 +2422,7 @@
         "addr:street": "Prussia Street",
         "addr:suburb": "Stoneybatter",
         "amenity": "pub",
-        "name": "Hyne’s"
+        "name": "Hynes"
       },
       "geometry": {
         "type": "Point",
@@ -2471,7 +2471,7 @@
         "amenity": "pub",
         "cuisine": "regional",
         "layer": "1",
-        "name": "Madigan’s Bar & Restaurant",
+        "name": "Madigans Bar & Restaurant",
         "smoking": "no",
         "wheelchair": "no"
       },
@@ -2579,7 +2579,7 @@
         "postcode": "A96 Y981",
         "addr:street": "Georges Street Upper",
         "amenity": "pub",
-        "name": "Walter’s",
+        "name": "Walters",
         "opening_hours": "Mo-Th 12:00-23:30, Fr,Sa 12:00-00:30, Su 12:00-23:30"
       },
       "geometry": {
@@ -2619,7 +2619,7 @@
         "addr:street": "Main Street",
         "amenity": "pub",
         "food": "yes",
-        "name": "Jack O’Rourke’s",
+        "name": "Jack ORourkes",
         "phone": "+353-1-288-7102",
         "start_date": "1897",
         "website": "https://jackorourkes.com/",
@@ -2696,7 +2696,7 @@
         "addr:street": "Stillorgan Road",
         "addr:substreet": "Galloping Green Lower",
         "amenity": "pub",
-        "name": "Byrne’s of Galloping Green",
+        "name": "Byrnes of Galloping Green",
         "opening_hours": "Mo-Th 12:00-23:30; Fr-Sa 12:00-00:30, Su 12:30-23:00",
         "opening_hours:covid19": "closed",
         "website": "https://www.gallopinggreen.ie/"
@@ -2726,7 +2726,7 @@
         "cuisine": "carvery;pasta",
         "email": "keelingsbar@gmail.com",
         "food": "yes",
-        "name": "Keeling’s",
+        "name": "Keelings",
         "opening_hours": "Mo-Su 12:00-22:00",
         "phone": "+35318436601"
       },
@@ -2749,7 +2749,7 @@
         "addr:housenumber": "36",
         "postcode": "D07 VY01",
         "addr:street": "Phibsborough Road",
-        "alt_name": "Clarke’s",
+        "alt_name": "Clarkes",
         "amenity": "pub",
         "name": "Phibsborough House"
       },
@@ -2897,7 +2897,7 @@
         "postcode": "D02 WV05",
         "addr:street": "Stephen Street Lower",
         "amenity": "bar",
-        "name": "Bartley’s Bar",
+        "name": "Bartleys Bar",
         "opening_hours": "Mo-We off; Th 17:00-11:30; Fr 17:00-01:00; Sa 12:00-01:00; Su off",
         "phone": "+353-1-478-1190",
         "smoking": "outside",
@@ -2949,7 +2949,7 @@
         "contact:facebook": "https://www.facebook.com/Sinnotts/",
         "contact:twitter": "https://twitter.com/sinnottsbardub",
         "email": "info@sinnotts.ie",
-        "name": "Sinnott’s",
+        "name": "Sinnotts",
         "phone": "+353 1 478 4698",
         "website": "https://www.sinnotts.ie/",
         "wheelchair": "no"
@@ -2975,7 +2975,7 @@
         "addr:street": "Stephen Street Lower",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/pmacspub",
-        "name": "P. Mac’s",
+        "name": "P. Macs",
         "phone": "+35314053653",
         "wheelchair": "limited"
       },
@@ -3026,7 +3026,7 @@
         "addr:street": "James Street",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/guinansbar",
-        "name": "Guinan’s",
+        "name": "Guinans",
         "old_name": "The Tram;J.K. Stoutmans",
         "phone": "+353870656802",
         "wheelchair": "no"
@@ -3199,7 +3199,7 @@
         "amenity": "pub",
         "brewery": "Guinness;smithwick;Heineken;Budweiser;Beamish;peroni;Coors Light;hop house 13 lager",
         "food": "yes",
-        "name": "O’Connell’s",
+        "name": "OConnells",
         "outdoor_seating": "yes",
         "wheelchair": "limited"
       },
@@ -3285,7 +3285,7 @@
         "addr:housenumber": "36",
         "postcode": "D01 H6Y6",
         "addr:street": "Amiens Street",
-        "alt_name": "Cleary’s",
+        "alt_name": "Clearys",
         "amenity": "pub",
         "name": "J. & M. Cleary"
       },
@@ -3458,7 +3458,7 @@
         "amenity": "pub",
         "email": "info@mcneillsofhowth.ie",
         "indoor_seating": "yes",
-        "name": "McNeill’s",
+        "name": "McNeills",
         "outdoor_seating": "yes",
         "website": "http://www.mcneillsofhowth.ie"
       },
@@ -3744,7 +3744,7 @@
         "addr:housenumber": "27",
         "postcode": "D08 EP89",
         "addr:street": "James Street",
-        "alt_name": "Willow Murphy’s",
+        "alt_name": "Willow Murphys",
         "amenity": "pub",
         "name": "The Malt",
         "old_name": "The Malt House"
@@ -3958,7 +3958,7 @@
         "diet:vegan": "yes",
         "food": "yes",
         "indoor_seating": "yes",
-        "name": "Murray’s",
+        "name": "Murrays",
         "operator": "Murray Pub Group",
         "outdoor_seating": "yes",
         "smoking": "outside",
@@ -4037,7 +4037,7 @@
         "amenity": "pub",
         "contact:instagram": "@themagnetdublin",
         "name": "The Magnet",
-        "old_name": "Agnes Browne’s"
+        "old_name": "Agnes Brownes"
       },
       "geometry": {
         "type": "Point",
@@ -4101,7 +4101,7 @@
         "postcode": "D08 V0R1",
         "addr:street": "Thomas Street",
         "amenity": "pub",
-        "name": "Tom Kennedy’s",
+        "name": "Tom Kennedys",
         "wheelchair": "yes"
       },
       "geometry": {
@@ -4167,7 +4167,7 @@
         "addr:suburb": "Inchicore",
         "alt_name": "Richmond House",
         "amenity": "pub",
-        "name": "McDowell’s"
+        "name": "McDowells"
       },
       "geometry": {
         "type": "Point",
@@ -4252,8 +4252,8 @@
         "food": "yes",
         "indoor_seating": "yes",
         "internet_access": "wlan",
-        "name": "Bad Bob’s",
-        "name:en": "Bad Bob’s",
+        "name": "Bad Bobs",
+        "name:en": "Bad Bobs",
         "opening_hours": "Mo-Su,PH 00:00-02:00,10:00-24:00",
         "outdoor_seating": "yes",
         "phone": "+35316778860",
@@ -4448,7 +4448,7 @@
         "contact:facebook": "https://www.facebook.com/Fitzsimonsbar/",
         "contact:instagram": "https://www.instagram.com/fitzsimonsbar/",
         "contact:twitter": "https://twitter.com/FitzsimonsBar",
-        "name": "Fitzsimon’s",
+        "name": "Fitzsimons",
         "website": "https://www.fitzsimonsbar.ie/",
         "wheelchair": "no"
       },
@@ -4607,7 +4607,7 @@
         "amenity": "pub",
         "food": "yes",
         "name": "The Slipper",
-        "old_name": "Matt Weldon’s",
+        "old_name": "Matt Weldons",
         "opening_hours": "Mo-Sa 11:30-23:30, Su 12:30-23:00",
         "smoking": "isolated",
         "source": "survey"
@@ -4784,7 +4784,7 @@
         "addr:housenumber": "18",
         "postcode": "D03 DC97",
         "addr:street": "Conquer Hill Road",
-        "alt_name": "Grainger’s",
+        "alt_name": "Graingers",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/PebbleBeachClontarf/",
         "contact:instagram": "@graingerspebblebeach",
@@ -4976,7 +4976,7 @@
         "postcode": "D08 V972",
         "addr:street": "New Street South",
         "amenity": "pub",
-        "name": "Kavanagh’s"
+        "name": "Kavanaghs"
       },
       "geometry": {
         "type": "Point",
@@ -5069,7 +5069,7 @@
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/OSheasoftalbotstreet",
         "email": "osheashotel@eircom.net",
-        "name": "O’Shea’s",
+        "name": "OSheas",
         "phone": "+353 1 836 5670",
         "smoking": "isolated",
         "website": "https://osheasoftalbotstreet.com"
@@ -5092,7 +5092,7 @@
         "addr:county": "Dublin",
         "postcode": "D22 E642",
         "addr:street": "Orchard Road",
-        "alt_name": "Quinlan’s",
+        "alt_name": "Quinlans",
         "amenity": "pub",
         "internet_access": "wlan",
         "internet_access:fee": "no",
@@ -5462,7 +5462,7 @@
         "postcode": "D01 WV02",
         "addr:street": "Amiens Street",
         "amenity": "pub",
-        "name": "Mullet’s"
+        "name": "Mullets"
       },
       "geometry": {
         "type": "Point",
@@ -5521,7 +5521,7 @@
         "addr:street": "Dominick Street Upper",
         "amenity": "pub",
         "brewery": "Guinness;Beamish",
-        "name": "Cumiskey’s",
+        "name": "Cumiskeys",
         "opening_hours": "Mo-Sa 12:00-23:30; Su 12:30-23:00",
         "wheelchair": "yes"
       },
@@ -5584,7 +5584,7 @@
         "postcode": "D24 AE33",
         "addr:street": "Main Street",
         "amenity": "pub",
-        "name": "Muldowney’s"
+        "name": "Muldowneys"
       },
       "geometry": {
         "type": "Point",
@@ -5609,7 +5609,7 @@
         "contact:twitter": "@BarDarkey",
         "email": "darkeykellys@gmail.com",
         "indoor_seating": "yes",
-        "name": "Darkey Kelly’s",
+        "name": "Darkey Kellys",
         "outdoor_seating": "yes",
         "toilets:wheelchair": "yes",
         "website": "https://darkeykellys.ie",
@@ -5660,7 +5660,7 @@
         "addr:street": "Dorset Street Upper",
         "amenity": "pub",
         "brewery": "carlberg;various",
-        "name": "Glynn’s",
+        "name": "Glynns",
         "outdoor_seating": "no",
         "smoking": "no"
       },
@@ -5708,7 +5708,7 @@
         "addr:housenumber": "80",
         "postcode": "D01 FK52",
         "addr:street": "Dorset Street Upper",
-        "alt_name": "Hennessy’s",
+        "alt_name": "Hennessys",
         "amenity": "pub",
         "name": "The Findlater"
       },
@@ -5732,7 +5732,7 @@
         "postcode": "D02 RT72",
         "addr:street": "Dame Street",
         "amenity": "pub",
-        "name": "Peadar Kearney’s"
+        "name": "Peadar Kearneys"
       },
       "geometry": {
         "type": "Point",
@@ -5782,7 +5782,7 @@
         "addr:street": "Fleet Street",
         "amenity": "pub",
         "indoor_seating": "yes",
-        "name": "Busker’s Bar",
+        "name": "Buskers Bar",
         "note": "Free WI-FI",
         "outdoor_seating": "yes",
         "smoking": "outside",
@@ -5830,7 +5830,7 @@
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/conways.blackrock",
         "food": "Mo 12:00-15:00;Tu-We Off;Th-Sa 12:00-20:00;Su 12:30-18:00",
-        "name": "Conway’s",
+        "name": "Conways",
         "opening_hours": "Mo 12:00-23:30; Tu-We 15:30-23:30; Th 12:00-23:30; Fr-Sa 12:00-00:30; Su 12:30-23:00",
         "phone": "+353-1-278-4934",
         "website": "http://www.conwaysblackrock.com/",
@@ -6070,9 +6070,9 @@
         "addr:housenumber": "2",
         "postcode": "D02 KX03",
         "addr:street": "Suffolk Street",
-        "alt_name": "M.J. O’Neill",
+        "alt_name": "M.J. ONeill",
         "amenity": "pub",
-        "name": "O’Neill’s",
+        "name": "ONeills",
         "smoking": "isolated",
         "website": "http://www.oneillspubdublin.com/",
         "wheelchair": "no"
@@ -6102,7 +6102,7 @@
         "contact:twitter": "@MolloysDublin",
         "email": "info@molloysdublin.com",
         "food": "yes",
-        "name": "Molloy’s",
+        "name": "Molloys",
         "outdoor_seating": "no",
         "phone": "+353 1 547 8873",
         "smoking": "isolated",
@@ -6130,7 +6130,7 @@
         "addr:street": "Rathgar Road",
         "addr:suburb": "Rathmines",
         "amenity": "pub",
-        "name": "Grace’s",
+        "name": "Graces",
         "smoking": "outside"
       },
       "geometry": {
@@ -6273,7 +6273,7 @@
         "amenity": "bar",
         "contact:facebook": "https://www.facebook.com/huckleberrydublin/",
         "food": "yes",
-        "name": "Huck’s",
+        "name": "Hucks",
         "old_name": "Eventbrite",
         "old_name:2017": "Huckleberrys",
         "wheelchair": "yes"
@@ -6299,7 +6299,7 @@
         "amenity": "pub",
         "contact:facebook": "http://www.facebook.com/Peggykellys",
         "email": "info@peggykellys.ie",
-        "name": "Peggy Kelly’s",
+        "name": "Peggy Kellys",
         "phone": "+353 1 4978935",
         "website": "https://www.peggykellys.ie/"
       },
@@ -6323,7 +6323,7 @@
         "postcode": "K34 C678",
         "addr:street": "Harbour Road",
         "amenity": "pub",
-        "name": "Joe May’s",
+        "name": "Joe Mays",
         "phone": "+353-1-8491241",
         "start_date": "1865",
         "website": "https://joemayspub.ie/"
@@ -6350,7 +6350,7 @@
         "addr:suburb": "Donneybrook",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/arthurmaynesdonnybrook/",
-        "name": "Arthur Mayne’s",
+        "name": "Arthur Maynes",
         "outdoor_seating": "yes",
         "smoking": "outside",
         "wheelchair": "yes"
@@ -6435,7 +6435,7 @@
         "postcode": "D08 CY51",
         "addr:street": "Jamess Street",
         "amenity": "pub",
-        "name": "Kenny’s"
+        "name": "Kennys"
       },
       "geometry": {
         "type": "Point",
@@ -6479,8 +6479,8 @@
         "addr:street": "Main Street",
         "amenity": "pub",
         "email": "info@anniemaysnewcastle.ie",
-        "name": "Annie May’s",
-        "old_name": "Dowling’s;The Gondola",
+        "name": "Annie Mays",
+        "old_name": "Dowlings;The Gondola",
         "operator": "Louis Fitzgerald Group",
         "website": "https://anniemaysnewcastle.ie/"
       },
@@ -7303,7 +7303,7 @@
         "addr:street": "Tallaght Road",
         "amenity": "pub",
         "food": "yes",
-        "name": "D’Arcy McGee’s"
+        "name": "DArcy McGees"
       },
       "geometry": {
         "type": "Point",
@@ -7363,7 +7363,7 @@
         "addr:street": "Lower Lucan Road",
         "addr:suburb": "Castleknock",
         "amenity": "pub",
-        "name": "Angler’s Rest"
+        "name": "Anglers Rest"
       },
       "geometry": {
         "type": "Point",
@@ -7629,9 +7629,9 @@
         "addr:suburb": "Rotunda",
         "alt_name": "Fibbers Rock and Roll Bar",
         "amenity": "pub",
-        "name": "Fibber Magee’s",
+        "name": "Fibber Magees",
         "operator": "Murray Pub Group",
-        "short_name": "Fibber’s",
+        "short_name": "Fibbers",
         "website": "http://www.fibbermagees.ie"
       },
       "geometry": {
@@ -7697,7 +7697,7 @@
         "addr:street": "Amiens Street",
         "amenity": "pub",
         "email": "info@mcgettiganscookhousedublin.ie",
-        "name": "McGettigan’s Cookhouse & Bar",
+        "name": "McGettigans Cookhouse & Bar",
         "outdoor_seating": "no",
         "phone": "+353 1 855 9638",
         "smoking": "no",
@@ -7720,7 +7720,7 @@
         "addr:street": "Swords Road",
         "amenity": "pub",
         "email": "contact@mcgettigans.com",
-        "name": "McGettigan’s",
+        "name": "McGettigans",
         "phone": "+353-1-8522285",
         "website": "https://www.mcgettigans.com/"
       },
@@ -7861,7 +7861,7 @@
         "postcode": "K78 HF83",
         "addr:street": "Leixlip Road",
         "amenity": "pub",
-        "name": "Bob’s",
+        "name": "Bobs",
         "wheelchair": "limited"
       },
       "geometry": {
@@ -7984,7 +7984,7 @@
         "addr:street": "Old Road",
         "amenity": "bar",
         "contact:facebook": "https://www.facebook.com/JoyousGardenMartinBar",
-        "name": "Martin’s Bar"
+        "name": "Martins Bar"
       },
       "geometry": {
         "type": "Point",
@@ -8005,7 +8005,7 @@
         "postcode": "K56 E177",
         "addr:street": "Upper Main Street",
         "amenity": "bar",
-        "name": "Walshe’s Bar"
+        "name": "Walshes Bar"
       },
       "geometry": {
         "type": "Point",
@@ -8153,7 +8153,7 @@
         "contact:instagram": "@marysbardublin",
         "contact:twitter": "@MarysBarDublin",
         "email": "info@marysbar.ie",
-        "name": "Mary’s Bar & Hardware Shop",
+        "name": "Marys Bar & Hardware Shop",
         "phone": "+35316708629",
         "website": "https://marysbar.ie/",
         "wheelchair": "yes"
@@ -8495,7 +8495,7 @@
         "addr:street": "Parkgate Street",
         "amenity": "pub",
         "contact:facebook": "https://www.facebook.com/P.Duggans",
-        "name": "P. Duggan’s",
+        "name": "P. Duggans",
         "phone": "+35316778448"
       },
       "geometry": {
@@ -8676,7 +8676,7 @@
         "postcode": "D24 R5X0",
         "addr:street": "Main Street",
         "amenity": "pub",
-        "name": "Molloy’s Bar & Grill",
+        "name": "Molloys Bar & Grill",
         "website": "https://www.molloysbarandgrill.ie"
       },
       "geometry": {
@@ -9230,7 +9230,7 @@
         "contact:facebook": "https://www.facebook.com/thomasclarkesdublin/",
         "diet:vegan": "yes",
         "food": "yes",
-        "name": "Thomas Clarke’s",
+        "name": "Thomas Clarkes",
         "operator": "Murray Pub Group",
         "website": "https://www.murraysbar.ie/spaces"
       },
@@ -9257,7 +9257,7 @@
         "contact:facebook": "https://www.facebook.com/100063633666114/",
         "contact:twitter": "https://twitter.com/mobriensonline",
         "email": "info@m-obriens.ie",
-        "name": "M. O’Brien",
+        "name": "M. OBrien",
         "outdoor_seating": "yes",
         "phone": "+353-1-6762851",
         "smoking": "outside",
@@ -9499,7 +9499,7 @@
         "diet:vegan": "yes",
         "email": "info@jrmahons.ie",
         "food": "yes",
-        "name": "J.R. Mahon’s",
+        "name": "J.R. Mahons",
         "note": "Dublin City Council, Record of Protected Structures (2010), no. 1014",
         "old_name": "J.W. Sweetman",
         "phone": "+35316705777",

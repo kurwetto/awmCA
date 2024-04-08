@@ -1,0 +1,53 @@
+    #sidebar {
+        background-color: rgba(154, 205, 50, 0.8); /* Yellowgreen with 80% opacity */
+        padding: 75px 0px;
+        z-index: 1002;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0; /* Initially hide the sidebar */
+        overflow: hidden;
+        transition: width 0.5s; /* Transition the width */
+    }
+
+    #sidebar ul {
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    #sidebar ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+        border-radius: 5px;
+    }
+
+    #sidebar ul li a:hover {
+        background-color: white;
+        color: yellowgreen;
+    }
+
+
+
+    #sidebar-button {
+        position: fixed;
+        top: 10px;
+        left: -22.5px;
+        z-index: 1003;
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+
+    }
+
+    .search-button,
+.directions-button,
+.search-input {
+    transition: margin-left 0.5s; /* Transition the margin-left property */
+}

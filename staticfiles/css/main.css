@@ -47,18 +47,13 @@ p {
 }
 
 .search-input {
-    bottom: 10px; /* Adjust the top position */
-    left: 20px; /* Adjust the left position */
-}
-
-.search-button {
-    bottom: 60px; /* Adjust the top position */
-    left: 20px; /* Adjust the left position */
+    top: 10px; /* Adjust the top position */
+    left: 70px; /* Adjust the left position */
 }
 
 .directions-button {
-    bottom: 10px; /* Adjust the bottom position */
-    left: 250px; /* Adjust the left position */
+    top: 70px; /* Adjust the bottom position */
+    left: 70px; /* Adjust the left position */
 }
 
 /* Add styles for the display favorited pubs button */
@@ -92,3 +87,9 @@ p {
     margin: 5px 5px;
     cursor: pointer;
 }
+
+.search-input::placeholder {
+    color: white;
+}
+
+

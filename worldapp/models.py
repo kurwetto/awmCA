@@ -171,6 +171,7 @@ class Pub(models.Model):
     wheelchair = models.CharField(max_length=255, null=True)
     artist = models.ForeignKey(Artist, on_delete=models.SET_NULL, null=True)
     songURL = models.CharField(max_length=255, null=True)  # Add this line
+    date = models.DateTimeField(null=True)  # Add this line
     location = models.PointField()
 
 class Favourite(models.Model):

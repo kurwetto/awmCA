@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    z-index: 999;
+}
+
+.container {
+    margin-top: 20px;
+    text-align: center; /* Center text within the container */
+}
+
+h1, h2, h3 {
+    color: green;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.directions-button,
+.search-input,
+.search-button {
+    background-color: rgba(20, 100, 0, 0.6); /* Use rgba color with alpha value */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    z-index: 1001; /* Ensure the button appears on top of the map */
+    position: absolute; /* Position absolutely within the map container */
+}
+
+.directions-button:hover,
+.search-button:hover {
+    background-color: rgba(0, 100, 0, 0.8); /* Use a slightly darker color on hover */
+}
+
+.search-input {
+    top: 10px; /* Adjust the top position */
+    left: 120px; /* Adjust the left position */
+}
+
+.directions-button {
+    top: 70px; /* Adjust the bottom position */
+    left: 120px; /* Adjust the left position */
+}
+
+/* Add styles for the display favorited pubs button */
+#displayFavoritedPubsButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1002; /* Ensure the button appears on top of the map */
+    background-color: #007bff; /* Blue color for the button */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+#displayFavoritedPubsButton:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.myButton {
+    /* Add your styles here */
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+.search-input::placeholder {
+    color: white;
+}
+

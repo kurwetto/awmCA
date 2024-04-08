@@ -155,17 +155,25 @@ fetch('/get_user_favorites/')
                     pubContent += "<p>Wheelchair Access: " + feature.properties.wheelchair + "</p>";
                 }
                 if (feature.properties.artist) {
-                    pubContent += "<p>Artist Preforming: " + feature.properties.artist + "</p>";
+                    pubContent += "<p>This Week's Artist:<Artist></Artist>: " + feature.properties.artist + "</p>";
                 }
+                if (feature.properties.date) {
+    console.log("Date from properties: ", feature.properties.date); // Log the date
+    let date = new Date(feature.properties.date);
+    console.log("Parsed date: ", date); // Log the parsed date
+    pubContent += "<p>Date: " + date.toDateString() + "</p>";
+}
                if (feature.properties.songURL) {
         pubContent += `
             <audio id="audio_${feature.properties['@id']}" src="${feature.properties.songURL}"></audio>
             <button class="myButton" onclick="toggleAudio('audio_${feature.properties['@id']}')">Play Sample</button>
         `;
     }
+
+
 // Add "Show Directions" button to the popup content
 pubContent += `<button class="myButton" onclick="showDirections('${feature.properties.name}', ${layer.getLatLng().lat}, ${layer.getLatLng().lng})">Show Directions</button>`;
-pubContent += `<button class="myButton" onclick="toggleFavorite(${feature.properties.id})">Favorite</button>`;
+pubContent += `<button class="myButton" onclick="toggleFavorite(${feature.properties.id})">Favourite</button>`;
 
             layer.bindPopup(pubContent);
 
@@ -208,17 +216,29 @@ function onLocationFound(e) {
 
 map.on("locationfound", onLocationFound);
 
-searchButton.addEventListener('click', function() {
+// Add an event listener to the search input field for keypress event
+document.getElementById('searchInput').addEventListener('keypress', function(event) {
+    // Check if the pressed key is Enter (key code 13)
+    if (event.key === 'Enter') {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
+        // Call the search function
+        performSearch();
+    }
+});
+// Function to perform the search
+function performSearch() {
     // Get the search query from the search input field
     var searchQuery = document.getElementById('searchInput').value.toLowerCase();
 
-    // Update matchingP ubs to only include the pubs that match the search term
+    // Update matchingPubs to only include the pubs that match the search term
     matchingPubs = markers.filter(marker => marker.feature.properties.name.toLowerCase().includes(searchQuery));
 
     if (window.route) {
-                    map.removeControl(window.route);
-                    window.route = null;
-                }
+        map.removeControl(window.route);
+        window.route = null;
+    }
 
     // Iterate over all the markers
     for (var i = 0; i < markers.length; i++) {
@@ -236,7 +256,7 @@ searchButton.addEventListener('click', function() {
             map.removeLayer(marker);
         }
     }
-});
+}
 
 function showDirectionsToClosestPub() {
     // Check if the user's location has been found
@@ -301,4 +321,25 @@ function showDirections(pubName, lat, lng) {
     } else {
         alert('Location not found. Please enable location services.');
     }
+}
+
+// Add event listener to the clear button
+const clearButton = document.getElementById('clearButton');
+clearButton.addEventListener('click', clearSearchResults);
+
+// Function to clear search results and show all pubs on the map
+function clearSearchResults() {
+    // Remove any existing route
+    if (window.route) {
+        map.removeControl(window.route);
+        window.route = null;
+    }
+
+    // Show all markers
+    markers.forEach(function (marker) {
+        map.addLayer(marker);
+    });
+
+    // Reset matchingPubs to include all markers
+    matchingPubs = markers;
 }

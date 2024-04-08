@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <div class="container">
+  <div class="container" style="margin-left: 175px;"> <!-- Add margin-left style here -->
     <h2 class="my-4">Search Results</h2>
+
+    <!-- Add search forms for pubs and artists -->
 
     <form class="form-inline mb-3" method="get" action="{% url 'search_pubs' %}">
       <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search Pubs...">

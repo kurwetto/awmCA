@@ -306,6 +306,10 @@ def recommend_song(request):
 
     all_songs = Song.objects.all()
 
+    # If there are no songs in the database, return a message
+    if not all_songs.exists():
+        return HttpResponse("No songs found in the database.")
+
     # Fetch genre name from the most played song
     most_played_genre_name = most_played_song.get('song__genre__name')
 

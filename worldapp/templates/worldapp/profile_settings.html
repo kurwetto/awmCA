@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <div class="container">
+  <div class="container" style="margin-left: 175px;"> <!-- Add margin-left style here -->
     <h2 class="my-4">Profile Settings</h2>
     <div class="card mb-4">
       <div class="card-body">
@@ -36,22 +36,5 @@
     </div>
   </div>
 
-  <div class="text-center mt-4">
-    <p>Press the recommend button to use our machine learning algorithm to recommend you a song we think you'd like!</p>
-    <button id="recommend-button" class="btn btn-primary">Recommend a Song</button>
-    <div id="recommendations" class="text-center"></div>
-  </div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("#recommend-button").click(function(){
-    $.get("/recommend/", function(data, status){
-      $("#recommendations").html(data);
-    });
-  });
-});
-</script>
 
 {% endblock %}

@@ -17,7 +17,7 @@ class AlbumAdmin(admin.ModelAdmin):
 
 @admin.register(Pub)
 class PubAdmin(admin.ModelAdmin):
-    list_display = ("id", "name", "amenity", "addr_city", "addr_country", "addr_county", "addr_housename", "addr_housenumber", "postcode", "addr_street", "phone", "website", "wheelchair", "location", "artist")
+    list_display = ("id", "name", "amenity", "addr_city", "addr_country", "addr_county", "addr_housename", "addr_housenumber", "postcode", "addr_street", "phone", "website", "wheelchair", "location", "artist", "date")
 
 class FavouriteAdmin(admin.ModelAdmin):
     list_display = ('user', 'pub')

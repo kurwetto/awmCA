@@ -17,7 +17,6 @@ urlpatterns = [
     path('discover/', discover, name='discover'),
 
     path('', worldapp, name='worldapp'),
-    # path('update_location/', update_location, name="update_location"),
     path('search_pubs/', search_pubs, name='search_pubs'),
     path('search_artists/', search_artists, name='search_artists'),
     path('edit_pub/<path:pub_id>/', edit_pub, name='edit_pub'),

@@ -1,6 +1,6 @@
 <button id="sidebar-button">☰</button>
 
-<div id="sidebar">
+<div id="sidebar" style="width: 0px; visibility: hidden;">
     <ul>
         <li><a href="{% url 'worldapp' %}">Home</a></li>
         {% if user.is_authenticated %}
@@ -20,19 +20,24 @@
 <script>
 document.getElementById('sidebar-button').addEventListener('click', function() {
     var sidebar = document.getElementById('sidebar');
+    var sidebarButton = document.getElementById('sidebar-button');
     var buttons = document.querySelectorAll('.search-button, .directions-button, .search-input');
     if (sidebar.style.width === '0px') {
-        sidebar.style.width = '190px'; // Extend the sidebar
+        sidebar.style.width = '170px'; // Extend the sidebar
         sidebar.style.visibility = 'visible'; // Show the sidebar text
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].style.marginLeft = '100px'; // Move the buttons a little bit
+            buttons[i].style.marginLeft = '150px'; // Move the buttons a little bit
         }
+        sidebarButton.style.marginLeft = '80px'; // Move the sidebar button along with the sidebar
     } else {
         sidebar.style.width = '0px'; // Hide the sidebar
         sidebar.style.visibility = 'hidden'; // Hide the sidebar text
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].style.marginLeft = '0px'; // Move the buttons back
+            sidebarButton.style.marginLeft = '0px'; // Move the sidebar button back
         }
+
     }
 });
+
 </script>
