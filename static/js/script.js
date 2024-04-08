@@ -57,7 +57,7 @@ let icon = L.icon({
 
 let favouriteIcon = L.icon({
     iconUrl: '/static/pub.png',
-    iconSize: [40, 40]
+    iconSize: [72.5, 72.5]
 });
 
 // Audio initialization
@@ -119,23 +119,29 @@ function playAudio(url) {
     })
     .catch(error => console.error('Error:', error));
 }
-fetch('/pubs_geojson/')
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        geoJsonData = data; // Store the data
-        addMarkersToMap(data); // Add markers to the map
+fetch('/get_user_favorites/')
+    .then(response => response.json())
+    .then(data => {
+        favoritePubs = data;
+        // Proceed to fetch GeoJSON data
+        fetch('/pubs_geojson/')
+            .then(response => response.json())
+            .then(data => {
+                geoJsonData = data; // Store the data
+                addMarkersToMap(data); // Add markers to the map
+            });
     });
 
 
+
     function addMarkersToMap(data) {
-        L.geoJson(data, {
-            pointToLayer: function (feature, latlng) {
-                let marker = L.marker(latlng, { icon: icon });
-                markers.push(marker); // Add the marker to the array
-                return marker;
-            },
+       L.geoJson(data, {
+        pointToLayer: function (feature, latlng) {
+            let markerIcon = favoritePubs.find(fav => fav.pub_id === feature.properties.id) ? favouriteIcon : icon;
+            let marker = L.marker(latlng, { icon: markerIcon });
+            markers.push(marker); // Add the marker to the array
+            return marker;
+        },
             onEachFeature: function (feature, layer) {
                 let pubContent = "";
 

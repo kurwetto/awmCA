@@ -7,7 +7,7 @@ import spotipy
 from django import forms
 from django.conf import settings
 from django.contrib import messages
-from django.contrib.auth import login, logout
+from django.contrib.auth import login, logout, get_user
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth.models import User
@@ -44,7 +44,6 @@ for genre in all_genre_names:
 knn = NearestNeighbors(n_neighbors=1)
 knn.fit(data)
 
-
 def user_register(request):
     if request.user.is_authenticated:
         return redirect('worldapp')
@@ -63,7 +62,6 @@ def user_register(request):
 
         return render(request, 'worldapp/register.html', {'form': form})
 
-
 def user_login(request):
     if request.user.is_authenticated:
         return redirect('worldapp')
@@ -79,16 +77,13 @@ def user_login(request):
 
         return render(request, 'worldapp/login.html', {'form': form})
 
-
 def user_logout(request):
     logout(request)
     return redirect('login')
 
-
 def discover(request):
     allSongs = Song.objects.all().order_by('-last_updated')
     return render(request, template_name="worldapp/discover.html", context={"allSongs": allSongs})
-
 
 @login_required
 def profile_settings(request):
@@ -118,7 +113,6 @@ def profile_settings(request):
         'favourite_pubs': favourite_pubs
     })
 
-
 def worldapp(request):
     if not request.user.is_authenticated:
         return redirect('login')
@@ -126,16 +120,13 @@ def worldapp(request):
         context = {'title': 'AWMCA Map'}
         return render(request, 'worldapp/worldapp.html', context)
 
-
 def is_admin(user):
     return user.is_superuser  # or any other condition you want to check
-
 
 @login_required
 @user_passes_test(is_admin)
 def update(request):
     return render(request, 'worldapp/update.html')
-
 
 @user_passes_test(is_admin)
 def search_pubs(request):
@@ -154,14 +145,12 @@ def search_pubs(request):
     }
     return render(request, 'worldapp/update.html', context)
 
-
 @user_passes_test(is_admin)
 def search_artists(request):
     query = request.GET.get('q')
     artists = None
     if query:
-        artists = Artist.objects.filter(Q(artistName__icontains=query)).prefetch_related('album_set',
-                                                                                         'album_set__song_set')
+        artists = Artist.objects.filter(Q(artistName__icontains=query)).prefetch_related('album_set', 'album_set__song_set')
     else:
         artists = Artist.objects.none()
 
@@ -169,7 +158,6 @@ def search_artists(request):
         'artists': artists,
     }
     return render(request, 'worldapp/update.html', context)
-
 
 def edit_pub(request, pub_id):
     pub = Pub.objects.get(id=pub_id)
@@ -183,7 +171,6 @@ def edit_pub(request, pub_id):
     else:
         form = PubForm(instance=pub)
     return render(request, 'worldapp/update.html', {'form': form})
-
 
 class PubsGeoJSON(APIView):
     def get(self, request):
@@ -220,7 +207,6 @@ class PubsGeoJSON(APIView):
         }
         return Response(geojson)
 
-
 @login_required
 def toggle_favourite(request, pub_id):
     # Get the pub instance
@@ -240,7 +226,6 @@ def toggle_favourite(request, pub_id):
 
     return JsonResponse({'status': status})
 
-
 def discover_artists(request):
     artists = Artist.objects.all().prefetch_related('album_set', 'album_set__song_set')
 
@@ -248,7 +233,6 @@ def discover_artists(request):
         'artists': artists,
     }
     return render(request, 'worldapp/discover.html', context)
-
 
 def search_songs(request):
     search_query = request.GET.get('search', None)
@@ -265,7 +249,6 @@ def search_songs(request):
     context = {'search_result': search_result, 'search_query': search_query}
     return render(request, 'worldapp/search_results.html', context)
 
-
 @login_required
 def record_play(request, song_id):
     # Get the song instance
@@ -278,10 +261,8 @@ def record_play(request, song_id):
 
     return JsonResponse({'status': 'success'})
 
-
 def generate_random_string(length):
     return ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(length))
-
 
 def spotify_login(APIView):
     scope = 'user-read-private user-read-email'
@@ -293,7 +274,6 @@ def spotify_login(APIView):
                                            state=state)
     auth_url = sp_oauth.get_authorize_url()
     return redirect(auth_url)
-
 
 def spotify_callback(request):
     sp_oauth = spotipy.oauth2.SpotifyOAuth(client_id=settings.SPOTIFY_CLIENT_ID,
@@ -307,7 +287,6 @@ def spotify_callback(request):
 
     return redirect('worldapp')  # or where you want to redirect the user
 
-
 def recommend_song(request):
     user = request.user
 
@@ -317,9 +296,9 @@ def recommend_song(request):
         return HttpResponse("No songs played by the user yet.")
 
     # Get the most played song by the user
-    most_played_song = plays.values('song__genre__name') \
-        .annotate(song_count=Count('song')) \
-        .order_by('-song_count') \
+    most_played_song = plays.values('song__genre__name')\
+        .annotate(song_count=Count('song'))\
+        .order_by('-song_count')\
         .first()
 
     if most_played_song is None:
@@ -341,12 +320,9 @@ def recommend_song(request):
 
     return HttpResponse(f"We think you'd like: \"{random_song.songName}\" by {random_song.album.artist.artistName}")
 
-
-@login_required
-def get_favourite_pubs(request):
-    # Extract the pub IDs
-    favourite_pubs = Pub.objects.filter(favourite__user=request.user)
-
-    return render(request, 'worldapp/index.html', {
-        'favourite_pubs': favourite_pubs
-    })
+def get_user_favorites(request):
+    if request.user.is_authenticated:
+        favorite_pubs = Favourite.objects.filter(user=request.user).values('pub_id')
+        return JsonResponse(list(favorite_pubs), safe=False)
+    else:
+        return JsonResponse([], safe=False)
