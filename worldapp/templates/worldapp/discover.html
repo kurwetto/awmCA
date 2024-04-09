@@ -5,9 +5,9 @@
 
 
 {% block content %}
-<div class="container" style="margin-left: 175px; margin-right: 175px;"> <!-- Add margin-left and margin-right styles -->
+<div class="container" style="margin-left: 250px; margin-right: 250px;"> <!-- Add margin-left and margin-right styles -->
     <h1 class="text-center mt-4">Discover New Artists</h1>
-    <p class="text-center">Here are some songs we think you'd like!</p>
+    <p class="text-center">Find some new local artists/songs!</p>
     <hr>
 {% comment %}<a href="{% url 'spotify_login' %}" class="btn btn-primary">Connect with Spotify</a>{% endcomment %}
 
@@ -33,7 +33,7 @@ $(document).ready(function(){
 });
 </script>
 
-<div class="container" style="margin-left: 175px; margin-right: 175px;"> <!-- Add margin-left and margin-right styles -->
+<div class="container" style="margin-left: 250px; margin-right: 250px;"> <!-- Add margin-left and margin-right styles -->
     <h1 class="text-center mt-4">Browse Songs</h1>
 
     {% for song in allSongs %}

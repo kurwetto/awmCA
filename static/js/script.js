@@ -112,9 +112,15 @@ function playAudio(url) {
         if (data.status === 'added') {
             // Pub was added to favorites, update UI accordingly (change button color, etc.)
             console.log('Pub added to favorites');
+            const messageContainer = document.createElement('div');
+        messageContainer.classList.add('fav-added-message');
+        messageContainer.textContent = 'Pub added to favorites!';
         } else if (data.status === 'removed') {
             // Pub was removed from favorites, update UI accordingly (change button color, etc.)
             console.log('Pub removed from favorites');
+            const messageContainer1 = document.createElement('div');
+        messageContainer1.classList.add('fav-removed-message');
+        messageContainer1.textContent = 'Pub removed to favorites!';
         }
     })
     .catch(error => console.error('Error:', error));
@@ -179,10 +185,6 @@ pubContent += `<button class="myButton" onclick="toggleFavorite(${feature.proper
 
             // Add click event to the map to show all markers and remove directions
             map.on('click', function () {
-                // Show all markers
-                markers.forEach(function (marker) {
-                    map.addLayer(marker);
-                });
 
                 // If a route exists, remove it
                 if (window.route) {
@@ -216,6 +218,7 @@ function onLocationFound(e) {
 
 map.on("locationfound", onLocationFound);
 
+
 // Add an event listener to the search input field for keypress event
 document.getElementById('searchInput').addEventListener('keypress', function(event) {
     // Check if the pressed key is Enter (key code 13)
@@ -227,6 +230,13 @@ document.getElementById('searchInput').addEventListener('keypress', function(eve
         performSearch();
     }
 });
+
+// Add an event listener to the clear button
+document.getElementById('clearButton').addEventListener('click', function() {
+    // Call the clear function
+    clearMarkers();
+});
+
 // Function to perform the search
 function performSearch() {
     // Get the search query from the search input field
@@ -256,6 +266,20 @@ function performSearch() {
             map.removeLayer(marker);
         }
     }
+}
+
+// Function to clear markers and show all markers on the map
+function clearMarkers() {
+    // Show all markers
+    markers.forEach(function (marker) {
+        map.addLayer(marker);
+    });
+
+    // Reset the matchingPubs array
+    matchingPubs = markers;
+
+    // Clear the value of the search input field
+    document.getElementById('searchInput').value = '';
 }
 
 function showDirectionsToClosestPub() {
@@ -323,23 +347,4 @@ function showDirections(pubName, lat, lng) {
     }
 }
 
-// Add event listener to the clear button
-const clearButton = document.getElementById('clearButton');
-clearButton.addEventListener('click', clearSearchResults);
 
-// Function to clear search results and show all pubs on the map
-function clearSearchResults() {
-    // Remove any existing route
-    if (window.route) {
-        map.removeControl(window.route);
-        window.route = null;
-    }
-
-    // Show all markers
-    markers.forEach(function (marker) {
-        map.addLayer(marker);
-    });
-
-    // Reset matchingPubs to include all markers
-    matchingPubs = markers;
-}

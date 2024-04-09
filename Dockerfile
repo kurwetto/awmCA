@@ -25,6 +25,7 @@ RUN /opt/conda/envs/awmCA/bin/pip install djangorestframework
 RUN /opt/conda/envs/awmCA/bin/pip install spotipy
 RUN /opt/conda/envs/awmCA/bin/pip install scikit-learn
 RUN /opt/conda/envs/awmCA/bin/pip install pandas
+RUN /opt/conda/envs/awmCA/bin/pip install django-pwa
 
 # Make RUN commands use the new environment
 # See https://pythonspeed.com/articles/activate-conda-dockerfile/ for explanation

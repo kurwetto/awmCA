@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 # PWA working locally but problem with docker so commented for now. Maybe try to by downgrading django version?
-# PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/js', 'serviceworker.js')
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/js', 'serviceworker.js')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, '/static/'),
 ]
@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'leaflet',
     'rest_framework',
-    # 'pwa', works only locally maybe dry downgrading django version?
+    'pwa',
 ]
 
 MIDDLEWARE = [
@@ -197,49 +197,49 @@ SPOTIFY_CLIENT_SECRET = '8420cc7e68104406a977ad5f3922d70d'
 SPOTIFY_REDIRECT_URI = 'http://127.0.0.1:8000'
 SPOTIFY_SCOPES = ['user-read-playback-state', 'user-modify-playback-state']
 
-# PWA_APP_NAME = 'My App'
-# PWA_APP_DESCRIPTION = "My app description"
-# PWA_APP_THEME_COLOR = '#0A0302'
-# PWA_APP_BACKGROUND_COLOR = '#ffffff'
-# PWA_APP_DISPLAY = 'standalone'
-# PWA_APP_SCOPE = '/'
-# PWA_APP_ORIENTATION = 'any'
-# PWA_APP_START_URL = '/'
-# PWA_APP_STATUS_BAR_COLOR = 'default'
-# PWA_APP_ICONS = [
-#     {
-#         'src': '/static/images/icon-144x144.png',
-#         'sizes': '144x144'
-#     }
-# ]
-# PWA_APP_ICONS_APPLE = [
-#     {
-#         'src': '/static/images/icon-144x144.png',
-#         'sizes': '144x144'
-#     }
-# ]
-# PWA_APP_SPLASH_SCREEN = [
-#     {
-#         'src': '/static/images/splash-640x1136.png',
-#         'media': '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)'
-#     }
-# ]
-# PWA_APP_DIR = 'ltr'
-# PWA_APP_LANG = 'en-US'
-# PWA_APP_SHORTCUTS = [
-#     {
-#         'name': 'Shortcut',
-#         'url': '/target',
-#         'description': 'Shortcut to a page in my application'
-#     }
-# ]
-# PWA_APP_SCREENSHOTS = [
-#     {
-#       'src': '/static/images/splash-750x1334.png',
-#       'sizes': '750x1334',
-#       "type": "image/png"
-#     }
-# ]
+PWA_APP_NAME = 'Musivents'
+PWA_APP_DESCRIPTION = "Find local pubs and preformances in your area!"
+PWA_APP_THEME_COLOR = '#0A0302'
+PWA_APP_BACKGROUND_COLOR = '#ffffff'
+PWA_APP_DISPLAY = 'standalone'
+PWA_APP_SCOPE = '/'
+PWA_APP_ORIENTATION = 'any'
+PWA_APP_START_URL = '/'
+PWA_APP_STATUS_BAR_COLOR = 'default'
+PWA_APP_ICONS = [
+    {
+        'src': '/static/images/icon-144x144.png',
+        'sizes': '144x144'
+    }
+]
+PWA_APP_ICONS_APPLE = [
+    {
+        'src': '/static/images/icon-144x144.png',
+        'sizes': '144x144'
+    }
+]
+PWA_APP_SPLASH_SCREEN = [
+    {
+        'src': '/static/images/splash-640x1136.png',
+        'media': '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)'
+    }
+]
+PWA_APP_DIR = 'ltr'
+PWA_APP_LANG = 'en-US'
+PWA_APP_SHORTCUTS = [
+    {
+        'name': 'Shortcut',
+        'url': '/target',
+        'description': 'Shortcut to a page in my application'
+    }
+]
+PWA_APP_SCREENSHOTS = [
+    {
+      'src': '/static/images/splash-750x1334.png',
+      'sizes': '750x1334',
+      "type": "image/png"
+    }
+]
 
 SPOTIFY_CLIENT_SECRET = '58f0cefdb44f4d97978baca4d9362b29'
 SPOTIFY_CLIENT_ID = 'b9def44198fc490796da7b149564603e'

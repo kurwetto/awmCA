@@ -28,7 +28,8 @@ p {
 
 .directions-button,
 .search-input,
-.search-button {
+.search-button
+{
     background-color: rgba(20, 100, 0, 0.6); /* Use rgba color with alpha value */
     color: #fff;
     border: none;
@@ -39,6 +40,24 @@ p {
     margin-bottom: 20px;
     z-index: 1001; /* Ensure the button appears on top of the map */
     position: absolute; /* Position absolutely within the map container */
+}
+
+.clear-button{
+    background-color: rgba(255, 18, 0, 0.6); /* Use rgba color with alpha value */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    z-index: 1001; /* Ensure the button appears on top of the map */
+    position: absolute; /* Position absolutely within the map container */
+    transition: margin-left 0.5s;
+}
+
+.clear-button:hover {
+    background-color: rgba(215, 13, 0, 0.6); /* Use a slightly darker color on hover */
 }
 
 .directions-button:hover,
@@ -55,6 +74,12 @@ p {
     top: 70px; /* Adjust the bottom position */
     left: 55px; /* Adjust the left position */
 }
+
+.clear-button{
+    top: 15px;
+    left: 240px;
+}
+
 
 /* Add styles for the display favorited pubs button */
 #displayFavoritedPubsButton {
