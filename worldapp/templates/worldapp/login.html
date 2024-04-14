@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
     <div class="container mt-5">
         <div class="card shadow-lg rounded-lg">
@@ -22,10 +21,12 @@
 
                     <button type="submit" class="btn btn-primary btn-lg btn-block mt-4">Login</button>
                 </form>
+                <p class="text-center mt-3">Don't have an account? <a href="{% url 'register' %}">Register</a></p>
             </div>
         </div>
     </div>
 {% endblock %}
+
 
 <style>
     body {
