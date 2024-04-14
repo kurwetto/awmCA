@@ -41,12 +41,18 @@
         </div>
       </div>
 
-      <h3 class="my-4 text-center">Favourite Pubs</h3>
+      <h3 class="my-4 text-center">See what artists are preforming at your favourite pubs!</h3>
       <div class="card">
         <div class="card-body">
           <ul class="list-group list-group-flush">
             {% for pub in favourite_pubs %}
-              <li class="list-group-item">{{ pub.name }}</li>
+              <li class="list-group-item">
+                {{ pub.name }}
+                {% if pub.artist %}
+                  <br>Performing Artist: {{ pub.artist.artistName }}
+                {% endif %}
+                <button type="button" onclick="toggleFavourite('{{ pub.id }}', this)" class="btn btn-danger btn-sm">X</button>
+              </li>
             {% empty %}
               <li class="list-group-item">You have no favourite pubs.</li>
             {% endfor %}
@@ -56,4 +62,24 @@
     </div>
   </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+function toggleFavourite(pubId, button) {
+  $.ajax({
+    url: '/toggle_favourite/' + pubId + '/',
+    method: 'POST',
+    data: {
+      csrfmiddlewaretoken: '{{ csrf_token }}'
+    },
+    success: function(response) {
+      if (response.status === 'removed') {
+        // Remove the pub from the list
+        $(button).closest('li').remove();
+      }
+    }
+  });
+}
+</script>
+
 {% endblock %}
