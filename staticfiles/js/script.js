@@ -112,28 +112,19 @@ function playAudio(url) {
         if (data.status === 'added') {
             // Pub was added to favorites, update UI accordingly (change button color, etc.)
             console.log('Pub added to favorites');
-
-            // Find the marker for the favorited pub
-            const markerToUpdate = markers.find(marker => marker.feature.properties.id === pubId);
-            if (markerToUpdate) {
-                markerToUpdate.setIcon(favouriteIcon); // Update the marker icon
-                markerToUpdate._icon.src = markerToUpdate.options.icon.options.iconUrl; // Force refresh of icon
-            }
+            const messageContainer = document.createElement('div');
+        messageContainer.classList.add('fav-added-message');
+        messageContainer.textContent = 'Pub added to favorites!';
         } else if (data.status === 'removed') {
             // Pub was removed from favorites, update UI accordingly (change button color, etc.)
             console.log('Pub removed from favorites');
-
-            // Find the marker for the unfavorited pub
-            const markerToUpdate = markers.find(marker => marker.feature.properties.id === pubId);
-            if (markerToUpdate) {
-                markerToUpdate.setIcon(icon); // Update the marker icon
-                markerToUpdate._icon.src = markerToUpdate.options.icon.options.iconUrl; // Force refresh of icon
-            }
+            const messageContainer1 = document.createElement('div');
+        messageContainer1.classList.add('fav-removed-message');
+        messageContainer1.textContent = 'Pub removed to favorites!';
         }
     })
     .catch(error => console.error('Error:', error));
 }
-
 fetch('/get_user_favorites/')
     .then(response => response.json())
     .then(data => {
@@ -172,12 +163,6 @@ fetch('/get_user_favorites/')
                 if (feature.properties.artist) {
                     pubContent += "<p>This Week's Artist:<Artist></Artist>: " + feature.properties.artist + "</p>";
                 }
-                if (feature.properties.date) {
-    console.log("Date from properties: ", feature.properties.date); // Log the date
-    let date = new Date(feature.properties.date);
-    console.log("Parsed date: ", date); // Log the parsed date
-    pubContent += "<p>Date: " + date.toDateString() + "</p>";
-}
                if (feature.properties.songURL) {
         pubContent += `
             <audio id="audio_${feature.properties['@id']}" src="${feature.properties.songURL}"></audio>
@@ -194,10 +179,6 @@ pubContent += `<button class="myButton" onclick="toggleFavorite(${feature.proper
 
             // Add click event to the map to show all markers and remove directions
             map.on('click', function () {
-                // Show all markers
-                markers.forEach(function (marker) {
-                    map.addLayer(marker);
-                });
 
                 // If a route exists, remove it
                 if (window.route) {
@@ -217,7 +198,6 @@ let gpsMarker, gpsCircleMarker;
 function onLocationFound(e) {
     let radius = Math.floor(e.accuracy / 2);
     let popupContent = `You are within ${radius} meters from this point`;
-
     if (!gpsMarker) {
         gpsMarker = L.marker(e.latlng).addTo(map).bindPopup(popupContent).openPopup();
         gpsCircleMarker = L.circle(e.latlng, radius).addTo(map);
@@ -242,6 +222,13 @@ document.getElementById('searchInput').addEventListener('keypress', function(eve
         performSearch();
     }
 });
+
+// Add an event listener to the clear button
+document.getElementById('clearButton').addEventListener('click', function() {
+    // Call the clear function
+    clearMarkers();
+});
+
 // Function to perform the search
 function performSearch() {
     // Get the search query from the search input field
@@ -271,6 +258,20 @@ function performSearch() {
             map.removeLayer(marker);
         }
     }
+}
+
+// Function to clear markers and show all markers on the map
+function clearMarkers() {
+    // Show all markers
+    markers.forEach(function (marker) {
+        map.addLayer(marker);
+    });
+
+    // Reset the matchingPubs array
+    matchingPubs = markers;
+
+    // Clear the value of the search input field
+    document.getElementById('searchInput').value = '';
 }
 
 function showDirectionsToClosestPub() {
@@ -337,3 +338,5 @@ function showDirections(pubName, lat, lng) {
         alert('Location not found. Please enable location services.');
     }
 }
+
+

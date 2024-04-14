@@ -1,66 +1,86 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <div class="container" style="margin-left: 175px;"> <!-- Add margin-left style here -->
-    <h2 class="my-4">Search Results</h2>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="my-4 text-center">Search Results</h2>
 
-    <!-- Add search forms for pubs and artists -->
+        <!-- Search form for pubs -->
+        <form class="mb-3" method="get" action="{% url 'search_pubs' %}">
+          <div class="input-group">
+            <input class="form-control" type="text" name="q" placeholder="Search Pubs...">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </div>
+        </form>
 
-    <form class="form-inline mb-3" method="get" action="{% url 'search_pubs' %}">
-      <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search Pubs...">
-      <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search">
-    </form>
+        <!-- Search form for artists -->
+        <form class="mb-3" method="get" action="{% url 'search_artists' %}">
+          <div class="input-group">
+            <input class="form-control" type="text" name="q" placeholder="Search Artists...">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </div>
+        </form>
 
-    <form class="form-inline mb-3" method="get" action="{% url 'search_artists' %}">
-      <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search Artists...">
-      <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search">
-    </form>
-
-    {% if pubs %}
-      <div class="card mb-4">
-        <div class="card-body">
-          <h3>Matching Pubs</h3>
-          <ul class="list-group list-group-flush">
-            {% for pub in pubs %}
-              <li class="list-group-item">
-                {{ pub.name }}
-                <!-- Display other pub details as needed -->
-                <form method="post" action="{% url 'edit_pub' pub.id %}">
-                  {% csrf_token %}
-                  {{ pub.form.as_p }}
-                  <button class="btn btn-primary" type="submit">Save changes</button>
-                </form>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    {% endif %}
-
-    {% if artists %}
-      <div class="card">
-        <div class="card-body">
-          <h3>Matching Artists</h3>
-          <ul class="list-group list-group-flush">
-            {% for artist in artists %}
-              <li class="list-group-item">
-                <h4>{{ artist.artistName }}</h4>
-                {% for album in artist.album_set.all %}
-                  <h5>Album: {{ album.albumName }}</h5>
-                  {% for song in album.song_set.all %}
-                    <p>Song:
-                      <a href="#" onclick="document.getElementById('song{{ song.id }}').play()">
-                        {{ song.songName }}
-                      </a>
-                    </p>
-                    <audio id="song{{ song.id }}" src="{{ song.song.url }}"></audio>
-                  {% endfor %}
+        {% if pubs %}
+          <div class="card mb-4">
+            <div class="card-body">
+              <h3 class="mb-3">Matching Pubs</h3>
+              <ul class="list-group list-group-flush">
+                {% for pub in pubs %}
+                  <li class="list-group-item">
+                    {{ pub.name }}
+                    <!-- Display other pub details as needed -->
+                    <form method="post" action="{% url 'edit_pub' pub.id %}">
+                      {% csrf_token %}
+                      {{ pub.form.as_p }}
+                      <button class="btn btn-primary mt-2" type="submit">Save changes</button>
+                    </form>
+                  </li>
                 {% endfor %}
-              </li>
-            {% endfor %}
-          </ul>
+              </ul>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if artists %}
+          <div class="card">
+            <div class="card-body">
+              <h3 class="mb-3">Matching Artists</h3>
+              <ul class="list-group list-group-flush">
+                {% for artist in artists %}
+                  <li class="list-group-item">
+                    <h4>{{ artist.artistName }}</h4>
+                    {% for album in artist.album_set.all %}
+                      <h5>Album: {{ album.albumName }}</h5>
+                      {% for song in album.song_set.all %}
+                        <p>Song:
+                          <a href="#" onclick="document.getElementById('song{{ song.id }}').play()">
+                            {{ song.songName }}
+                          </a>
+                        </p>
+                        <audio id="song{{ song.id }}" src="{{ song.song.url }}"></audio>
+                      {% endfor %}
+                    {% endfor %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% endif %}
+
+        <!-- Additional text for admin updates -->
+        <div class="mt-4">
+          <h2 class="my-4 text-center">Admin Updates</h2>
+          <p>As an admin, you can update relevant artist and song information at the event. To do so:</p>
+          <ol>
+            <li>Welcome to the admin update page.</li>
+            <li>Navigate to the relevant sections for artists and songs.</li>
+            <li>Update the information as needed, including artist preforming & song choice.</li>
+            <li>Save your changes.</li>
+          </ol>
         </div>
       </div>
-    {% endif %}
+    </div>
   </div>
 {% endblock %}

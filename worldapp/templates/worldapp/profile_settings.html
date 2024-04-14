@@ -1,40 +1,59 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <div class="container" style="margin-left: 175px;"> <!-- Add margin-left style here -->
-    <h2 class="my-4">Profile Settings</h2>
-    <div class="card mb-4">
-      <div class="card-body">
-        <form method="post" enctype="multipart/form-data">
-          {% csrf_token %}
-          {{ user_form.as_p }}
-          <button type="submit" class="btn btn-primary">Update Profile</button>
-        </form>
-      </div>
-    </div>
-    <div class="card mb-4">
-      <div class="card-body">
-        <form method="post">
-          {% csrf_token %}
-          {{ password_form.as_p }}
-          <button type="submit" name="change_password" class="btn btn-primary">Change Password</button>
-        </form>
-      </div>
-    </div>
+{% load crispy_forms_tags %}
 
-    <h3 class="my-4">Favourite Pubs</h3>
-    <div class="card">
-      <div class="card-body">
-        <ul class="list-group list-group-flush">
-          {% for pub in favourite_pubs %}
-            <li class="list-group-item">{{ pub.name }}</li>
-          {% empty %}
-            <li class="list-group-item">You have no favourite pubs.</li>
-          {% endfor %}
-        </ul>
+{% if messages %}
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>
+{% endif %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h2 class="my-4 text-center">Profile Settings</h2>
 
+      <div class="card mb-4">
+        <div class="card-body">
+          <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ user_form.as_p }}
+            <button type="submit" name="change_username" class="btn btn-primary">Update Profile</button>
+          </form>
+        </div>
+      </div>
 
+      <div class="card mb-4">
+        <div class="card-body">
+          <form method="post">
+            {% csrf_token %}
+            {{ password_form.as_p }}
+            <button type="submit" name="change_password" class="btn btn-primary">Change Password</button>
+          </form>
+        </div>
+      </div>
+
+      <h3 class="my-4 text-center">Favourite Pubs</h3>
+      <div class="card">
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            {% for pub in favourite_pubs %}
+              <li class="list-group-item">{{ pub.name }}</li>
+            {% empty %}
+              <li class="list-group-item">You have no favourite pubs.</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

@@ -21,8 +21,7 @@
 document.getElementById('sidebar-button').addEventListener('click', function() {
     var sidebar = document.getElementById('sidebar');
     var sidebarButton = document.getElementById('sidebar-button');
-    var buttons = document.querySelectorAll('.search-button, .directions-button, .search-input');
-    var clearButton = document.getElementById('clearButton'); // Get the clear button element
+    var buttons = document.querySelectorAll('.search-button, .directions-button, .search-input, .clear-button');
 
     if (sidebar.style.width === '0px') {
         sidebar.style.width = '170px'; // Extend the sidebar
@@ -32,8 +31,6 @@ document.getElementById('sidebar-button').addEventListener('click', function() {
         }
         sidebarButton.style.marginLeft = '80px'; // Move the sidebar button along with the sidebar
 
-        // Move the clear button to the right
-        clearButton.style.marginLeft = '150px';
 
     } else {
         sidebar.style.width = '0px'; // Hide the sidebar

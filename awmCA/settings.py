@@ -86,6 +86,7 @@ WSGI_APPLICATION = 'awmCA.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
+
 DOCKER_HOST = 'awmca_postgis'
 LOCAL_HOST = 'localhost'
 
@@ -165,11 +166,11 @@ if os.getenv('DEPLOY_SECURE') == "True":
     ALLOWED_HOSTS = ['.michal-korneluk.shop', 'localhost',]
     CSRF_COOKIE_SECURE = True
     SESSION_COOKIE_SECURE = True
-# else:
-#     DEBUG = True
-#     ALLOWED_HOSTS = []
-#     CSRF_COOKIE_SECURE = False
-#     SESSION_COOKIE_SECURE = False
+else:
+    DEBUG = True
+    ALLOWED_HOSTS = []
+    CSRF_COOKIE_SECURE = False
+    SESSION_COOKIE_SECURE = False
 
 
 # Default primary key field type

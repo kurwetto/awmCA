@@ -56,7 +56,9 @@ def user_register(request):
                 messages.success(request, 'User Registration Successful!')
                 return redirect('worldapp')
             else:
-                messages.error(request, 'Error: Something Went Wrong.')
+                # Pass form errors to the template
+                errors = form.errors.as_data()
+                return render(request, 'worldapp/register.html', {'form': form, 'errors': errors})
         else:
             form = UserRegisterForm()
 
@@ -87,22 +89,27 @@ def discover(request):
 
 @login_required
 def profile_settings(request):
+    user_form = UsernameUpdateForm(instance=request.user)  # Initialize user_form
+    password_form = CustomPasswordChangeForm(request.user)  # Initialize password_form this was done to make sure that we can change the password and name outside of eachother.
+
     if request.method == 'POST':
-        user_form = UsernameUpdateForm(request.POST, request.FILES, instance=request.user)
-        if 'change_password' in request.POST:
+        # Check which form was submitted
+        if 'change_username' in request.POST:
+            user_form = UsernameUpdateForm(request.POST, instance=request.user)
+            if user_form.is_valid():
+                user_form.save()
+                messages.success(request, 'Your username was successfully updated!')
+                return redirect('profile_settings')
+            else:
+                messages.error(request, 'Please correct the error below.')
+        elif 'change_password' in request.POST:
             password_form = CustomPasswordChangeForm(request.user, request.POST)
             if password_form.is_valid():
                 password_form.save()
                 messages.success(request, 'Your password was successfully updated!')
-        if user_form.is_valid():
-            user_form.save()
-            messages.success(request, 'Your username was successfully updated!')
-            return redirect('profile_settings')
-        else:
-            messages.error(request, 'Please correct the error below.')
-    else:
-        user_form = UsernameUpdateForm(instance=request.user)
-        password_form = CustomPasswordChangeForm(request.user)
+                return redirect('profile_settings')
+            else:
+                messages.error(request, 'Please correct the error below.')
 
     # Get the favourite pubs of the current user
     favourite_pubs = Pub.objects.filter(favourite__user=request.user)
@@ -112,6 +119,8 @@ def profile_settings(request):
         'password_form': password_form,
         'favourite_pubs': favourite_pubs
     })
+
+
 
 def worldapp(request):
     if not request.user.is_authenticated:
@@ -159,6 +168,7 @@ def search_artists(request):
     }
     return render(request, 'worldapp/update.html', context)
 
+@user_passes_test(is_admin)
 def edit_pub(request, pub_id):
     pub = Pub.objects.get(id=pub_id)
     if request.method == 'POST':
@@ -261,31 +271,31 @@ def record_play(request, song_id):
 
     return JsonResponse({'status': 'success'})
 
-def generate_random_string(length):
-    return ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(length))
-
-def spotify_login(APIView):
-    scope = 'user-read-private user-read-email'
-    state = generate_random_string(16)
-    sp_oauth = spotipy.oauth2.SpotifyOAuth(client_id=settings.SPOTIFY_CLIENT_ID,
-                                           redirect_uri=settings.SPOTIFY_REDIRECT_URI,
-                                           client_secret=settings.SPOTIFY_CLIENT_SECRET,
-                                           scope=scope,
-                                           state=state)
-    auth_url = sp_oauth.get_authorize_url()
-    return redirect(auth_url)
-
-def spotify_callback(request):
-    sp_oauth = spotipy.oauth2.SpotifyOAuth(client_id=settings.SPOTIFY_CLIENT_ID,
-                                           client_secret=settings.SPOTIFY_CLIENT_SECRET,
-                                           redirect_uri=settings.SPOTIFY_REDIRECT_URI)
-    code = request.GET.get('code')
-    token_info = sp_oauth.get_access_token(code)
-
-    # save the token_info in your preferred way (session, database, etc.)
-    request.session['spotify_token_info'] = token_info
-
-    return redirect('worldapp')  # or where you want to redirect the user
+# def generate_random_string(length):
+#     return ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(length))
+#
+# def spotify_login(APIView):
+#     scope = 'user-read-private user-read-email'
+#     state = generate_random_string(16)
+#     sp_oauth = spotipy.oauth2.SpotifyOAuth(client_id=settings.SPOTIFY_CLIENT_ID,
+#                                            redirect_uri=settings.SPOTIFY_REDIRECT_URI,
+#                                            client_secret=settings.SPOTIFY_CLIENT_SECRET,
+#                                            scope=scope,
+#                                            state=state)
+#     auth_url = sp_oauth.get_authorize_url()
+#     return redirect(auth_url)
+#
+# def spotify_callback(request):
+#     sp_oauth = spotipy.oauth2.SpotifyOAuth(client_id=settings.SPOTIFY_CLIENT_ID,
+#                                            client_secret=settings.SPOTIFY_CLIENT_SECRET,
+#                                            redirect_uri=settings.SPOTIFY_REDIRECT_URI)
+#     code = request.GET.get('code')
+#     token_info = sp_oauth.get_access_token(code)
+#
+#     # save the token_info in your preferred way (session, database, etc.)
+#     request.session['spotify_token_info'] = token_info
+#
+#     return redirect('worldapp')  # or where you want to redirect the user
 
 def recommend_song(request):
     user = request.user
@@ -330,3 +340,4 @@ def get_user_favorites(request):
         return JsonResponse(list(favorite_pubs), safe=False)
     else:
         return JsonResponse([], safe=False)
+

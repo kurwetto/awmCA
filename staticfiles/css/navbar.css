@@ -45,8 +45,7 @@
     transition: margin-left 0.5s; /* Transition the margin-left property */
 }
 
-
-    .search-button,
+.search-button,
 .directions-button,
 .search-input {
     transition: margin-left 0.5s; /* Transition the margin-left property */

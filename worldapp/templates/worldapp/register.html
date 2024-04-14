@@ -11,31 +11,49 @@
                     <div class="form-group">
                         <label for="{{ form.username.id_for_label }}">Username:</label>
                         {{ form.username }}
+                        {% if form.errors.username %}
+                            <p class="text-danger">{{ form.errors.username.0 }}</p>
+                        {% endif %}
                     </div>
 
                     <div class="form-group">
                         <label for="{{ form.email.id_for_label }}">Email Address:</label>
                         {{ form.email }}
+                        {% if form.errors.email %}
+                            <p class="text-danger">{{ form.errors.email.0 }}</p>
+                        {% endif %}
                     </div>
 
                     <div class="form-group">
                         <label for="{{ form.first_name.id_for_label }}">First Name:</label>
                         {{ form.first_name }}
+                        {% if form.errors.first_name %}
+                            <p class="text-danger">{{ form.errors.first_name.0 }}</p>
+                        {% endif %}
                     </div>
 
                     <div class="form-group">
                         <label for="{{ form.last_name.id_for_label }}">Last Name:</label>
                         {{ form.last_name }}
+                        {% if form.errors.last_name %}
+                            <p class="text-danger">{{ form.errors.last_name.0 }}</p>
+                        {% endif %}
                     </div>
 
                     <div class="form-group">
                         <label for="{{ form.password1.id_for_label }}">Password:</label>
                         {{ form.password1 }}
+                        {% if form.errors.password1 %}
+                            <p class="text-danger">{{ form.errors.password1.0 }}</p>
+                        {% endif %}
                     </div>
 
                     <div class="form-group">
                         <label for="{{ form.password2.id_for_label }}">Confirm Password:</label>
                         {{ form.password2 }}
+                        {% if form.errors.password2 %}
+                            <p class="text-danger">{{ form.errors.password2.0 }}</p>
+                        {% endif %}
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-block mt-3 custom-register-btn">Register</button>

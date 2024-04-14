@@ -52,44 +52,6 @@ class UserRegisterForm(UserCreationForm):
             raise forms.ValidationError("Email is already in use.")
         return email
 
-# class UserRegisterForm(forms.ModelForm):
-#     """Default"""
-#     username = forms.CharField(label='Username', max_length=150, widget=forms.TextInput(attrs={'class': 'form-control'}))
-#     email = forms.CharField(label='Email Address', max_length=320, widget=forms.EmailInput(attrs={'class': 'form-control'}))
-#     first_name = forms.CharField(label='First Name', max_length=35, widget=forms.TextInput(attrs={'class': 'form-control'}))
-#     last_name = forms.CharField(label='Last Name', max_length=35, widget=forms.TextInput(attrs={'class': 'form-control'}))
-#     password = forms.CharField(label='Password', widget=forms.PasswordInput(attrs={'class': 'form-control'}))
-#     password1 = forms.CharField(label='Confirm Password', widget=forms.PasswordInput(attrs={'class': 'form-control'}))
-#
-#     class Meta:
-#         model = User
-#         fields = ['username', 'email', 'first_name', 'last_name', 'password', 'password1']
-#
-#     def clean_email(self):
-#         """ Verify that email address is available. """
-#         email = self.cleaned_data.get('email')
-#         qs = User.objects.filter(email=email)
-#         if qs.exists():
-#             raise forms.ValidationError("Email is already in use.")
-#         return email
-#
-#     def clean(self):
-#         """ Verify that passwords match. """
-#         cleaned_data = super().clean()
-#         password = cleaned_data.get("password")
-#         password1 = cleaned_data.get("password1")
-#         if password is not None and password != password1:
-#             self.add_error("password1", "Passwords must match.")
-#         return cleaned_data
-#
-#     def save(self, commit=True):
-#         # Save the provided password in hashed format
-#         user = super().save(commit=False)
-#         user.set_password(self.cleaned_data["password"])
-#         if commit:
-#             user.save()
-#         return user
-
 class UserAdminCreationForm(forms.ModelForm):
     """ Form for creating new users, includes all the required fields. """
     password = forms.CharField(label='Password', widget=forms.PasswordInput)
@@ -138,7 +100,6 @@ class UserAdminChangeForm(forms.ModelForm):
 class PubForm(forms.ModelForm):
     artist = forms.ModelChoiceField(queryset=Artist.objects.all())
     songURL = forms.ChoiceField(choices=[])
-    date = forms.DateTimeField(input_formats=['%Y-%m-%d %H:%M'])  # Add this line
 
     def __init__(self, *args, **kwargs):
         super(PubForm, self).__init__(*args, **kwargs)
@@ -146,4 +107,4 @@ class PubForm(forms.ModelForm):
 
     class Meta:
         model = Pub
-        fields = ['artist', 'songURL', 'date']  # Add 'date' here
+        fields = ['artist', 'songURL']  # Add 'date' here
