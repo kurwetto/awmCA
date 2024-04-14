@@ -29,7 +29,7 @@ urlpatterns = [
     # path('callback/', spotify_callback, name='spotify_callback'),
     path('recommend/', recommend_song, name='recommend_song'),
     path('get_user_favorites/', get_user_favorites, name='get_user_favorites'),
-
+    path('add_artist/', add_artist, name='add_artist'),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

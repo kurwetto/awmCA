@@ -19,7 +19,7 @@
                 <p> Use the search below to quickly find artists, albums or songs!</p>
                  <form class="search-form" role="search" action="{% url 'search_songs' %}">
                     {% csrf_token %}
-                    <input class="form-control me-2" type="search" placeholder="Find Artist/Song/Album" aria-label="Search" name="search">
+                    <input class="form-control me-2" type="search" placeholder="Find Artist/Song/Album" aria-label="Search"  name="search">
                 </form>
             </div>
         </div>

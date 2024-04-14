@@ -25,6 +25,7 @@ from sklearn.neighbors import KNeighborsClassifier, NearestNeighbors
 from .forms import (CustomPasswordChangeForm, PubForm, UserLoginForm,
                     UserRegisterForm, UsernameUpdateForm)
 from .models import Artist, Favourite, Play, Pub, Song
+from .forms import ArtistForm
 
 # Prepare Data
 all_songs = Song.objects.all()
@@ -340,4 +341,14 @@ def get_user_favorites(request):
         return JsonResponse(list(favorite_pubs), safe=False)
     else:
         return JsonResponse([], safe=False)
+
+def add_artist(request):
+    if request.method == 'POST':
+        form = ArtistForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('search_pubs')
+    else:
+        form = ArtistForm()
+    return render(request, 'update.html', {'form': form})
 

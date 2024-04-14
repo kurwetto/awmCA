@@ -26,6 +26,7 @@ p {
     line-height: 1.6;
 }
 
+.show-fav-button,
 .directions-button,
 .search-input,
 .search-button
@@ -40,6 +41,7 @@ p {
     margin-bottom: 20px;
     z-index: 1001; /* Ensure the button appears on top of the map */
     position: absolute; /* Position absolutely within the map container */
+    transition: margin-left 0.5s;
 }
 
 .clear-button{
@@ -80,25 +82,11 @@ p {
     left: 240px;
 }
 
-
-/* Add styles for the display favorited pubs button */
-#displayFavoritedPubsButton {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1002; /* Ensure the button appears on top of the map */
-    background-color: #007bff; /* Blue color for the button */
-    color: #fff; /* White text color */
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+.show-fav-button {
+    top: 130px;
+    left: 55px;
 }
 
-#displayFavoritedPubsButton:hover {
-    background-color: #0056b3; /* Darker blue color on hover */
-}
 
 .myButton {
     /* Add your styles here */

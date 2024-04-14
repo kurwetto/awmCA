@@ -7,6 +7,8 @@ let favoritePubs = [];
 // Add event listener to the directions button
 const directionsButton = document.getElementById('directionsButton');
 directionsButton.addEventListener('click', showDirectionsToClosestPub);
+const showFavoritesButton = document.getElementById('showFavouritesButton');
+showFavoritesButton.addEventListener('click', showFavorites);
 const searchButton = document.getElementById('searchButton');
 
 // Map initialization with default tile layer
@@ -339,4 +341,26 @@ function showDirections(pubName, lat, lng) {
     }
 }
 
+// Add event listener to the "Show Favorites" button
+
+
+// Function to show only favorited pubs
+function showFavorites() {
+    // Hide all markers
+    markers.forEach(function(marker) {
+        map.removeLayer(marker);
+    });
+
+    // Filter markers to show only favorited pubs
+    const favoriteMarkers = markers.filter(function(marker) {
+        return favoritePubs.some(function(fav) {
+            return fav.pub_id === marker.feature.properties.id;
+        });
+    });
+
+    // Show only favorite markers on the map
+    favoriteMarkers.forEach(function(marker) {
+        marker.addTo(map);
+    });
+}
 

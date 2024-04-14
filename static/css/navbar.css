@@ -25,6 +25,7 @@
     border-radius: 5px;
 }
 
+
 #sidebar ul li a:hover {
     background-color: white;
     color: yellowgreen;
@@ -45,8 +46,15 @@
     transition: margin-left 0.5s; /* Transition the margin-left property */
 }
 
+.show-fav-button,
 .search-button,
 .directions-button,
 .search-input {
     transition: margin-left 0.5s; /* Transition the margin-left property */
 }
+
+/* Center the placeholder text in the input field */
+.form-control::placeholder {
+    text-align: center;
+}
+

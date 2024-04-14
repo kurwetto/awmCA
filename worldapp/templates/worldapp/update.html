@@ -74,13 +74,29 @@
           <h2 class="my-4 text-center">Admin Updates</h2>
           <p>As an admin, you can update relevant artist and song information at the event. To do so:</p>
           <ol>
-            <li>Welcome to the admin update page.</li>
             <li>Navigate to the relevant sections for artists and songs.</li>
             <li>Update the information as needed, including artist preforming & song choice.</li>
             <li>Save your changes.</li>
+
           </ol>
         </div>
       </div>
     </div>
   </div>
+    <!-- Form to add a new artist -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+<form class="mb-3 input-group" method="post" action="{% url 'add_artist' %}">
+  {% csrf_token %}
+  <input class="form-control" type="text" name="artistName" placeholder="Artist Name...">
+  <button class="btn btn-outline-success" type="submit">Add Artist</button>
+</form>
+        </div>
+        </div>
+    </div>
+
+
+
 {% endblock %}
+```

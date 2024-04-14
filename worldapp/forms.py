@@ -2,7 +2,7 @@ from django.contrib.auth.forms import AuthenticationForm, ReadOnlyPasswordHashFi
     UserCreationForm
 from django import forms
 from django.contrib.auth import get_user_model
-from worldapp.models import Pub, Artist, Song
+from worldapp.models import Pub, Artist, Song, Artist, Album, Genre, Song
 
 User = get_user_model()
 class UserLoginForm(AuthenticationForm):
@@ -108,3 +108,9 @@ class PubForm(forms.ModelForm):
     class Meta:
         model = Pub
         fields = ['artist', 'songURL']  # Add 'date' here
+
+class ArtistForm(forms.ModelForm):
+    class Meta:
+        model = Artist
+        fields = ['artistName']
+
