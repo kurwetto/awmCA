@@ -364,3 +364,15 @@ function showFavorites() {
     });
 }
 
+// Add a control to allow users to locate their current position on the map
+L.control.locate({
+    position: 'topright', // Position of the control
+    strings: {
+        title: "Show me where I am", // Title of the control
+    },
+    locateOptions: {
+        maxZoom: 16, // Maximum zoom level when locating the user's position
+        watch: true, // Continuously watch the user's position
+        enableHighAccuracy: true, // Use high accuracy mode if available
+    }
+}).addTo(map);
