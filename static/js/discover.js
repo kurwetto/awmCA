@@ -46,7 +46,6 @@ $(document).ready((function () {
                 console.log("Error recording play.");
             }
         });
-
     })
 
     $(document).on("click", ".pause-btn svg", function (params) {

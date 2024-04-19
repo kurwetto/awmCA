@@ -2,6 +2,7 @@ import json
 import random
 import string
 
+import numpy as np
 import pandas as pd
 import spotipy
 from django import forms
@@ -84,6 +85,7 @@ def user_logout(request):
     logout(request)
     return redirect('login')
 
+@login_required
 def discover(request):
     allSongs = Song.objects.all().order_by('-last_updated')
     return render(request, template_name="worldapp/discover.html", context={"allSongs": allSongs})
@@ -91,7 +93,7 @@ def discover(request):
 @login_required
 def profile_settings(request):
     user_form = UsernameUpdateForm(instance=request.user)  # Initialize user_form
-    password_form = CustomPasswordChangeForm(request.user)  # Initialize password_form this was done to make sure that we can change the password and name outside of eachother.
+    password_form = CustomPasswordChangeForm(request.user)  # Initialize password_form | change the password and name outside of eachother.
 
     if request.method == 'POST':
         # Check which form was submitted
@@ -131,7 +133,7 @@ def worldapp(request):
         return render(request, 'worldapp/worldapp.html', context)
 
 def is_admin(user):
-    return user.is_superuser  # or any other condition you want to check
+    return user.is_superuser  # built in django check
 
 @login_required
 @user_passes_test(is_admin)
@@ -156,6 +158,19 @@ def search_pubs(request):
     return render(request, 'worldapp/update.html', context)
 
 @user_passes_test(is_admin)
+def edit_pub(request, pub_id):
+    pub = Pub.objects.get(id=pub_id)
+    if request.method == 'POST':
+        form = PubForm(request.POST, instance=pub)
+        if form.is_valid():
+            form.save()
+            return redirect('update')
+        else:
+            print(form.errors)  # Print form errors
+    else:
+        form = PubForm(instance=pub)
+    return render(request, 'worldapp/update.html', {'form': form})
+@user_passes_test(is_admin)
 def search_artists(request):
     query = request.GET.get('q')
     artists = None
@@ -169,19 +184,7 @@ def search_artists(request):
     }
     return render(request, 'worldapp/update.html', context)
 
-@user_passes_test(is_admin)
-def edit_pub(request, pub_id):
-    pub = Pub.objects.get(id=pub_id)
-    if request.method == 'POST':
-        form = PubForm(request.POST, instance=pub)
-        if form.is_valid():
-            form.save()
-            return redirect('update')
-        else:
-            print(form.errors)  # Print form errors
-    else:
-        form = PubForm(instance=pub)
-    return render(request, 'worldapp/update.html', {'form': form})
+
 
 class PubsGeoJSON(APIView):
     def get(self, request):
@@ -237,14 +240,15 @@ def toggle_favourite(request, pub_id):
 
     return JsonResponse({'status': status})
 
-def discover_artists(request):
-    artists = Artist.objects.all().prefetch_related('album_set', 'album_set__song_set')
+# def discover_artists(request):
+#     artists = Artist.objects.all().prefetch_related('album_set', 'album_set__song_set')
+#
+#     context = {
+#         'artists': artists,
+#     }
+#     return render(request, 'worldapp/discover.html', context)
 
-    context = {
-        'artists': artists,
-    }
-    return render(request, 'worldapp/discover.html', context)
-
+@login_required
 def search_songs(request):
     search_query = request.GET.get('search', None)
 
@@ -298,9 +302,9 @@ def record_play(request, song_id):
 #
 #     return redirect('worldapp')  # or where you want to redirect the user
 
+
 def recommend_song(request):
     user = request.user
-
     # Check if there are any songs played by the user
     plays = Play.objects.filter(user=user)
     if not plays.exists():
@@ -311,10 +315,8 @@ def recommend_song(request):
         .annotate(song_count=Count('song'))\
         .order_by('-song_count')\
         .first()
-
     if most_played_song is None:
         return HttpResponse("No most played song found for the user.")
-
     all_songs = Song.objects.all()
 
     # If there are no songs in the database, return a message
@@ -324,16 +326,19 @@ def recommend_song(request):
     # Fetch genre name from the most played song
     most_played_genre_name = most_played_song.get('song__genre__name')
 
-    # Filter songs by genre
-    same_genre_songs = all_songs.filter(genre__name=most_played_genre_name)
+    # Create a genre vector for the most played genre
+    song_genre_vector = [1 if genre == most_played_genre_name else 0 for genre in all_genre_names]
+    song_genre_vector = np.array(song_genre_vector).reshape(1, -1)
 
-    if not same_genre_songs.exists():
-        return HttpResponse("No songs of the same genre found.")
+    # Use KNN to find song of similar genre
+    distances, indices = knn.kneighbors(song_genre_vector, n_neighbors=3)  # Increase the number of neighbors
 
-    # Shuffle the queryset to get a random song
-    random_song = same_genre_songs.order_by('?').first()
+    # Select a random index from the top N indices
+    random_index = random.choice(indices[0])
 
-    return HttpResponse(f"We think you'd like: \"{random_song.songName}\" by {random_song.album.artist.artistName}")
+    recommended_song = all_songs[int(random_index)]
+
+    return HttpResponse(f"We think you'd like: \"{recommended_song.songName}\" by {recommended_song.album.artist.artistName}")
 
 def get_user_favorites(request):
     if request.user.is_authenticated:
@@ -342,6 +347,7 @@ def get_user_favorites(request):
     else:
         return JsonResponse([], safe=False)
 
+@user_passes_test(is_admin)
 def add_artist(request):
     if request.method == 'POST':
         form = ArtistForm(request.POST)

@@ -74,14 +74,15 @@ function playAudio(url) {
     audio.play();
 }
 
- function toggleAudio(audioId) {
-            var audio = document.getElementById(audioId);
-            if (audio.paused) {
-                audio.play();
-            } else {
-                audio.pause();
-            }
-        }
+// Function to toggle audio playback
+function toggleAudio(audioId) {
+    var audio = document.getElementById(audioId);
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
 
 
         function getCookie(name) {
@@ -99,7 +100,7 @@ function playAudio(url) {
     }
     return cookieValue;
 }
-       function toggleFavorite(pubId) {
+function toggleFavorite(pubId) {
     // Send an AJAX request to the backend to toggle the favorite status
     fetch(`/toggle_favourite/${pubId}/`, {
         method: 'POST',
@@ -115,18 +116,19 @@ function playAudio(url) {
             // Pub was added to favorites, update UI accordingly (change button color, etc.)
             console.log('Pub added to favorites');
             const messageContainer = document.createElement('div');
-        messageContainer.classList.add('fav-added-message');
-        messageContainer.textContent = 'Pub added to favorites!';
+            messageContainer.classList.add('fav-added-message');
+            messageContainer.textContent = 'Pub added to favorites!';
         } else if (data.status === 'removed') {
             // Pub was removed from favorites, update UI accordingly (change button color, etc.)
             console.log('Pub removed from favorites');
             const messageContainer1 = document.createElement('div');
-        messageContainer1.classList.add('fav-removed-message');
-        messageContainer1.textContent = 'Pub removed to favorites!';
+            messageContainer1.classList.add('fav-removed-message');
+            messageContainer1.textContent = 'Pub removed to favorites!';
         }
     })
     .catch(error => console.error('Error:', error));
 }
+
 fetch('/get_user_favorites/')
     .then(response => response.json())
     .then(data => {
@@ -142,43 +144,39 @@ fetch('/get_user_favorites/')
 
 
 
-    function addMarkersToMap(data) {
-       L.geoJson(data, {
+function addMarkersToMap(data) {
+    L.geoJson(data, {
         pointToLayer: function (feature, latlng) {
             let markerIcon = favoritePubs.find(fav => fav.pub_id === feature.properties.id) ? favouriteIcon : icon;
             let marker = L.marker(latlng, { icon: markerIcon });
             markers.push(marker); // Add the marker to the array
             return marker;
         },
-            onEachFeature: function (feature, layer) {
-                let pubContent = "";
+        onEachFeature: function (feature, layer) {
+            let pubContent = "";
 
-                if (feature.properties.name) {
-                    pubContent += "<p>Name: " + feature.properties.name + "</p>";
-                }
-                if (feature.properties.postcode) {
-                    pubContent += "<p>Address: " + feature.properties.postcode + "</p>";
-                }
-                if (feature.properties.wheelchair) {
-                    pubContent += "<p>Wheelchair Access: " + feature.properties.wheelchair + "</p>";
-                }
-                if (feature.properties.artist) {
-                    pubContent += "<p>This Week's Artist:<Artist></Artist>: " + feature.properties.artist + "</p>";
-                }
-               if (feature.properties.songURL) {
-        pubContent += `
-            <audio id="audio_${feature.properties['@id']}" src="${feature.properties.songURL}"></audio>
-            <button class="myButton" onclick="toggleAudio('audio_${feature.properties['@id']}')">Play Sample</button>
-        `;
-    }
-
-
-// Add "Show Directions" button to the popup content
-pubContent += `<button class="myButton" onclick="showDirections('${feature.properties.name}', ${layer.getLatLng().lat}, ${layer.getLatLng().lng})">Show Directions</button>`;
-pubContent += `<button class="myButton" onclick="toggleFavorite(${feature.properties.id})">Favourite</button>`;
+            if (feature.properties.name) {
+                pubContent += "<p>Name: " + feature.properties.name + "</p>";
+            }
+            if (feature.properties.postcode) {
+                pubContent += "<p>Address: " + feature.properties.postcode + "</p>";
+            }
+            if (feature.properties.wheelchair) {
+                pubContent += "<p>Wheelchair Access: " + feature.properties.wheelchair + "</p>";
+            }
+            if (feature.properties.artist) {
+                pubContent += "<p>This Week's Artist<Artist></Artist>: " + feature.properties.artist + "</p>";
+            }
+            if (feature.properties.songURL) {
+                pubContent += `
+                    <audio id="audio_${feature.properties['@id']}" src="${feature.properties.songURL}"></audio>
+                    <button class="myButton" onclick="toggleAudio('audio_${feature.properties['@id']}')">Play Sample</button>
+                `;
+            }
+            pubContent += `<button class="myButton" onclick="showDirections('${feature.properties.name}', ${layer.getLatLng().lat}, ${layer.getLatLng().lng})">Show Directions</button>`;
+            pubContent += `<button class="myButton" onclick="toggleFavorite(${feature.properties.id})">Favourite</button>`;
 
             layer.bindPopup(pubContent);
-
             // Add click event to the map to show all markers and remove directions
             map.on('click', function () {
 
@@ -194,6 +192,7 @@ pubContent += `<button class="myButton" onclick="toggleFavorite(${feature.proper
         },
     }).addTo(map);
 }
+
 
 // Current Location
 let gpsMarker, gpsCircleMarker;
@@ -213,6 +212,12 @@ function onLocationFound(e) {
 
 map.on("locationfound", onLocationFound);
 
+// Add an event listener to the clear button
+document.getElementById('clearButton').addEventListener('click', function() {
+    // Call the clear function
+    clearMarkers();
+});
+
 // Add an event listener to the search input field for keypress event
 document.getElementById('searchInput').addEventListener('keypress', function(event) {
     // Check if the pressed key is Enter (key code 13)
@@ -223,12 +228,6 @@ document.getElementById('searchInput').addEventListener('keypress', function(eve
         // Call the search function
         performSearch();
     }
-});
-
-// Add an event listener to the clear button
-document.getElementById('clearButton').addEventListener('click', function() {
-    // Call the clear function
-    clearMarkers();
 });
 
 // Function to perform the search
@@ -276,40 +275,40 @@ function clearMarkers() {
     document.getElementById('searchInput').value = '';
 }
 
-function showDirectionsToClosestPub() {
-    // Check if the user's location has been found
-    if (gpsMarker) {
-        // Calculate distance to each visible pub and find the closest one
-        let closestPub;
-        let closestDistance = Infinity;
+    function showDirectionsToClosestPub() {
+        // Check if the user's location has been found
+        if (gpsMarker) {
+            // Calculate distance to each visible pub and find the closest one
+            let closestPub;
+            let closestDistance = Infinity;
 
-        matchingPubs.forEach(function (marker) {
-            let distance = marker.getLatLng().distanceTo(gpsMarker.getLatLng());
-            if (distance < closestDistance) {
-                closestDistance = distance;
-                closestPub = marker;
-            }
-        });
+            matchingPubs.forEach(function (marker) {
+                let distance = marker.getLatLng().distanceTo(gpsMarker.getLatLng());
+                if (distance < closestDistance) {
+                    closestDistance = distance;
+                    closestPub = marker;
+                }
+            });
 
-        // Show route to the closest pub
-        if (closestPub) {
-            if (window.route) {
-                map.removeControl(window.route);
+            // Show route to the closest pub
+            if (closestPub) {
+                if (window.route) {
+                    map.removeControl(window.route);
+                }
+                window.route = L.Routing.control({
+                    waypoints: [
+                        L.latLng(gpsMarker.getLatLng().lat, gpsMarker.getLatLng().lng),
+                        L.latLng(closestPub.getLatLng().lat, closestPub.getLatLng().lng)
+                    ],
+                    routeWhileDragging: true
+                }).addTo(map);
+            } else {
+                alert('No pubs found.');
             }
-            window.route = L.Routing.control({
-                waypoints: [
-                    L.latLng(gpsMarker.getLatLng().lat, gpsMarker.getLatLng().lng),
-                    L.latLng(closestPub.getLatLng().lat, closestPub.getLatLng().lng)
-                ],
-                routeWhileDragging: true
-            }).addTo(map);
         } else {
-            alert('No pubs found.');
+            alert('Location not found. Please enable location services.');
         }
-    } else {
-        alert('Location not found. Please enable location services.');
     }
-}
 
 function showDirections(pubName, lat, lng) {
     if (gpsMarker) {
@@ -344,21 +343,21 @@ function showDirections(pubName, lat, lng) {
 // Add event listener to the "Show Favorites" button
 
 
-// Function to show only favorited pubs
+// Function to show only favourite
 function showFavorites() {
     // Hide all markers
     markers.forEach(function(marker) {
         map.removeLayer(marker);
     });
 
-    // Filter markers to show only favorited pubs
+    // Filter markers to show only favourite
     const favoriteMarkers = markers.filter(function(marker) {
         return favoritePubs.some(function(fav) {
             return fav.pub_id === marker.feature.properties.id;
         });
     });
 
-    // Show only favorite markers on the map
+    // Show only favourite markers on the map
     favoriteMarkers.forEach(function(marker) {
         marker.addTo(map);
     });

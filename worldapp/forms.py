@@ -52,6 +52,14 @@ class UserRegisterForm(UserCreationForm):
             raise forms.ValidationError("Email is already in use.")
         return email
 
+    def clean_username(self):
+        """ Verify that username is available. """
+        username = self.cleaned_data.get('username')
+        qs = User.objects.filter(username=username)
+        if qs.exists():
+            raise forms.ValidationError("Username is already in use.")
+        return username
+
 class UserAdminCreationForm(forms.ModelForm):
     """ Form for creating new users, includes all the required fields. """
     password = forms.CharField(label='Password', widget=forms.PasswordInput)

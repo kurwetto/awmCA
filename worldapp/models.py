@@ -19,14 +19,6 @@ class UserManager(BaseUserManager):
         user.set_password(password)
         user.save(using=self._db)
         return user
-
-    def create_staffuser(self, email, password):
-        """ Create and Save a Staff User with the given Email and Password. """
-        user = self.create_user(email=email, password=password)
-        user.staff = True
-        user.save(using=self._db)
-        return user
-
     def create_superuser(self, email, password):
         """ Create and Save a Super User with the given Email and Password. """
         user = self.create_user(email=email, password=password)
@@ -104,7 +96,7 @@ class Artist(models.Model):
 
     class Meta:
         verbose_name = _("Artist")
-        verbose_name_plural = _("Artists")
+        verbose_name_plural =    _("Artists")
 
     def __str__(self):
         return self.artistName
@@ -170,8 +162,8 @@ class Pub(models.Model):
     website = models.URLField(max_length=255, null=True)
     wheelchair = models.CharField(max_length=255, null=True)
     artist = models.ForeignKey(Artist, on_delete=models.SET_NULL, null=True)
-    songURL = models.CharField(max_length=255, null=True)  # Add this line
-    date = models.DateTimeField(null=True)  # Add this line
+    songURL = models.CharField(max_length=255, null=True)
+    date = models.DateTimeField(null=True)
     location = models.PointField()
 
 class Favourite(models.Model):
